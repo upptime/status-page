@@ -1,3 +1,9 @@
+# [v1.0.1](https://github.com/upptime/status-page/compare/v1.0.0...v1.0.1) (2020-10-13)
+
+## 🐛 Bug fixes
+
+- [`d71ef9a`](https://github.com/upptime/status-page/commit/d71ef9a)  Add support for graph colors from config
+
 # v1.0.0 (2020-10-13)
 
 ## ✨ New features
