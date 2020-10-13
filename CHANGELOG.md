@@ -1,3 +1,9 @@
+# [v1.0.2](https://github.com/upptime/status-page/compare/v1.0.1...v1.0.2) (2020-10-13)
+
+## 🐛 Bug fixes
+
+- [`b376314`](https://github.com/upptime/status-page/commit/b376314)  Use root config if available
+
 # [v1.0.1](https://github.com/upptime/status-page/compare/v1.0.0...v1.0.1) (2020-10-13)
 
 ## 🐛 Bug fixes
