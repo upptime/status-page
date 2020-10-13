@@ -3,7 +3,7 @@ import { safeLoad } from "js-yaml";
 import { join } from "path";
 
 export const preProcess = async () => {
-  const config = safeLoad(await readFile(join("..", ".upptimerc.yml"), "utf8")) as {
+  const config = safeLoad(await readFile(join(".", ".upptimerc.yml"), "utf8")) as {
     "status-website"?: {
       cname?: string;
     };

@@ -7,7 +7,7 @@ export const preProcess = async () => {
     [index: string]: string;
   };
 
-  const config = safeLoad(await readFile(join("..", ".upptimerc.yml"), "utf8")) as {
+  const config = safeLoad(await readFile(join(".", ".upptimerc.yml"), "utf8")) as {
     logoUrl?: string;
     name?: string;
     introTitle?: string;
