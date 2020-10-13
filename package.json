@@ -1,7 +1,7 @@
 {
   "name": "@upptime/status-page",
   "version": "0.0.0",
-  "description": "Koj's repository template with GitHub Actions CI, releases, and more",
+  "description": "Upptime status page website",
   "main": "dist/index.js",
   "scripts": {
     "pre-process": "ts-node pre-process.ts",
