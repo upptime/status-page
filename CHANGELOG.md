@@ -1,3 +1,9 @@
+# [v1.0.3](https://github.com/upptime/status-page/compare/v1.0.2...v1.0.3) (2020-10-13)
+
+## 🐛 Bug fixes
+
+- [`3c3df6f`](https://github.com/upptime/status-page/commit/3c3df6f)  Use root config in post-process
+
 # [v1.0.2](https://github.com/upptime/status-page/compare/v1.0.1...v1.0.2) (2020-10-13)
 
 ## 🐛 Bug fixes
