@@ -8,12 +8,12 @@
     "test": "jest",
     "test-watch": "jest --watch",
     "coverage": "jest --coverage",
-    "update-template": "npx update-template https://github.com/koj-co/template",
+    "update-template": "npx update-template https://github.com/upptime/status-page",
     "semantic-release": "semantic-release"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/koj-co/template.git"
+    "url": "git+https://github.com/upptime/status-page.git"
   },
   "keywords": [
     "koj",
@@ -24,9 +24,9 @@
   "author": "Anand Chowdhary <mail@anandchowdhary.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/koj-co/template/issues"
+    "url": "https://github.com/upptime/status-page/issues"
   },
-  "homepage": "https://github.com/koj-co/template#readme",
+  "homepage": "https://github.com/upptime/status-page#readme",
   "devDependencies": {
     "@koj/config": "1.2.5",
     "@semantic-release/changelog": "^5.0.1",
