@@ -17,8 +17,8 @@ export const preProcess = async () => {
     }
   } catch (error) {}
 
-  if (config["status-website"]?.cname)
-    await writeFile(join(".", "__sapper__", "export", "CNAME"), config["status-website"]?.cname);
+  if (config["status-website"] && config["status-website"].cname)
+    await writeFile(join(".", "__sapper__", "export", "CNAME"), config["status-website"].cname);
   await copyFile(
     join(".", "__sapper__", "export", "service-worker-index.html"),
     join(".", "__sapper__", "export", "404.html")
