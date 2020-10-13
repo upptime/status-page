@@ -10,3 +10,6 @@ allowed:
   - unlicense
 reviewed:
   npm:
+    - color-convert
+    - sprintf-js
+    - svelte-chartjs
