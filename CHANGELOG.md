@@ -1,3 +1,9 @@
+# [v1.0.4](https://github.com/upptime/status-page/compare/v1.0.3...v1.0.4) (2020-10-13)
+
+## 🐛 Bug fixes
+
+- [`62476f7`](https://github.com/upptime/status-page/commit/62476f7)  Change ?. to &amp;&amp; check
+
 # [v1.0.3](https://github.com/upptime/status-page/compare/v1.0.2...v1.0.3) (2020-10-13)
 
 ## 🐛 Bug fixes
