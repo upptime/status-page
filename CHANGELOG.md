@@ -1,3 +1,9 @@
+# [v1.1.0](https://github.com/upptime/status-page/compare/v1.0.4...v1.1.0) (2020-10-14)
+
+## ✨ New features
+
+- [`21b6f24`](https://github.com/upptime/status-page/commit/21b6f24)  Support site config logo, favicon
+
 # [v1.0.4](https://github.com/upptime/status-page/compare/v1.0.3...v1.0.4) (2020-10-13)
 
 ## 🐛 Bug fixes
