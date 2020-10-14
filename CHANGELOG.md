@@ -1,3 +1,9 @@
+# [v1.1.1](https://github.com/upptime/status-page/compare/v1.1.0...v1.1.1) (2020-10-14)
+
+## 🐛 Bug fixes
+
+- [`0678ec5`](https://github.com/upptime/status-page/commit/0678ec5)  Fix logo href tag
+
 # [v1.1.0](https://github.com/upptime/status-page/compare/v1.0.4...v1.1.0) (2020-10-14)
 
 ## ✨ New features
