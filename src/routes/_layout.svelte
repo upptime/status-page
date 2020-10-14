@@ -13,6 +13,17 @@
   }
 </style>
 
+<svelte:head>
+  <link
+    rel="icon"
+    type="image/svg"
+    href={(config['status-website'] || {}).faviconSvg || (config['status-website'] || {}).favicon || `https://raw.githubusercontent.com/koj-co/upptime/master/assets/icon.svg`} />
+  <link
+    rel="icon"
+    type="image/png"
+    href={(config['status-website'] || {}).favicon || `/logo-192.png`} />
+</svelte:head>
+
 <Nav {segment} />
 
 <main class="container">
