@@ -39,7 +39,7 @@
     "js-yaml": "^3.14.0",
     "polka": "next",
     "sirv": "^1.0.5",
-    "snarkdown": "^1.2.2",
+    "snarkdown": "^2.0.0",
     "svelte-chartjs": "^1.0.1"
   },
   "devDependencies": {
