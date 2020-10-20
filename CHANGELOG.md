@@ -1,3 +1,9 @@
+# [v1.1.2](https://github.com/upptime/status-page/compare/v1.1.1...v1.1.2) (2020-10-20)
+
+## ♻️ Updates
+
+- [`eda619a`](https://github.com/upptime/status-page/commit/eda619a)  Remove service worker in template
+
 # [v1.1.1](https://github.com/upptime/status-page/compare/v1.1.0...v1.1.1) (2020-10-14)
 
 ## 🐛 Bug fixes
