@@ -1,3 +1,13 @@
+# [v1.2.0](https://github.com/upptime/status-page/compare/v1.1.2...v1.2.0) (2020-10-27)
+
+## ✨ New features
+
+- [`ef07d8e`](https://github.com/upptime/status-page/commit/ef07d8e)  Add support for custom base URLs
+
+## ♻️ Updates
+
+- [`35ec506`](https://github.com/upptime/status-page/commit/35ec506)  Export site with base URL
+
 # [v1.1.2](https://github.com/upptime/status-page/compare/v1.1.1...v1.1.2) (2020-10-20)
 
 ## ♻️ Updates
