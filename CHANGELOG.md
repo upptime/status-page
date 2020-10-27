@@ -1,3 +1,9 @@
+# [v1.2.1](https://github.com/upptime/status-page/compare/v1.2.0...v1.2.1) (2020-10-27)
+
+## 🐛 Bug fixes
+
+- [`b1c64da`](https://github.com/upptime/status-page/commit/b1c64da)  Don&#x27;t use ?. for base URL
+
 # [v1.2.0](https://github.com/upptime/status-page/compare/v1.1.2...v1.2.0) (2020-10-27)
 
 ## ✨ New features
