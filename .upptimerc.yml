@@ -2,6 +2,7 @@ owner: koj-co
 repo: upptime
 status-website:
   cname: upptime.js.org
+  baseUrl: /status-website
   logoUrl: https://raw.githubusercontent.com/koj-co/upptime/79d9d1c22ecf706acc51f17798d7c7dbc710ab40/assets/icon.svg
   name: Upptime
   introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
