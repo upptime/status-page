@@ -1,13 +1,25 @@
-import { readFile, writeFile, copyFile } from "fs-extra";
+import { readFile, writeFile, copyFile, copy, remove } from "fs-extra";
 import { safeLoad } from "js-yaml";
 import { join } from "path";
+import { execSync } from "child_process";
 
 export const preProcess = async () => {
   let config: {
     "status-website"?: {
       cname?: string;
+      baseUrl?: string;
     };
   } = safeLoad(await readFile(join(".", ".upptimerc.yml"), "utf8")) as any;
+  const baseUrl = config["status-website"]?.baseUrl || "/";
+
+  execSync(`sapper export --legacy --basepath ${baseUrl}`, {
+    stdio: "inherit",
+  });
+
+  if (baseUrl !== "/") {
+    await copy(join(".", "__sapper__", "export", baseUrl), join(".", "__sapper__", "export"));
+    await remove(join(".", "__sapper__", "export", baseUrl));
+  }
 
   try {
     const file = await readFile(join("..", "..", ".upptimerc.yml"), "utf8");
