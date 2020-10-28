@@ -86,14 +86,12 @@
       </dl>
       <div class="r">
         <p>
-          <a
-            href={`https://github.com/${config.owner}/${config.repo}/issues/${number}`}>
+          <a href={`https://github.com/${config.owner}/${config.repo}/issues/${number}`}>
             {config.i18n.incidentSubscribe}
           </a>
         </p>
         <p>
-          <a
-            href={`https://github.com/${config.owner}/${config.repo}/issues/${number}`}>
+          <a href={`https://github.com/${config.owner}/${config.repo}/issues/${number}`}>
             {config.i18n.incidentViewOnGitHub}
           </a>
         </p>
@@ -108,20 +106,13 @@
           {@html config.i18n.incidentCommentSummary
             .replace(
               /\$DATE/,
-              `<a href=${comment.html_url}>${new Date(
-                comment.created_at
-              ).toLocaleString()}</a>`
+              `<a href=${comment.html_url}>${new Date(comment.created_at).toLocaleString()}</a>`
             )
-            .replace(
-              /\$AUTHOR/,
-              `<a href=${comment.user.html_url}>@${comment.user.login}</a>`
-            )}
+            .replace(/\$AUTHOR/, `<a href=${comment.user.html_url}>@${comment.user.login}</a>`)}
         </div>
       </article>
     {/each}
   {/if}
 </section>
 
-<footer>
-  <a href="/">{config.i18n.incidentBack}</a>
-</footer>
+<footer><a href="../">{config.i18n.incidentBack}</a></footer>

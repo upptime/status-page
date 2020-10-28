@@ -64,15 +64,12 @@
             <h4>{incident.title.replace('🛑', '').replace('⚠️', '').trim()}</h4>
             <div>
               {config.i18n.activeIncidentSummary
-                .replace(
-                  /\$DATE/g,
-                  new Date(incident.created_at).toLocaleString()
-                )
+                .replace(/\$DATE/g, new Date(incident.created_at).toLocaleString())
                 .replace(/\$POSTS/g, incident.comments)}
             </div>
           </div>
           <div class="f r">
-            <a href={`/incident/${incident.number}`}>
+            <a href={`incident/${incident.number}`}>
               {config.i18n.incidentReport.replace(/\$NUMBER/g, incident.number)}
             </a>
           </div>
