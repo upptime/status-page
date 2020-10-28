@@ -1,3 +1,10 @@
+# [v1.2.4](https://github.com/upptime/status-page/compare/v1.2.3...v1.2.4) (2020-10-28)
+
+## 🐛 Bug fixes
+
+- [`50fb197`](https://github.com/upptime/status-page/commit/50fb197)  Use correct config file (fixed upptime/upptime#40)
+(Issues: [`upptime/upptime#40`](https://github.com/upptime/upptime/issues/40))
+
 # [v1.2.3](https://github.com/upptime/status-page/compare/v1.2.2...v1.2.3) (2020-10-28)
 
 ## 🐛 Bug fixes
