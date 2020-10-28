@@ -22,20 +22,10 @@ export const preProcess = async () => {
   }
 
   try {
-    const file = await readFile(join("..", ".upptimerc.yml"), "utf8");
-    if (file) {
-      config = safeLoad(file) as any;
-      console.log("Using root config instead");
-    }
-  } catch (error) {
-    console.log("Root config not found 1 dir up");
-  }
-
-  try {
     const file = await readFile(join("..", "..", ".upptimerc.yml"), "utf8");
     if (file) {
       config = safeLoad(file) as any;
-      console.log("Using root config instead");
+      console.log("Using root config instead", config);
     }
   } catch (error) {
     console.log("Root config not found 2 dirs up");
