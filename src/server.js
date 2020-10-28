@@ -9,16 +9,7 @@ import { join } from "path";
 const { PORT, NODE_ENV } = process.env;
 const dev = NODE_ENV === "development";
 
-let config = safeLoad(fs.readFileSync(join(".", ".upptimerc.yml"), "utf8"));
-try {
-  const file = fs.readFileSync(join("..", "..", ".upptimerc.yml"), "utf8");
-  if (file) {
-    config = safeLoad(file);
-    console.log("Using root config instead", config);
-  }
-} catch (error) {
-  console.log("Root config not found 2 dirs up");
-}
+let config = safeLoad(fs.readFileSync(join("..", ".upptimerc.yml"), "utf8"));
 const baseUrl = (config["status-website"] || {}).baseUrl || "/";
 
 polka()

@@ -13,7 +13,7 @@ export const preProcess = async () => {
     introTitle?: string;
     introMessage?: string;
     i18n?: { [index: string]: string };
-  } = safeLoad(await readFile(join("..", "..", ".upptimerc.yml"), "utf8")) as any;
+  } = safeLoad(await readFile(join("..", ".upptimerc.yml"), "utf8")) as any;
 
   config.i18n = { ...i18n, ...config.i18n };
   await ensureDir(join(".", "src", "data"));

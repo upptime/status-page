@@ -9,7 +9,7 @@ export const postProcess = async () => {
       cname?: string;
       baseUrl?: string;
     };
-  } = safeLoad(await readFile(join("..", "..", ".upptimerc.yml"), "utf8")) as any;
+  } = safeLoad(await readFile(join("..", ".upptimerc.yml"), "utf8")) as any;
   const baseUrl = (config["status-website"] || {}).baseUrl || "/";
 
   execSync(`sapper export --legacy --basepath ${baseUrl}`, {
