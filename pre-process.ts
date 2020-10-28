@@ -13,15 +13,7 @@ export const preProcess = async () => {
     introTitle?: string;
     introMessage?: string;
     i18n?: { [index: string]: string };
-  } = safeLoad(await readFile(join(".", ".upptimerc.yml"), "utf8")) as any;
-
-  try {
-    const file = await readFile(join("..", "..", ".upptimerc.yml"), "utf8");
-    if (file) {
-      config = safeLoad(file) as any;
-      console.log("Using root config instead");
-    }
-  } catch (error) {}
+  } = safeLoad(await readFile(join("..", "..", ".upptimerc.yml"), "utf8")) as any;
 
   config.i18n = { ...i18n, ...config.i18n };
   await ensureDir(join(".", "src", "data"));

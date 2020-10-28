@@ -3,13 +3,13 @@ import { safeLoad } from "js-yaml";
 import { join } from "path";
 import { execSync } from "child_process";
 
-export const preProcess = async () => {
+export const postProcess = async () => {
   let config: {
     "status-website"?: {
       cname?: string;
       baseUrl?: string;
     };
-  } = safeLoad(await readFile(join(".", ".upptimerc.yml"), "utf8")) as any;
+  } = safeLoad(await readFile(join("..", "..", ".upptimerc.yml"), "utf8")) as any;
   const baseUrl = (config["status-website"] || {}).baseUrl || "/";
 
   execSync(`sapper export --legacy --basepath ${baseUrl}`, {
@@ -21,16 +21,6 @@ export const preProcess = async () => {
     await remove(join(".", "__sapper__", "export", baseUrl));
   }
 
-  try {
-    const file = await readFile(join("..", "..", ".upptimerc.yml"), "utf8");
-    if (file) {
-      config = safeLoad(file) as any;
-      console.log("Using root config instead", config);
-    }
-  } catch (error) {
-    console.log("Root config not found 2 dirs up");
-  }
-
   if (config["status-website"] && config["status-website"].cname)
     await writeFile(join(".", "__sapper__", "export", "CNAME"), config["status-website"].cname);
   await copyFile(
@@ -39,4 +29,4 @@ export const preProcess = async () => {
   );
 };
 
-preProcess();
+postProcess();
