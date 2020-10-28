@@ -1,3 +1,9 @@
+# [v1.2.6](https://github.com/upptime/status-page/compare/v1.2.5...v1.2.6) (2020-10-28)
+
+## ♻️ Updates
+
+- [`87342a7`](https://github.com/upptime/status-page/commit/87342a7)  Use 2 dir up config
+
 # [v1.2.5](https://github.com/upptime/status-page/compare/v1.2.4...v1.2.5) (2020-10-28)
 
 ## 🐛 Bug fixes
