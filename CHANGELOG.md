@@ -1,3 +1,9 @@
+# [v1.2.3](https://github.com/upptime/status-page/compare/v1.2.2...v1.2.3) (2020-10-28)
+
+## 🐛 Bug fixes
+
+- [`028692a`](https://github.com/upptime/status-page/commit/028692a)  Remove check 1 dir up
+
 # [v1.2.2](https://github.com/upptime/status-page/compare/v1.2.1...v1.2.2) (2020-10-28)
 
 ## 🐛 Bug fixes
