@@ -4,6 +4,7 @@ import fs from "fs-extra";
 import polka from "polka";
 import sirv from "sirv";
 import { safeLoad } from "js-yaml";
+import { join } from "path";
 
 const { PORT, NODE_ENV } = process.env;
 const dev = NODE_ENV === "development";
