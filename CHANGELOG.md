@@ -1,3 +1,9 @@
+# [v1.2.8](https://github.com/upptime/status-page/compare/v1.2.7...v1.2.8) (2020-10-28)
+
+## ♻️ Updates
+
+- [`4ed23a7`](https://github.com/upptime/status-page/commit/4ed23a7)  Use relative links in URLs
+
 # [v1.2.7](https://github.com/upptime/status-page/compare/v1.2.6...v1.2.7) (2020-10-28)
 
 ## 🐛 Bug fixes
