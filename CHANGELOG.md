@@ -1,3 +1,10 @@
+# [v1.2.5](https://github.com/upptime/status-page/compare/v1.2.4...v1.2.5) (2020-10-28)
+
+## 🐛 Bug fixes
+
+- [`053d51d`](https://github.com/upptime/status-page/commit/053d51d)  Ensure join exists (upptime/upptime#40)
+(Issues: [`upptime/upptime#40`](https://github.com/upptime/upptime/issues/40))
+
 # [v1.2.4](https://github.com/upptime/status-page/compare/v1.2.3...v1.2.4) (2020-10-28)
 
 ## 🐛 Bug fixes
