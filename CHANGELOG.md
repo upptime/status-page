@@ -1,3 +1,9 @@
+# [v1.2.7](https://github.com/upptime/status-page/compare/v1.2.6...v1.2.7) (2020-10-28)
+
+## 🐛 Bug fixes
+
+- [`d9c5cc9`](https://github.com/upptime/status-page/commit/d9c5cc9)  Read correct .upptimerc.yml file
+
 # [v1.2.6](https://github.com/upptime/status-page/compare/v1.2.5...v1.2.6) (2020-10-28)
 
 ## ♻️ Updates
