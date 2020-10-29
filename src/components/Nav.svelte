@@ -69,7 +69,7 @@
           <li>
             <a
               aria-current={segment === (item.href === '/' ? undefined : item.href) ? 'page' : undefined}
-              href={item.href}>
+              href={item.href.replace('$OWNER', config.owner).replace('$REPO', config.repo)}>
               {item.title}
             </a>
           </li>
