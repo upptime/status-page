@@ -64,12 +64,18 @@
       </div>
     {/if}
     <ul>
-      <li>
-        <a aria-current={segment === undefined ? 'page' : undefined} href="/">
-          {config.i18n.navStatus}
-        </a>
-      </li>
-      {#if config['status-website'] && config['status-website'].navbarGitHub}
+      {#if config['status-website'] && config['status-website'].navbar}
+        {#each config['status-website'].navbar as item}
+          <li>
+            <a
+              aria-current={segment === (item.href === '/' ? undefined : item.href) ? 'page' : undefined}
+              href={item.href}>
+              {item.title}
+            </a>
+          </li>
+        {/each}
+      {/if}
+      {#if config['status-website'] && config['status-website'].navbarGitHub && !config['status-website'].navbar}
         <li>
           <a href={`https://github.com/${config.owner}/${config.repo}`}>
             {config.i18n.navGitHub}
