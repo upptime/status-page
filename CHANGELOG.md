@@ -1,3 +1,13 @@
+# [v1.3.0](https://github.com/upptime/status-page/compare/v1.2.8...v1.3.0) (2020-10-29)
+
+## ✨ New features
+
+- [`e794ae0`](https://github.com/upptime/status-page/commit/e794ae0)  Add support for custom navbar items
+
+## ♻️ Updates
+
+- [`12e67ab`](https://github.com/upptime/status-page/commit/12e67ab)  Change config gitHubNavBar -&gt; navbarGitHub
+
 # [v1.2.8](https://github.com/upptime/status-page/compare/v1.2.7...v1.2.8) (2020-10-28)
 
 ## ♻️ Updates
