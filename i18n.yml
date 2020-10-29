@@ -25,6 +25,5 @@ up: Up
 down: Down
 ms: ms
 loading: Loading
-navStatus: Status
 navGitHub: GitHub
 footer: This page is [open source]($REPO), powered by [Upptime](https://upptime.js.org)
