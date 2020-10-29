@@ -1,3 +1,9 @@
+## [v1.3.1](https://github.com/upptime/status-page/compare/v1.3.0...v1.3.1) (2020-10-29)
+
+### 💄 Interface changes
+
+- [`7e1746a`](https://github.com/upptime/status-page/commit/7e1746a)  Add padding to logo
+
 ## [v1.3.0](https://github.com/upptime/status-page/compare/v1.2.8...v1.3.0) (2020-10-29)
 
 ### ✨ New features
