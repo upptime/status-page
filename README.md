@@ -24,6 +24,14 @@ We use the [upptime/upptime](https://github.com/upptime/upptime) repository for 
 
 When you use Upptime, we automatically generate a static status website and push it to the `gh-pages` branch. You don't have to manually manage any code from this repository.
 
+When building locally, you can start a server:
+
+```bash
+npm run dev
+```
+
+Currently, the `.upptimerc.yml` configuration file is required one directly above the project root.
+
 ## 📄 License
 
 [MIT](./LICENSE) © [Koj](https://koj.co)

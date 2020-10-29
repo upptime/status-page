@@ -1,9 +1,40 @@
 owner: koj-co
 repo: upptime
+user-agent: KojBot
+
+# Add your sites here
+sites:
+  - name: Google
+    url: https://www.google.com
+  - name: Wikipedia
+    url: https://en.wikipedia.org
+  - name: Internet Archive
+    url: https://archive.org
+  - name: Hacker News
+    url: https://news.ycombinator.com
+  - name: Broken Site
+    url: https://thissitedoesnotexist.com
+  - name: Secret Site
+    url: $SECRET_SITE
+
+# Add downtime notifications
+# https://upptime.js.org/docs/notifications
+notifications:
+  - type: slack
+    channel: C016QTU9S9Y
+assignees:
+  - AnandChowdhary
+
+# Configure your status website
+# http://localhost:3000/docs/configuration#status-website
 status-website:
-  cname: upptime.js.org
-  baseUrl: /status-website
-  logoUrl: https://raw.githubusercontent.com/koj-co/upptime/79d9d1c22ecf706acc51f17798d7c7dbc710ab40/assets/icon.svg
+  cname: demo.upptime.js.org
+  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
   name: Upptime
   introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
   introMessage: This is a sample status page which uses **real-time** data from our [Github repository](https://github.com/koj-co/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/koj-co/upptime)
+  navbar:
+    - title: Status
+      href: /
+    - title: GitHub
+      href: https://github.com/$OWNER/$REPO
