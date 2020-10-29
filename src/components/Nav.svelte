@@ -69,10 +69,12 @@
           {config.i18n.navStatus}
         </a>
       </li>
-      {#if config['status-website'] && config['status-website'].gitHubNavBar}
-      <li>
-        <a href={`https://github.com/${config.owner}/${config.repo}`}> {config.i18n.navGitHub} </a>
-      </li>
+      {#if config['status-website'] && config['status-website'].navbarGitHub}
+        <li>
+          <a href={`https://github.com/${config.owner}/${config.repo}`}>
+            {config.i18n.navGitHub}
+          </a>
+        </li>
       {/if}
     </ul>
   </div>
