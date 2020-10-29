@@ -37,7 +37,7 @@
     float: left;
     display: flex;
     align-items: center;
-    padding: 0;
+    padding: 0.5rem 0;
     font-weight: bold;
     margin-right: 2rem;
   }
