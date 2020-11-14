@@ -18,7 +18,7 @@ This repository is for Upptime's embeddable web app. We love contributions, so p
 
 ### Issues
 
-We use the [upptime/upptime](https://github.com/upptime/upptime) repository for issues for all projects, including this one. If you found a bug or have a feature request, [open an issue](https://github.com/upptime/upptime/issues) in the Upptime repository and add the label "embed".
+We use the [upptime/upptime](https://github.com/upptime/upptime) repository for issues for all projects, including this one. If you found a bug or have a feature request, [open an issue](https://github.com/upptime/upptime/issues) in the Upptime repository and add the label "static-site".
 
 ## 💻 Usage
 
