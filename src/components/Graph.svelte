@@ -1,15 +1,13 @@
 <script>
   import Loading from "../components/Loading.svelte";
-  import { Octokit } from "@octokit/rest";
   import { onMount } from "svelte";
   import config from "../data/config.json";
   import Line from "svelte-chartjs/src/Line.svelte";
+  import { createOctokit } from "../utils/createOctokit";
 
   export let slug;
   let loading = true;
-  const octokit = new Octokit({
-    userAgent: config["user-agent"],
-  });
+  const octokit = createOctokit();
   const owner = config.owner;
   const repo = config.repo;
   let commits = [];
@@ -34,9 +32,7 @@
     });
     data = commits
       .filter((commit) => commit.commit.message.includes("ms) [skip ci]"))
-      .map((commit) =>
-        parseInt(commit.commit.message.split(" in ")[1].split("ms")[0])
-      );
+      .map((commit) => parseInt(commit.commit.message.split(" in ")[1].split("ms")[0]));
     labels = commits
       .filter((commit) => commit.commit.message.includes("ms) [skip ci]"))
       .map((commit) => new Date(commit.commit.committer.date).toLocaleString());
@@ -45,7 +41,6 @@
 </script>
 
 <style>
-
 </style>
 
 <section>

@@ -1,9 +1,9 @@
 <script>
   import Loading from "../components/Loading.svelte";
-  import { Octokit } from "@octokit/rest";
   import { onMount } from "svelte";
   import snarkdown from "snarkdown";
   import config from "../data/config.json";
+  import { createOctokit } from "../utils/createOctokit";
 
   export let number;
 
@@ -11,9 +11,7 @@
   let loading = true;
   let loadingIncident = true;
 
-  const octokit = new Octokit({
-    userAgent: config["user-agent"],
-  });
+  const octokit = createOctokit();
   const owner = config.owner;
   const repo = config.repo;
   let comments = [];
