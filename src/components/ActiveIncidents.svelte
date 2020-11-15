@@ -1,13 +1,11 @@
 <script>
   import Loading from "../components/Loading.svelte";
-  import { Octokit } from "@octokit/rest";
   import { onMount } from "svelte";
   import config from "../data/config.json";
+  import { createOctokit } from "../utils/createOctokit";
 
   let loading = true;
-  const octokit = new Octokit({
-    userAgent: config["user-agent"],
-  });
+  const octokit = createOctokit();
   const owner = config.owner;
   const repo = config.repo;
   let incidents = [];

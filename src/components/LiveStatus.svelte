@@ -1,16 +1,19 @@
 <script>
   import Loading from "../components/Loading.svelte";
-  import { Octokit } from "@octokit/rest";
   import { onMount } from "svelte";
   import config from "../data/config.json";
+  import { createOctokit } from "../utils/createOctokit";
 
   let loading = true;
-  const octokit = new Octokit({
-    userAgent: config["user-agent"],
-  });
+  const octokit = createOctokit();
   const owner = config.owner;
   const repo = config.repo;
+  const { apiBaseUrl } = config["status-website"];
   let sites = [];
+
+  const isGitHubApi = apiBaseUrl.includes("api.github.com");
+  const userContentBaseUrl = isGitHubApi ? `https://raw.githubusercontent.com` : apiBaseUrl;
+  const graphsBaseUrl = `${userContentBaseUrl}/${owner}/${repo}/master/graphs`;
 
   onMount(async () => {
     sites = JSON.parse(
@@ -44,7 +47,7 @@
     {#each sites as site}
       <article
         class={`${site.status} link`}
-        style={`background-image: url("https://raw.githubusercontent.com/${owner}/${repo}/master/graphs/${site.slug}.png`}>
+        style={`background-image: url("${graphsBaseUrl}/${site.slug}.png`}>
         <h4><a href={`history/${site.slug}`}>{site.name}</a></h4>
         <div>
           {@html config.i18n.overallUptime.replace(/\$UPTIME/g, site.uptime)}
