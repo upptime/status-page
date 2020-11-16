@@ -1,3 +1,31 @@
+## [v1.4.0](https://github.com/upptime/status-page/compare/v1.3.1...v1.4.0) (2020-11-16)
+
+### ✨ New features
+
+- [`bcc9557`](https://github.com/upptime/status-page/commit/bcc9557)  Add apiBaseUrl in status-website for custom API
+
+### ⬆️ Dependency updates
+
+- [`44d71ad`](https://github.com/upptime/status-page/commit/44d71ad)  Bump @octokit/rest from 18.0.6 to 18.0.7
+- [`ce7556b`](https://github.com/upptime/status-page/commit/ce7556b)  Bump semantic-release from 17.2.1 to 17.2.2
+- [`19117d7`](https://github.com/upptime/status-page/commit/19117d7)  Bump @koj/config from 1.2.6 to 1.2.7
+- [`97c7d6c`](https://github.com/upptime/status-page/commit/97c7d6c)  Bump rollup from 2.32.1 to 2.33.1
+- [`4361fbc`](https://github.com/upptime/status-page/commit/4361fbc)  Bump @octokit/rest from 18.0.7 to 18.0.8
+- [`4f9e3b9`](https://github.com/upptime/status-page/commit/4f9e3b9)  Bump jest from 26.6.1 to 26.6.2
+- [`f5af9ec`](https://github.com/upptime/status-page/commit/f5af9ec)  Bump @octokit/rest from 18.0.8 to 18.0.9
+- [`06e2d07`](https://github.com/upptime/status-page/commit/06e2d07)  Bump actions/checkout from v2.3.3 to v2.3.4
+- [`70863f6`](https://github.com/upptime/status-page/commit/70863f6)  Bump @babel/runtime from 7.12.1 to 7.12.5
+- [`55c9148`](https://github.com/upptime/status-page/commit/55c9148)  Bump jest from 26.6.2 to 26.6.3
+- [`4a89812`](https://github.com/upptime/status-page/commit/4a89812)  Bump @types/fs-extra from 9.0.2 to 9.0.3
+- [`b0d7ad8`](https://github.com/upptime/status-page/commit/b0d7ad8)  Bump @koj/config from 1.2.7 to 1.2.8
+- [`2744ed8`](https://github.com/upptime/status-page/commit/2744ed8)  Bump ts-jest from 26.4.3 to 26.4.4
+- [`516464e`](https://github.com/upptime/status-page/commit/516464e)  Bump svelte from 3.29.4 to 3.29.6
+- [`1f0faa4`](https://github.com/upptime/status-page/commit/1f0faa4)  Bump rollup-plugin-svelte from 6.1.0 to 6.1.1
+- [`73a355e`](https://github.com/upptime/status-page/commit/73a355e)  Bump svelte from 3.29.6 to 3.29.7
+- [`0ca4fa5`](https://github.com/upptime/status-page/commit/0ca4fa5)  Bump @types/fs-extra from 9.0.3 to 9.0.4
+- [`a358c4f`](https://github.com/upptime/status-page/commit/a358c4f)  Bump rollup from 2.33.1 to 2.33.2
+- [`f1ddfa2`](https://github.com/upptime/status-page/commit/f1ddfa2)  Bump @semantic-release/github from 7.1.1 to 7.1.2
+
 ## [v1.3.1](https://github.com/upptime/status-page/compare/v1.3.0...v1.3.1) (2020-10-29)
 
 ### 💄 Interface changes
