@@ -54,46 +54,38 @@
 </style>
 
 <svelte:head>
-  <!-- <title>{config.i18n.incidentTitle}</title> -->
-  <title>Rate limit exceeded</title>
+  <title>{config.i18n.rateLimitExceededTitle}</title>
 </svelte:head>
 
-<h1>Rate limit exceeded</h1>
+<h1>{config.i18n.rateLimitExceededTitle}</h1>
 
-<p class="lead">
-  You have exceeded the number of requests you can do in an hour, so you'll have to wait before
-  accessing this website again. Alternately, you can add a GitHub Personal Access Token to continue
-  to use this website.
-</p>
+<p class="lead">{config.i18n.rateLimitExceededIntro}</p>
 
-<h2>What does this error mean?</h2>
+<h2>{config.i18n.rateLimitExceededWhatDoesErrorMean}</h2>
 
-<p>
-  This website uses the GitHub API to access real-time data about our websites' status. By default,
-  GitHub allows each IP address 60 requests per hour, which you have consumed.
-</p>
+<p>{config.i18n.rateLimitExceededErrorMeaning}</p>
 
-<h2>How can I fix it?</h2>
+<h2>{config.i18n.rateLimitExceededErrorHowCanFix}</h2>
 
 <p>
-  You can wait for another hour and your IP address' limit will be restored. Alternately, you can
-  add your GitHub Personal Access Token, which gives you an additional 5,000 requests per hour. You
-  can
+  {config.i18n.rateLimitExceededErrorFix}
   <a
     href="https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token"
-    target="_blank">learn how to generate a Personal Access Token</a>
-  on the GitHub documentation.
+    target="_blank">{config.i18n.rateLimitExceededGeneratePAT}</a>
 </p>
 
 {#if localStorageToken}
-  <p>You have a personal access token set.</p>
-  <button on:click={remove}>Remove token</button>
+  <p>{config.i18n.rateLimitExceededHasSet}</p>
+  <button on:click={remove}>{config.i18n.rateLimitExceededRemoveToken}</button>
 {:else}
   <form on:submit|preventDefault={save}>
     <label>
-      <span>GitHub Personal Access Token</span>
-      <input type="text" bind:value={token} placeholder="Copy and paste your token" />
+      <span>{config.i18n.rateLimitExceededGitHubPAT}</span>
+      <input
+        type="text"
+        bind:value={token}
+        placeholder={config.i18n.rateLimitExceededCopyPastePAT} />
     </label>
-    <button type="submit">Save token</button>
+    <button type="submit">{config.i18n.rateLimitExceededSaveToken}</button>
   </form>
 {/if}

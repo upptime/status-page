@@ -27,3 +27,15 @@ ms: ms
 loading: Loading
 navGitHub: GitHub
 footer: This page is [open source]($REPO), powered by [Upptime](https://upptime.js.org)
+rateLimitExceededTitle: Rate limit exceedeed
+rateLimitExceededIntro: You have exceeded the number of requests you can do in an hour, so you'll have to wait before accessing this website again. Alternately, you can add a GitHub Personal Access Token to continue to use this website.
+rateLimitExceededWhatDoesErrorMean: What does this error mean?
+rateLimitExceededErrorMeaning: This website uses the GitHub API to access real-time data about our websites' status. By default, GitHub allows each IP address 60 requests per hour, which you have consumed.
+rateLimitExceededErrorHowCanFix: How can I fix it?
+rateLimitExceededErrorFix: You can wait for another hour and your IP address' limit will be restored. Alternately, you can add your GitHub Personal Access Token, which gives you an additional 5,000 requests per hour.
+rateLimitExceededGeneratePAT: Learn how to generate a Personal Access Token
+rateLimitExceededHasSet: You have a personal access token set.
+rateLimitExceededRemoveToken: Remove token
+rateLimitExceededGitHubPAT: GitHub Personal Access Token
+rateLimitExceededCopyPastePAT: Copy and paste your token
+rateLimitExceededSaveToken: Save token
