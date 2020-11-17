@@ -3,7 +3,7 @@
   import { onMount } from "svelte";
   import config from "../data/config.json";
   import Line from "svelte-chartjs/src/Line.svelte";
-  import { createOctokit } from "../utils/createOctokit";
+  import { createOctokit, handleError } from "../utils/createOctokit";
 
   export let slug;
   let loading = true;
@@ -15,14 +15,18 @@
   let data = [];
 
   onMount(async () => {
-    commits = (
-      await octokit.repos.listCommits({
-        owner,
-        repo,
-        path: `history/${slug}.yml`,
-        per_page: 28,
-      })
-    ).data;
+    try {
+      commits = (
+        await octokit.repos.listCommits({
+          owner,
+          repo,
+          path: `history/${slug}.yml`,
+          per_page: 28,
+        })
+      ).data;
+    } catch (error) {
+      handleError(error);
+    }
     commits = commits.map((commit, index) => {
       commit.showHeading =
         index === 0 ||

@@ -18,3 +18,7 @@ export const createOctokit = () => {
     auth: token || undefined,
   });
 };
+
+export const handleError = (error) => {
+  console.log("Error handler 123", error);
+};

@@ -3,7 +3,7 @@
   import { onMount } from "svelte";
   import snarkdown from "snarkdown";
   import config from "../data/config.json";
-  import { createOctokit } from "../utils/createOctokit";
+  import { createOctokit, handleError } from "../utils/createOctokit";
 
   export let number;
 
@@ -18,23 +18,31 @@
   let incident = {};
 
   onMount(async () => {
-    incident = (
-      await octokit.issues.get({
-        owner,
-        repo,
-        issue_number: number,
-        sort: "created",
-        direction: "desc",
-      })
-    ).data;
+    try {
+      incident = (
+        await octokit.issues.get({
+          owner,
+          repo,
+          issue_number: number,
+          sort: "created",
+          direction: "desc",
+        })
+      ).data;
+    } catch (error) {
+      handleError(error);
+    }
     loadingIncident = false;
-    comments = (
-      await octokit.issues.listComments({
-        owner,
-        repo,
-        issue_number: number,
-      })
-    ).data.reverse();
+    try {
+      comments = (
+        await octokit.issues.listComments({
+          owner,
+          repo,
+          issue_number: number,
+        })
+      ).data.reverse();
+    } catch (error) {
+      handleError(error);
+    }
     loading = false;
   });
 </script>

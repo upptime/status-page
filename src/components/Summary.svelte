@@ -2,7 +2,7 @@
   import Loading from "../components/Loading.svelte";
   import { onMount } from "svelte";
   import config from "../data/config.json";
-  import { createOctokit } from "../utils/createOctokit";
+  import { createOctokit, handleError } from "../utils/createOctokit";
 
   export let slug;
   let loading = true;
@@ -12,17 +12,21 @@
   let summary = null;
 
   onMount(async () => {
-    summary = JSON.parse(
-      atob(
-        (
-          await octokit.repos.getContent({
-            owner,
-            repo,
-            path: "history/summary.json",
-          })
-        ).data.content
-      )
-    ).find((item) => item.slug === slug);
+    try {
+      summary = JSON.parse(
+        atob(
+          (
+            await octokit.repos.getContent({
+              owner,
+              repo,
+              path: "history/summary.json",
+            })
+          ).data.content
+        )
+      ).find((item) => item.slug === slug);
+    } catch (error) {
+      handleError(error);
+    }
     loading = false;
   });
 </script>

@@ -2,7 +2,7 @@
   import Loading from "../components/Loading.svelte";
   import { onMount } from "svelte";
   import config from "../data/config.json";
-  import { createOctokit } from "../utils/createOctokit";
+  import { createOctokit, handleError } from "../utils/createOctokit";
 
   let loading = true;
   const octokit = createOctokit();
@@ -11,24 +11,28 @@
   let incidents = [];
 
   onMount(async () => {
-    incidents = (
-      await octokit.issues.listForRepo({
-        owner,
-        repo,
-        state: "open",
-        filter: "all",
-        sort: "created",
-        direction: "desc",
-        labels: "status",
-      })
-    ).data;
-    incidents = incidents.map((incident, index) => {
-      incident.showHeading =
-        index === 0 ||
-        new Date(incidents[index - 1].created_at).toLocaleDateString() !==
-          new Date(incident.created_at).toLocaleDateString();
-      return incident;
-    });
+    try {
+      incidents = (
+        await octokit.issues.listForRepo({
+          owner,
+          repo,
+          state: "open",
+          filter: "all",
+          sort: "created",
+          direction: "desc",
+          labels: "status",
+        })
+      ).data;
+      incidents = incidents.map((incident, index) => {
+        incident.showHeading =
+          index === 0 ||
+          new Date(incidents[index - 1].created_at).toLocaleDateString() !==
+            new Date(incident.created_at).toLocaleDateString();
+        return incident;
+      });
+    } catch (error) {
+      handleError(error);
+    }
     loading = false;
   });
 </script>

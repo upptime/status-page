@@ -2,7 +2,7 @@
   import Loading from "../components/Loading.svelte";
   import { onMount } from "svelte";
   import config from "../data/config.json";
-  import { createOctokit } from "../utils/createOctokit";
+  import { createOctokit, handleError } from "../utils/createOctokit";
 
   let loading = true;
   const octokit = createOctokit();
@@ -16,17 +16,21 @@
   const graphsBaseUrl = `${userContentBaseUrl}/${owner}/${repo}/master/graphs`;
 
   onMount(async () => {
-    sites = JSON.parse(
-      atob(
-        (
-          await octokit.repos.getContent({
-            owner,
-            repo,
-            path: "history/summary.json",
-          })
-        ).data.content.replace(/\n/g, "")
-      )
-    );
+    try {
+      sites = JSON.parse(
+        atob(
+          (
+            await octokit.repos.getContent({
+              owner,
+              repo,
+              path: "history/summary.json",
+            })
+          ).data.content.replace(/\n/g, "")
+        )
+      );
+    } catch (error) {
+      handleError(error);
+    }
     loading = false;
   });
 </script>
