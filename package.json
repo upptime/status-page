@@ -48,6 +48,7 @@
     "@babel/plugin-transform-runtime": "^7.11.0",
     "@babel/preset-env": "^7.11.0",
     "@babel/runtime": "^7.11.2",
+    "cypress": "^5.6.0",
     "@koj/config": "^1.2.5",
     "@rollup/plugin-babel": "^5.1.0",
     "@rollup/plugin-commonjs": "^16.0.0",
