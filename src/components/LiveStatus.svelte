@@ -11,7 +11,7 @@
   const { apiBaseUrl } = config["status-website"];
   let sites = [];
 
-  const isGitHubApi = apiBaseUrl.includes("api.github.com");
+  const isGitHubApi = (apiBaseUrl || "").includes("api.github.com");
   const userContentBaseUrl = isGitHubApi ? `https://raw.githubusercontent.com` : apiBaseUrl;
   const graphsBaseUrl = `${userContentBaseUrl}/${owner}/${repo}/master/graphs`;
 
