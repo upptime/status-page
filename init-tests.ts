@@ -1,7 +1,12 @@
-import { copyFile } from "fs-extra";
+import { copyFile, readFile } from "fs-extra";
 import { join } from "path";
 
 const initTests = async () => {
-  await copyFile(join(".", ".upptimerc.yml"), join("..", ".upptimerc.yml"));
+  let hasFile = false;
+  try {
+    await readFile(join("..", ".upptimerc.yml"));
+    hasFile = true;
+  } catch (error) {}
+  if (!hasFile) await copyFile(join(".", ".upptimerc.yml"), join("..", ".upptimerc.yml"));
 };
 initTests();

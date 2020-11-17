@@ -6,13 +6,14 @@
   "scripts": {
     "pre-process": "ts-node pre-process.ts",
     "post-process": "ts-node post-process.ts",
+    "init-tests": "ts-node init-tests.ts",
     "dev": "npm run pre-process && sapper dev",
-    "build": "npm run pre-process && sapper build --legacy",
+    "build": "npm run init-tests && npm run pre-process && sapper build --legacy",
     "export": "npm run pre-process && npm run post-process",
     "start": "node __sapper__/build",
     "cy:run": "cypress run",
     "cy:open": "cypress open",
-    "test": "ts-node init-tests.ts && run-p --race dev cy:run",
+    "test": "npm run init-tests && run-p --race dev cy:run",
     "update-template": "npx update-template https://github.com/upptime/status-page",
     "semantic-release": "semantic-release"
   },
