@@ -8,11 +8,12 @@
   const octokit = createOctokit();
   const owner = config.owner;
   const repo = config.repo;
-  const { apiBaseUrl } = config["status-website"];
+  let { apiBaseUrl } = config["status-website"] || {};
   let sites = [];
-
-  const isGitHubApi = (apiBaseUrl || "").includes("api.github.com");
-  const userContentBaseUrl = isGitHubApi ? `https://raw.githubusercontent.com` : apiBaseUrl;
+  if (!apiBaseUrl) apiBaseUrl = "https://api.github.com";
+  const userContentBaseUrl = apiBaseUrl.includes("api.github.com")
+    ? `https://raw.githubusercontent.com`
+    : apiBaseUrl;
   const graphsBaseUrl = `${userContentBaseUrl}/${owner}/${repo}/master/graphs`;
 
   onMount(async () => {
