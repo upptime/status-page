@@ -1,3 +1,10 @@
+## [v1.4.1](https://github.com/upptime/status-page/compare/v1.4.0...v1.4.1) (2020-11-17)
+
+### 🐛 Bug fixes
+
+- [`fed467e`](https://github.com/upptime/status-page/commit/fed467e)  Fix upptime/upptime#55
+(Issues: [`upptime/upptime#55`](https://github.com/upptime/upptime/issues/55))
+
 ## [v1.4.0](https://github.com/upptime/status-page/compare/v1.3.1...v1.4.0) (2020-11-16)
 
 ### ✨ New features
