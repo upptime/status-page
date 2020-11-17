@@ -1,3 +1,10 @@
+## [v1.5.1](https://github.com/upptime/status-page/compare/v1.5.0...v1.5.1) (2020-11-17)
+
+### 🐛 Bug fixes
+
+- [`b7806cd`](https://github.com/upptime/status-page/commit/b7806cd)  Fix graphs base URL broken in #52
+(Issues: [`#52`](https://github.com/upptime/status-page/issues/52))
+
 ## [v1.5.0](https://github.com/upptime/status-page/compare/v1.4.1...v1.5.0) (2020-11-17)
 
 ### ✨ New features
