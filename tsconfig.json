@@ -15,6 +15,6 @@
     "outDir": "./dist",
     "typeRoots": ["node_modules/@types", "@types"]
   },
-  "include": ["src", "tooling"],
+  "include": ["src", "tooling", "tests"],
   "exclude": ["node_modules"]
 }
