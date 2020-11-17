@@ -12,7 +12,7 @@
     "start": "node __sapper__/build",
     "cy:run": "cypress run",
     "cy:open": "cypress open",
-    "test": "exit 0",
+    "test": "run-p --race dev cy:run",
     "update-template": "npx update-template https://github.com/upptime/status-page",
     "semantic-release": "semantic-release"
   },
