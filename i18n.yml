@@ -39,3 +39,7 @@ rateLimitExceededRemoveToken: Remove token
 rateLimitExceededGitHubPAT: GitHub Personal Access Token
 rateLimitExceededCopyPastePAT: Copy and paste your token
 rateLimitExceededSaveToken: Save token
+errorTitle: An error occurred
+errorIntro: An error occurred in trying to get the latest status details.
+errorText: You can try again in a few moments.
+errorHome: Go to the homepage
