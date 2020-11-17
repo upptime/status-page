@@ -1,3 +1,21 @@
+## [v1.5.0](https://github.com/upptime/status-page/compare/v1.4.1...v1.5.0) (2020-11-17)
+
+### ✨ New features
+
+- [`dbe1300`](https://github.com/upptime/status-page/commit/dbe1300)  Add rate limit exceeded page
+- [`33f2652`](https://github.com/upptime/status-page/commit/33f2652)  Add general error page
+
+### ♻️ Updates
+
+- [`4a9bb09`](https://github.com/upptime/status-page/commit/4a9bb09)  Use local token in Octokit
+- [`c89a310`](https://github.com/upptime/status-page/commit/c89a310)  Add error handler helper
+
+### ⬆️ Dependency updates
+
+- [`b4674c8`](https://github.com/upptime/status-page/commit/b4674c8)  Bump @semantic-release/npm from 7.0.6 to 7.0.8
+- [`ac4e767`](https://github.com/upptime/status-page/commit/ac4e767)  Update koj-co/template
+- [`c165898`](https://github.com/upptime/status-page/commit/c165898)  Bump semantic-release from 17.2.2 to 17.2.3
+
 ## [v1.4.1](https://github.com/upptime/status-page/compare/v1.4.0...v1.4.1) (2020-11-17)
 
 ### 🐛 Bug fixes
