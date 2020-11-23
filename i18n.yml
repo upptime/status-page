@@ -23,6 +23,7 @@ sevelDayResponseTime: 7-day response time
 responseTimeMs: Response time (ms)
 up: Up
 down: Down
+degraded: Degraded
 ms: ms
 loading: Loading
 navGitHub: GitHub
