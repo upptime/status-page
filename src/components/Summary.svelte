@@ -46,7 +46,7 @@
     </h1>
     <dl>
       <dt>{config.i18n.overallUptimeTitle}</dt>
-      <dd>{summary.uptime}%</dd>
+      <dd>{summary.uptime}</dd>
       <dt>{config.i18n.averageResponseTimeTitle}</dt>
       <dd>{summary.time}{config.i18n.ms}</dd>
     </dl>
