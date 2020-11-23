@@ -57,7 +57,7 @@
   <div class="container">
     {#if config['status-website'] && config['status-website'].logoUrl}
       <div>
-        <a href={config['status-website'].logoHref || '/'} class="logo">
+        <a href={config['status-website'].logoHref || '.'} class="logo">
           <img alt="" src={config['status-website'].logoUrl} />
           <div>{config['status-website'].name}</div>
         </a>
