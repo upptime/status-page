@@ -52,7 +52,7 @@
       {#if incident.showHeading}
         <h3>{new Date(incident.created_at).toLocaleDateString()}</h3>
       {/if}
-      <article class="down link">
+      <article class="down link {incident.title.includes('degraded') ? 'degraded' : ''}">
         <div class="f">
           <div>
             <h4>{incident.title.replace('🛑', '').replace('⚠️', '').trim()}</h4>

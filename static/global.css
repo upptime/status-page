@@ -1,7 +1,7 @@
 body {
   margin: 0;
-  font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu, Cantarell,
+    Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   line-height: 1.5;
   padding-bottom: 2.5rem;
   color: #333;
@@ -79,6 +79,9 @@ h4 {
 article.down {
   border-left: 0.2rem solid #e74c3c;
 }
+article.degraded {
+  border-left: 0.2rem solid #f39c12 !important;
+}
 article.up {
   border-left: 0.2rem solid #2ecc71;
 }
@@ -101,6 +104,9 @@ section + h2 {
 .tag.open,
 .tag.down {
   background-color: #c0392b;
+}
+.tag.degraded {
+  background-color: #f39c12 !important;
 }
 .tag {
   display: inline-block;

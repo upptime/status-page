@@ -44,6 +44,9 @@
   article {
     background-color: #ffdce3;
   }
+  article.degraded {
+    background-color: #ffdfad;
+  }
   article.good {
     background-color: #dcffeb;
     color: #003300;
@@ -60,7 +63,7 @@
   {:else if incidents.length}
     <h2>{config.i18n.activeIncidents}</h2>
     {#each incidents as incident}
-      <article class="down link">
+      <article class="down link {incident.title.includes('degraded') ? 'degraded' : ''}">
         <div class="f">
           <div>
             <h4>{incident.title.replace('🛑', '').replace('⚠️', '').trim()}</h4>
