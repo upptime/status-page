@@ -28,4 +28,4 @@
 
 <p>{config.i18n.errorText}</p>
 
-<a href="/" class="button">{config.i18n.errorHome}</a>
+<a href={config.path} class="button">{config.i18n.errorHome}</a>

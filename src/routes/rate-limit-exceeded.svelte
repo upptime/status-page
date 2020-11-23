@@ -8,7 +8,7 @@
   const save = () => {
     if (typeof window !== "undefined" && "localStorage" in window)
       window.localStorage.setItem("personal-access-token", token);
-    goto("/");
+    goto(config.path);
   };
   const remove = () => {
     token = "";
