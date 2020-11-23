@@ -53,7 +53,7 @@
       <article
         class={`${site.status} link`}
         style={`background-image: url("${graphsBaseUrl}/${site.slug}.png`}>
-        <h4><a href={`history/${site.slug}`}>{site.name}</a></h4>
+        <h4><a href={`${config.path}/history/${site.slug}`}>{site.name}</a></h4>
         <div>
           {@html config.i18n.overallUptime.replace(/\$UPTIME/g, site.uptime)}
         </div>
