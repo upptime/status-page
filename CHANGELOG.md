@@ -1,3 +1,24 @@
+## [v1.5.3](https://github.com/upptime/status-page/compare/v1.5.2...v1.5.3) (2020-11-23)
+
+### ♻️ Updates
+
+- [`1c932ce`](https://github.com/upptime/status-page/commit/1c932ce)  Add base URL in config
+
+### 💄 Interface changes
+
+- [`376bdf9`](https://github.com/upptime/status-page/commit/376bdf9)  Add UI for degraded
+
+### 🐛 Bug fixes
+
+- [`c4bd2d0`](https://github.com/upptime/status-page/commit/c4bd2d0)  Fix homepage path (fixed upptime/upptime#69)
+(Issues: [`upptime/upptime#69`](https://github.com/upptime/upptime/issues/69))- [`aa91251`](https://github.com/upptime/status-page/commit/aa91251)  Fix config.path in href
+
+### ⬆️ Dependency updates
+
+- [`31dfe8c`](https://github.com/upptime/status-page/commit/31dfe8c)  Bump @babel/preset-env from 7.12.1 to 7.12.7
+- [`272fcac`](https://github.com/upptime/status-page/commit/272fcac)  Bump @babel/core from 7.12.3 to 7.12.7
+- [`f6589bd`](https://github.com/upptime/status-page/commit/f6589bd)  Bump semantic-release from 17.2.4 to 17.3.0
+
 ## [v1.5.2](https://github.com/upptime/status-page/compare/v1.5.1...v1.5.2) (2020-11-23)
 
 ### ⬆️ Dependency updates
