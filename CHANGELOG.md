@@ -1,3 +1,14 @@
+## [v1.5.2](https://github.com/upptime/status-page/compare/v1.5.1...v1.5.2) (2020-11-23)
+
+### ⬆️ Dependency updates
+
+- [`8a1bc39`](https://github.com/upptime/status-page/commit/8a1bc39)  Bump vsoch/pull-request-action from 1.0.11 to 1.0.12
+- [`027253f`](https://github.com/upptime/status-page/commit/027253f)  Bump @semantic-release/github from 7.1.2 to 7.2.0
+- [`55547cd`](https://github.com/upptime/status-page/commit/55547cd)  Bump @koj/config from 1.2.8 to 1.2.9
+- [`18333f5`](https://github.com/upptime/status-page/commit/18333f5)  Bump rollup from 2.33.2 to 2.33.3
+- [`ae1b32b`](https://github.com/upptime/status-page/commit/ae1b32b)  Bump typescript from 4.0.5 to 4.1.2
+- [`e868d81`](https://github.com/upptime/status-page/commit/e868d81)  Bump semantic-release from 17.2.3 to 17.2.4
+
 ## [v1.5.1](https://github.com/upptime/status-page/compare/v1.5.0...v1.5.1) (2020-11-17)
 
 ### 🐛 Bug fixes
