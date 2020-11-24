@@ -21,7 +21,7 @@ export const preProcess = async () => {
     };
   } = safeLoad(await readFile(join("..", ".upptimerc.yml"), "utf8")) as any;
   if (!config.owner || !config.repo) throw new Error("Owner/repo not set");
-  config.path = `https://${config.owner}.github.io/${config.repo}/`;
+  config.path = `https://${config.owner}.github.io/${config.repo}`;
   if (config["status-website"]?.cname) config.path = `https://${config["status-website"].cname}`;
   config.i18n = { ...i18n, ...config.i18n };
   await ensureDir(join(".", "src", "data"));
