@@ -1,3 +1,10 @@
+## [v1.5.4](https://github.com/upptime/status-page/compare/v1.5.3...v1.5.4) (2020-11-24)
+
+### 🐛 Bug fixes
+
+- [`77b08f9`](https://github.com/upptime/status-page/commit/77b08f9)  Prevent double slashed (fixed upptime/upptime#85)
+(Issues: [`upptime/upptime#85`](https://github.com/upptime/upptime/issues/85))
+
 ## [v1.5.3](https://github.com/upptime/status-page/compare/v1.5.2...v1.5.3) (2020-11-23)
 
 ### ♻️ Updates
