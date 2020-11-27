@@ -1,3 +1,16 @@
+## [v1.5.5](https://github.com/upptime/status-page/compare/v1.5.4...v1.5.5) (2020-11-27)
+
+### 🐛 Bug fixes
+
+- [`cd12191`](https://github.com/upptime/status-page/commit/cd12191)  Trigger minor release after fixing double %
+
+### ⬆️ Dependency updates
+
+- [`9c30049`](https://github.com/upptime/status-page/commit/9c30049)  Bump @babel/core from 7.12.7 to 7.12.8
+- [`f7d3942`](https://github.com/upptime/status-page/commit/f7d3942)  Bump cypress from 5.6.0 to 6.0.0
+- [`7ef361f`](https://github.com/upptime/status-page/commit/7ef361f)  Bump svelte from 3.29.7 to 3.30.0
+- [`ad96309`](https://github.com/upptime/status-page/commit/ad96309)  Bump @babel/core from 7.12.8 to 7.12.9
+
 ## [v1.5.4](https://github.com/upptime/status-page/compare/v1.5.3...v1.5.4) (2020-11-24)
 
 ### 🐛 Bug fixes
