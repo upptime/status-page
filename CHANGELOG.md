@@ -1,3 +1,11 @@
+## [v1.5.6](https://github.com/upptime/status-page/compare/v1.5.5...v1.5.6) (2020-11-30)
+
+### 🐛 Bug fixes
+
+- [`2dd47b5`](https://github.com/upptime/status-page/commit/2dd47b5)  Fix reversed graph direction (fixed upptime/upptime#82)
+(Issues: [`upptime/upptime#82`](https://github.com/upptime/upptime/issues/82))- [`69f30a2`](https://github.com/upptime/status-page/commit/69f30a2)  Force render graphs (fixed upptime/upptime#53)
+(Issues: [`upptime/upptime#53`](https://github.com/upptime/upptime/issues/53))
+
 ## [v1.5.5](https://github.com/upptime/status-page/compare/v1.5.4...v1.5.5) (2020-11-27)
 
 ### 🐛 Bug fixes
