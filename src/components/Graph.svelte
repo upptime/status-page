@@ -23,7 +23,7 @@
           path: `history/${slug}.yml`,
           per_page: 28,
         })
-      ).data;
+      ).data.reverse();
     } catch (error) {
       handleError(error);
     }
