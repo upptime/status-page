@@ -1,3 +1,17 @@
+## [v1.5.7](https://github.com/upptime/status-page/compare/v1.5.6...v1.5.7) (2020-12-01)
+
+### 🐛 Bug fixes
+
+- [`b2f6aa7`](https://github.com/upptime/status-page/commit/b2f6aa7)  Fix redirect to rate-limit (fixed upptime/upptime#100)
+(Issues: [`upptime/upptime#100`](https://github.com/upptime/upptime/issues/100))
+
+### ⬆️ Dependency updates
+
+- [`b1db07c`](https://github.com/upptime/status-page/commit/b1db07c)  Bump rollup from 2.33.3 to 2.34.0
+- [`11715c5`](https://github.com/upptime/status-page/commit/11715c5)  Bump cypress from 6.0.0 to 6.0.1
+- [`029c9ee`](https://github.com/upptime/status-page/commit/029c9ee)  Bump @rollup/plugin-babel from 5.2.1 to 5.2.2
+- [`0dbce81`](https://github.com/upptime/status-page/commit/0dbce81)  Bump svelte from 3.30.0 to 3.30.1
+
 ## [v1.5.6](https://github.com/upptime/status-page/compare/v1.5.5...v1.5.6) (2020-11-30)
 
 ### 🐛 Bug fixes
