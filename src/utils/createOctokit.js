@@ -22,7 +22,7 @@ export const createOctokit = () => {
 export const handleError = (error) => {
   if (error.message === "Bad credentials") {
     window.location.href = "/error";
-  } else if ((error.message || "").indexOf("rate limit exceeded")) {
+  } else if ((error.message || "").indexOf("rate limit exceeded") > -1) {
     window.location.href = "/rate-limit-exceeded";
   } else {
     window.location.href = "/error";
