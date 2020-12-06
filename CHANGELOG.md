@@ -1,3 +1,15 @@
+## v1.7.0 (2020-12-06)
+
+[📝 Release notes](https://github.com/upptime/status-page/releases/tag/v1.7.0) · [💻 Compare](https://github.com/upptime/status-page/compare/v1.6.1...v1.7.0) · [🔖 Tag](https://github.com/upptime/status-page/tree/v1.7.0) · 🗄️ Archive ([zip](https://github.com/upptime/status-page/archive/v1.7.0.zip) · [tar.gz](https://github.com/upptime/status-page/archive/v1.7.0.tar.gz))
+
+### ✨ New features
+
+- [`d6b0ad6`](https://github.com/upptime/status-page/commit/d6b0ad6)  Add support for custom scripts/styles
+
+### ♻️ Updates
+
+- [`fd10380`](https://github.com/upptime/status-page/commit/fd10380)  Add custom plain JS
+
 ## v1.6.1 (2020-12-06)
 
 [📝 Release notes](https://github.com/upptime/status-page/releases/tag/v1.6.1) · [💻 Compare](https://github.com/upptime/status-page/compare/v1.6.0...v1.6.1) · [🔖 Tag](https://github.com/upptime/status-page/tree/v1.6.1) · 🗄️ Archive ([zip](https://github.com/upptime/status-page/archive/v1.6.1.zip) · [tar.gz](https://github.com/upptime/status-page/archive/v1.6.1.tar.gz))
