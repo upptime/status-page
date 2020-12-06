@@ -121,4 +121,4 @@
   {/if}
 </section>
 
-<footer><a href="../">{config.i18n.incidentBack}</a></footer>
+<footer><a href={config.path}>{config.i18n.incidentBack}</a></footer>
