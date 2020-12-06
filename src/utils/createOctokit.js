@@ -42,7 +42,12 @@ export const cachedResponse = async (key, fn) => {
         const data = localStorage.getItem(key);
         if (data) {
           const item = JSON.parse(data);
-          if (new Date().getTime() - new Date(item.createdAt || "").getTime() > 600000) {
+          if (
+            new Date().getTime() - new Date(item.createdAt || "").getTime() >
+            (document.domain === "localhost"
+              ? config["status-website"].localhostCacheTime || 3600000
+              : config["status-website"].productionCacheTime || 120000)
+          ) {
             localStorage.removeItem(key);
           } else {
             console.log("Got cached item");
