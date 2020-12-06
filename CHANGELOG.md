@@ -1,3 +1,13 @@
+## v1.6.1 (2020-12-06)
+
+[📝 Release notes](https://github.com/upptime/status-page/releases/tag/v1.6.1) · [💻 Compare](https://github.com/upptime/status-page/compare/v1.6.0...v1.6.1) · [🔖 Tag](https://github.com/upptime/status-page/tree/v1.6.1) · 🗄️ Archive ([zip](https://github.com/upptime/status-page/archive/v1.6.1.zip) · [tar.gz](https://github.com/upptime/status-page/archive/v1.6.1.tar.gz))
+
+### 🐛 Bug fixes
+
+- [`e96423e`](https://github.com/upptime/status-page/commit/e96423e)  FIx redirect to config path page
+- [`3b9189a`](https://github.com/upptime/status-page/commit/3b9189a)  Fix link to homepage (fixed upptime/upptime#104)
+(Issues: [`upptime/upptime#104`](https://github.com/upptime/upptime/issues/104))
+
 ## v1.6.0 (2020-12-06)
 
 [📝 Release notes](https://github.com/upptime/status-page/releases/tag/v1.6.0) · [💻 Compare](https://github.com/upptime/status-page/compare/v1.5.7...v1.6.0) · [🔖 Tag](https://github.com/upptime/status-page/tree/v1.6.0) · 🗄️ Archive ([zip](https://github.com/upptime/status-page/archive/v1.6.0.zip) · [tar.gz](https://github.com/upptime/status-page/archive/v1.6.0.tar.gz))
