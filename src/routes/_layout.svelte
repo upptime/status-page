@@ -2,6 +2,7 @@
   import Nav from "../components/Nav.svelte";
   import config from "../data/config.json";
   import snarkdown from "snarkdown";
+  import { each } from "svelte/internal";
   export let segment;
 </script>
 
@@ -22,6 +23,22 @@
     rel="icon"
     type="image/png"
     href={(config['status-website'] || {}).favicon || `/logo-192.png`} />
+  {#if config['status-website'].scripts}
+    {#each config['status-website'].scripts as script}
+      <script src={script.src} async={!!script.async} defer={!!script.async}>
+      </script>
+    {/each}
+  {/if}
+  {#if config['status-website'].links}
+    {#each config['status-website'].links as link}
+      <link rel={link.rel} href={link.href} media={link.media} />
+    {/each}
+  {/if}
+  {#if config['status-website'].css}
+    <style>
+{config['status-website'].css}
+    </style>
+  {/if}
 </svelte:head>
 
 <Nav {segment} />
