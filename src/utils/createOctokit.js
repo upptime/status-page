@@ -29,3 +29,31 @@ export const handleError = (error) => {
     console.log(error.message);
   }
 };
+
+/**
+ * Memoize a GitHub API response in local storage
+ * @param {string} key - Local storage cache key
+ * @param {Function} fn - Function that returns the result
+ */
+export const cachedResponse = async (key, fn) => {
+  try {
+    if (typeof window !== "undefined") {
+      if ("localStorage" in window) {
+        const data = localStorage.getItem(key);
+        if (data) {
+          const item = JSON.parse(data);
+          if (new Date().getTime() - new Date(item.createdAt || "").getTime() > 600000) {
+            localStorage.removeItem(key);
+          } else {
+            console.log("Got cached item");
+            return item.data;
+          }
+        }
+      }
+    }
+  } catch (error) {}
+  console.log("Got here");
+  const i = await fn();
+  localStorage.setItem(key, JSON.stringify({ data: i, createdAt: new Date() }));
+  return i;
+};

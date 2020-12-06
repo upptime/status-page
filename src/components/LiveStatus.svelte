@@ -21,17 +21,8 @@
 
   onMount(async () => {
     try {
-      sites = JSON.parse(
-        atob(
-          (
-            await octokit.repos.getContent({
-              owner,
-              repo,
-              path: "history/summary.json",
-            })
-          ).data.content.replace(/\n/g, "")
-        )
-      );
+      const res = await fetch(`${userContentBaseUrl}/${owner}/${repo}/master/history/summary.json`);
+      sites = await res.json();
     } catch (error) {
       handleError(error);
     }

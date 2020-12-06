@@ -2,7 +2,7 @@
   import Loading from "../components/Loading.svelte";
   import { onMount } from "svelte";
   import config from "../data/config.json";
-  import { createOctokit, handleError } from "../utils/createOctokit";
+  import { cachedResponse, createOctokit, handleError } from "../utils/createOctokit";
 
   let loading = true;
   const octokit = createOctokit();
@@ -13,15 +13,17 @@
   onMount(async () => {
     try {
       incidents = (
-        await octokit.issues.listForRepo({
-          owner,
-          repo,
-          state: "open",
-          filter: "all",
-          sort: "created",
-          direction: "desc",
-          labels: "status",
-        })
+        await cachedResponse(`issues-${owner}-${repo}`, () =>
+          octokit.issues.listForRepo({
+            owner,
+            repo,
+            state: "open",
+            filter: "all",
+            sort: "created",
+            direction: "desc",
+            labels: "status",
+          })
+        )
       ).data;
       incidents = incidents.map((incident, index) => {
         incident.showHeading =

@@ -13,17 +13,8 @@
 
   onMount(async () => {
     try {
-      summary = JSON.parse(
-        atob(
-          (
-            await octokit.repos.getContent({
-              owner,
-              repo,
-              path: "history/summary.json",
-            })
-          ).data.content
-        )
-      ).find((item) => item.slug === slug);
+      const res = await fetch(`${userContentBaseUrl}/${owner}/${repo}/master/history/summary.json`);
+      summary = (await res.json()).find((item) => item.slug === slug);
     } catch (error) {
       handleError(error);
     }

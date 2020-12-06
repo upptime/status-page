@@ -2,7 +2,7 @@
   import Loading from "../components/Loading.svelte";
   import { onMount } from "svelte";
   import config from "../data/config.json";
-  import { createOctokit, handleError } from "../utils/createOctokit";
+  import { cachedResponse, createOctokit, handleError } from "../utils/createOctokit";
 
   export let slug;
   let loading = true;
@@ -14,15 +14,17 @@
   onMount(async () => {
     try {
       incidents = (
-        await octokit.issues.listForRepo({
-          owner,
-          repo,
-          state: "closed",
-          filter: "all",
-          sort: "created",
-          direction: "desc",
-          labels: `status,${slug}`,
-        })
+        await cachedResponse(`closed-issues-${owner}-${repo}-${slug}`, () =>
+          octokit.issues.listForRepo({
+            owner,
+            repo,
+            state: "closed",
+            filter: "all",
+            sort: "created",
+            direction: "desc",
+            labels: `status,${slug}`,
+          })
+        )
       ).data;
     } catch (error) {
       handleError(error);

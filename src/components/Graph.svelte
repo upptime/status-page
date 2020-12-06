@@ -3,7 +3,7 @@
   import { onMount } from "svelte";
   import config from "../data/config.json";
   import Line from "svelte-chartjs/src/Line.svelte";
-  import { createOctokit, handleError } from "../utils/createOctokit";
+  import { cachedResponse, createOctokit, handleError } from "../utils/createOctokit";
 
   export let slug;
   let loading = true;
@@ -18,12 +18,14 @@
   onMount(async () => {
     try {
       commits = (
-        await octokit.repos.listCommits({
-          owner,
-          repo,
-          path: `history/${slug}.yml`,
-          per_page: 28,
-        })
+        await cachedResponse(`commits-${owner}-${repo}-${slug}`, () =>
+          octokit.repos.listCommits({
+            owner,
+            repo,
+            path: `history/${slug}.yml`,
+            per_page: 28,
+          })
+        )
       ).data.reverse();
     } catch (error) {
       handleError(error);
