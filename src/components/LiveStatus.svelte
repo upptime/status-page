@@ -42,6 +42,15 @@
     background-position: top right;
     background-repeat: no-repeat;
   }
+  .icon {
+    height: 1rem;
+    margin-right: 0.33rem;
+    vertical-align: middle;
+    transform: scale(1.1) translateY(-0.1rem);
+  }
+  a {
+    text-decoration: none;
+  }
 </style>
 
 <h2>{config.i18n.liveStatus}</h2>
@@ -53,7 +62,10 @@
       <article
         class={`${site.status} link`}
         style={`background-image: url("${graphsBaseUrl}/${site.slug}.png`}>
-        <h4><a href={`${config.path}/history/${site.slug}`}>{site.name}</a></h4>
+        <h4>
+          <img class="icon" alt="" src={site.icon} />
+          <a href={`${config.path}/history/${site.slug}`}>{site.name}</a>
+        </h4>
         <div>
           {@html config.i18n.overallUptime.replace(/\$UPTIME/g, site.uptime)}
         </div>
