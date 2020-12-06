@@ -1,3 +1,28 @@
+## v1.6.0 (2020-12-06)
+
+[📝 Release notes](https://github.com/upptime/status-page/releases/tag/v1.6.0) · [💻 Compare](https://github.com/upptime/status-page/compare/v1.5.7...v1.6.0) · [🔖 Tag](https://github.com/upptime/status-page/tree/v1.6.0) · 🗄️ Archive ([zip](https://github.com/upptime/status-page/archive/v1.6.0.zip) · [tar.gz](https://github.com/upptime/status-page/archive/v1.6.0.tar.gz))
+
+### ✨ New features
+
+- [`a0b6623`](https://github.com/upptime/status-page/commit/a0b6623)  Add icons for status sites
+- [`31e11a9`](https://github.com/upptime/status-page/commit/31e11a9)  Add duration selector
+
+### 💄 Interface changes
+
+- [`9c33593`](https://github.com/upptime/status-page/commit/9c33593)  Add styles for updating data
+
+### ⬆️ Dependency updates
+
+- [`d2efe01`](https://github.com/upptime/status-page/commit/d2efe01)  Bump @rollup/plugin-commonjs from 16.0.0 to 17.0.0
+- [`0015d63`](https://github.com/upptime/status-page/commit/0015d63)  Bump @octokit/rest from 18.0.9 to 18.0.10
+- [`b691bcc`](https://github.com/upptime/status-page/commit/b691bcc)  Bump @types/jest from 26.0.15 to 26.0.16
+- [`9bc307a`](https://github.com/upptime/status-page/commit/9bc307a)  Bump rollup from 2.34.0 to 2.34.1
+- [`4d4e687`](https://github.com/upptime/status-page/commit/4d4e687)  Bump @koj/config from 1.2.9 to 1.2.11
+- [`e34c427`](https://github.com/upptime/status-page/commit/e34c427)  Bump svelte from 3.30.1 to 3.31.0
+- [`26a3963`](https://github.com/upptime/status-page/commit/26a3963)  Bump @octokit/rest from 18.0.10 to 18.0.11
+- [`73f0951`](https://github.com/upptime/status-page/commit/73f0951)  Bump ts-node from 9.0.0 to 9.1.0
+- [`72123f6`](https://github.com/upptime/status-page/commit/72123f6)  Bump @semantic-release/npm from 7.0.8 to 7.0.9
+
 ## [v1.5.7](https://github.com/upptime/status-page/compare/v1.5.6...v1.5.7) (2020-12-01)
 
 ### 🐛 Bug fixes
