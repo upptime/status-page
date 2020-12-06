@@ -39,6 +39,13 @@
 {config['status-website'].css}
     </style>
   {/if}
+  {#if config['status-website'].js}
+    <script>
+      {
+        config["status-website"].js;
+      }
+    </script>
+  {/if}
 </svelte:head>
 
 <Nav {segment} />
