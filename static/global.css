@@ -131,10 +131,10 @@ dl dd {
 
 @media (prefers-color-scheme: dark) {
   body {
-    background-color: #001f1e;
-    color: #f7ffff;
+    background-color: #001716;
+    color: #f0ffff;
   }
   article {
-    background-color: #003330;
+    background-color: #002b29;
   }
 }

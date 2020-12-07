@@ -16,7 +16,7 @@
 
   @media (prefers-color-scheme: dark) {
     nav {
-      background-color: #004f4b;
+      background-color: #002b29;
     }
   }
 
