@@ -2,11 +2,15 @@
   import Loading from "../components/Loading.svelte";
   import { onMount } from "svelte";
   import config from "../data/config.json";
-  import { createOctokit, handleError } from "../utils/createOctokit";
+  import { handleError } from "../utils/createOctokit";
 
   export let slug;
   let loading = true;
-  const octokit = createOctokit();
+  let { apiBaseUrl } = config["status-website"] || {};
+  if (!apiBaseUrl) apiBaseUrl = "https://api.github.com";
+  const userContentBaseUrl = apiBaseUrl.includes("api.github.com")
+    ? `https://raw.githubusercontent.com`
+    : apiBaseUrl;
   const owner = config.owner;
   const repo = config.repo;
   let summary = null;
