@@ -128,3 +128,13 @@ dl dt {
 dl dd {
   margin: 0 0 1rem 0;
 }
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #001f1e;
+    color: #f7ffff;
+  }
+  article {
+    background-color: #003330;
+  }
+}

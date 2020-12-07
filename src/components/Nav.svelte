@@ -14,6 +14,12 @@
     overflow-x: auto;
   }
 
+  @media (prefers-color-scheme: dark) {
+    nav {
+      background-color: #004f4b;
+    }
+  }
+
   ul {
     margin: 0;
     padding: 0;
