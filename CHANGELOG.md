@@ -1,3 +1,16 @@
+## v1.7.2 (2020-12-07)
+
+[📝 Release notes](https://github.com/upptime/status-page/releases/tag/v1.7.2) · [💻 Compare](https://github.com/upptime/status-page/compare/v1.7.1...v1.7.2) · [🔖 Tag](https://github.com/upptime/status-page/tree/v1.7.2) · 🗄️ Archive ([zip](https://github.com/upptime/status-page/archive/v1.7.2.zip) · [tar.gz](https://github.com/upptime/status-page/archive/v1.7.2.tar.gz))
+
+### 💄 Interface changes
+
+- [`1a22120`](https://github.com/upptime/status-page/commit/1a22120)  Add dark theme
+- [`f23c9eb`](https://github.com/upptime/status-page/commit/f23c9eb)  Update colors for dark theme
+
+### 🐛 Bug fixes
+
+- [`ba3cd12`](https://github.com/upptime/status-page/commit/ba3cd12)  Fix error with missing base URL
+
 ## v1.7.1 (2020-12-06)
 
 [📝 Release notes](https://github.com/upptime/status-page/releases/tag/v1.7.1) · [💻 Compare](https://github.com/upptime/status-page/compare/v1.7.0...v1.7.1) · [🔖 Tag](https://github.com/upptime/status-page/tree/v1.7.1) · 🗄️ Archive ([zip](https://github.com/upptime/status-page/archive/v1.7.1.zip) · [tar.gz](https://github.com/upptime/status-page/archive/v1.7.1.tar.gz))
