@@ -1,3 +1,23 @@
+## v1.7.3 (2020-12-10)
+
+[📝 Release notes](https://github.com/upptime/status-page/releases/tag/v1.7.3) · [💻 Compare](https://github.com/upptime/status-page/compare/v1.7.2...v1.7.3) · [🔖 Tag](https://github.com/upptime/status-page/tree/v1.7.3) · 🗄️ Archive ([zip](https://github.com/upptime/status-page/archive/v1.7.3.zip) · [tar.gz](https://github.com/upptime/status-page/archive/v1.7.3.tar.gz))
+
+### ♻️ Updates
+
+- [`bf21f20`](https://github.com/upptime/status-page/commit/bf21f20)  Use .dark globally for dark theme
+
+### ⬆️ Dependency updates
+
+- [`26b7c33`](https://github.com/upptime/status-page/commit/26b7c33)  Bump sirv from 1.0.7 to 1.0.9
+- [`3f15f33`](https://github.com/upptime/status-page/commit/3f15f33)  Bump rollup from 2.34.1 to 2.34.2
+- [`64158cf`](https://github.com/upptime/status-page/commit/64158cf)  Bump @octokit/rest from 18.0.11 to 18.0.12
+- [`906dadd`](https://github.com/upptime/status-page/commit/906dadd)  Bump ts-node from 9.1.0 to 9.1.1
+- [`5a6e68b`](https://github.com/upptime/status-page/commit/5a6e68b)  Bump @types/jest from 26.0.16 to 26.0.17
+- [`e431d1f`](https://github.com/upptime/status-page/commit/e431d1f)  Bump js-yaml from 3.14.0 to 3.14.1
+- [`88d32ee`](https://github.com/upptime/status-page/commit/88d32ee)  Bump sirv from 1.0.9 to 1.0.10
+- [`364f02b`](https://github.com/upptime/status-page/commit/364f02b)  Bump cypress from 6.0.1 to 6.1.0
+- [`50c2378`](https://github.com/upptime/status-page/commit/50c2378)  Bump @types/jest from 26.0.17 to 26.0.18
+
 ## v1.7.2 (2020-12-07)
 
 [📝 Release notes](https://github.com/upptime/status-page/releases/tag/v1.7.2) · [💻 Compare](https://github.com/upptime/status-page/compare/v1.7.1...v1.7.2) · [🔖 Tag](https://github.com/upptime/status-page/tree/v1.7.2) · 🗄️ Archive ([zip](https://github.com/upptime/status-page/archive/v1.7.2.zip) · [tar.gz](https://github.com/upptime/status-page/archive/v1.7.2.tar.gz))
