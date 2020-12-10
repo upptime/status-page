@@ -53,10 +53,8 @@
     background-color: #dcffeb;
     color: #003300;
   }
-  @media (prefers-color-scheme: dark) {
-    article {
-      background-color: #700000;
-    }
+  :global(.dark) article {
+    background-color: #700000;
   }
 </style>
 

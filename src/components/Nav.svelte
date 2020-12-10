@@ -14,10 +14,8 @@
     overflow-x: auto;
   }
 
-  @media (prefers-color-scheme: dark) {
-    nav {
-      background-color: #002b29;
-    }
+  :global(.dark) nav {
+    background-color: #002b29;
   }
 
   ul {

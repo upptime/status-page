@@ -129,12 +129,10 @@ dl dd {
   margin: 0 0 1rem 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #001716;
-    color: #f0ffff;
-  }
-  article {
-    background-color: #002b29;
-  }
+.dark body {
+  background-color: #001716;
+  color: #f0ffff;
+}
+.dark article {
+  background-color: #002b29;
 }
