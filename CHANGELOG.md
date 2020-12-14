@@ -1,3 +1,17 @@
+## v1.7.4 (2020-12-14)
+
+[📝 Release notes](https://github.com/upptime/status-page/releases/tag/v1.7.4) · [💻 Compare](https://github.com/upptime/status-page/compare/v1.7.3...v1.7.4) · [🔖 Tag](https://github.com/upptime/status-page/tree/v1.7.4) · 🗄️ Archive ([zip](https://github.com/upptime/status-page/archive/v1.7.4.zip) · [tar.gz](https://github.com/upptime/status-page/archive/v1.7.4.tar.gz))
+
+### ⬆️ Dependency updates
+
+- [`95d1722`](https://github.com/upptime/status-page/commit/95d1722)  Bump @babel/preset-env from 7.12.7 to 7.12.10
+- [`9a4216c`](https://github.com/upptime/status-page/commit/9a4216c)  Bump @babel/plugin-transform-runtime from 7.12.1 to 7.12.10
+- [`c5cd10c`](https://github.com/upptime/status-page/commit/c5cd10c)  Bump @babel/core from 7.12.9 to 7.12.10
+- [`f8709d7`](https://github.com/upptime/status-page/commit/f8709d7)  Bump actions/setup-node from v2.1.2 to v2.1.3
+- [`5e0b20f`](https://github.com/upptime/status-page/commit/5e0b20f)  Bump @types/fs-extra from 9.0.4 to 9.0.5
+- [`44c5e15`](https://github.com/upptime/status-page/commit/44c5e15)  Bump @types/jest from 26.0.18 to 26.0.19
+- [`3e0e87d`](https://github.com/upptime/status-page/commit/3e0e87d)  Bump ini from 1.3.5 to 1.3.8
+
 ## v1.7.3 (2020-12-10)
 
 [📝 Release notes](https://github.com/upptime/status-page/releases/tag/v1.7.3) · [💻 Compare](https://github.com/upptime/status-page/compare/v1.7.2...v1.7.3) · [🔖 Tag](https://github.com/upptime/status-page/tree/v1.7.3) · 🗄️ Archive ([zip](https://github.com/upptime/status-page/archive/v1.7.3.zip) · [tar.gz](https://github.com/upptime/status-page/archive/v1.7.3.tar.gz))
