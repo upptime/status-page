@@ -1,3 +1,15 @@
+## v1.7.5 (2020-12-21)
+
+[📝 Release notes](https://github.com/upptime/status-page/releases/tag/v1.7.5) · [💻 Compare](https://github.com/upptime/status-page/compare/v1.7.4...v1.7.5) · [🔖 Tag](https://github.com/upptime/status-page/tree/v1.7.5) · 🗄️ Archive ([zip](https://github.com/upptime/status-page/archive/v1.7.5.zip) · [tar.gz](https://github.com/upptime/status-page/archive/v1.7.5.tar.gz))
+
+### ⬆️ Dependency updates
+
+- [`bfcd94f`](https://github.com/upptime/status-page/commit/bfcd94f)  Bump typescript from 4.1.2 to 4.1.3
+- [`f4e5fc5`](https://github.com/upptime/status-page/commit/f4e5fc5)  Bump rollup from 2.34.2 to 2.35.0
+- [`1f67c21`](https://github.com/upptime/status-page/commit/1f67c21)  Bump rollup from 2.35.0 to 2.35.1
+- [`caca2cd`](https://github.com/upptime/status-page/commit/caca2cd)  Bump @babel/preset-env from 7.12.10 to 7.12.11
+- [`012f04b`](https://github.com/upptime/status-page/commit/012f04b)  Bump actions/setup-node from v2.1.3 to v2.1.4
+
 ## v1.7.4 (2020-12-14)
 
 [📝 Release notes](https://github.com/upptime/status-page/releases/tag/v1.7.4) · [💻 Compare](https://github.com/upptime/status-page/compare/v1.7.3...v1.7.4) · [🔖 Tag](https://github.com/upptime/status-page/tree/v1.7.4) · 🗄️ Archive ([zip](https://github.com/upptime/status-page/archive/v1.7.4.zip) · [tar.gz](https://github.com/upptime/status-page/archive/v1.7.4.tar.gz))
