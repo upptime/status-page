@@ -1,3 +1,15 @@
+## v1.7.6 (2020-12-28)
+
+[📝 Release notes](https://github.com/upptime/status-page/releases/tag/v1.7.6) · [💻 Compare](https://github.com/upptime/status-page/compare/v1.7.5...v1.7.6) · [🔖 Tag](https://github.com/upptime/status-page/tree/v1.7.6) · 🗄️ Archive ([zip](https://github.com/upptime/status-page/archive/v1.7.6.zip) · [tar.gz](https://github.com/upptime/status-page/archive/v1.7.6.tar.gz))
+
+### ⬆️ Dependency updates
+
+- [`633e571`](https://github.com/upptime/status-page/commit/633e571)  Bump vsoch/pull-request-action from 1.0.12 to 1.0.13
+- [`6f00944`](https://github.com/upptime/status-page/commit/6f00944)  Bump cypress from 6.1.0 to 6.2.0
+- [`26ba761`](https://github.com/upptime/status-page/commit/26ba761)  Bump pascalgn/automerge-action from v0.12.0 to v0.13.0
+- [`6fec6ad`](https://github.com/upptime/status-page/commit/6fec6ad)  Bump node-notifier from 8.0.0 to 8.0.1
+- [`23d9944`](https://github.com/upptime/status-page/commit/23d9944)  Bump @types/fs-extra from 9.0.5 to 9.0.6
+
 ## v1.7.5 (2020-12-21)
 
 [📝 Release notes](https://github.com/upptime/status-page/releases/tag/v1.7.5) · [💻 Compare](https://github.com/upptime/status-page/compare/v1.7.4...v1.7.5) · [🔖 Tag](https://github.com/upptime/status-page/tree/v1.7.5) · 🗄️ Archive ([zip](https://github.com/upptime/status-page/archive/v1.7.5.zip) · [tar.gz](https://github.com/upptime/status-page/archive/v1.7.5.tar.gz))
