@@ -1,6 +1,6 @@
 # ⬆️ Upptime Status Page
 
-This repository contains the web app for embeddable charts of your health and life data using Upptime. It's written in Svelte and a sample website is published at https://upptime.js.org/.
+This repository contains the web app for Upptime's status page website. It's written in Svelte and a sample website is published at https://demo.upptime.js.org/.
 
 [**To get started, visit upptime/upptime →**](https://github.com/upptime/upptime)
 
