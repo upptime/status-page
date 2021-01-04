@@ -1,3 +1,11 @@
+## v1.7.7 (2021-01-04)
+
+[📝 Release notes](https://github.com/upptime/status-page/releases/tag/v1.7.7) · [💻 Compare](https://github.com/upptime/status-page/compare/v1.7.6...v1.7.7) · [🔖 Tag](https://github.com/upptime/status-page/tree/v1.7.7) · 🗄️ Archive ([zip](https://github.com/upptime/status-page/archive/v1.7.7.zip) · [tar.gz](https://github.com/upptime/status-page/archive/v1.7.7.tar.gz))
+
+### ⬆️ Dependency updates
+
+- [`bc37f8f`](https://github.com/upptime/status-page/commit/bc37f8f)  Bump semantic-release from 17.3.0 to 17.3.1
+
 ## v1.7.6 (2020-12-28)
 
 [📝 Release notes](https://github.com/upptime/status-page/releases/tag/v1.7.6) · [💻 Compare](https://github.com/upptime/status-page/compare/v1.7.5...v1.7.6) · [🔖 Tag](https://github.com/upptime/status-page/tree/v1.7.6) · 🗄️ Archive ([zip](https://github.com/upptime/status-page/archive/v1.7.6.zip) · [tar.gz](https://github.com/upptime/status-page/archive/v1.7.6.tar.gz))
