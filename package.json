@@ -37,7 +37,7 @@
     "@octokit/rest": "^18.0.3",
     "compression": "^1.7.4",
     "fs-extra": "^9.0.1",
-    "js-yaml": "^3.14.0",
+    "js-yaml": "^4.0.0",
     "polka": "next",
     "sirv": "^1.0.5",
     "snarkdown": "^2.0.0",

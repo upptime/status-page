@@ -1,5 +1,5 @@
 import { readFile, writeFile, copyFile, copy, remove } from "fs-extra";
-import { safeLoad } from "js-yaml";
+import { load } from "js-yaml";
 import { join } from "path";
 import { execSync } from "child_process";
 
@@ -9,7 +9,7 @@ export const postProcess = async () => {
       cname?: string;
       baseUrl?: string;
     };
-  } = safeLoad(await readFile(join("..", ".upptimerc.yml"), "utf8")) as any;
+  } = load(await readFile(join("..", ".upptimerc.yml"), "utf8")) as any;
   const baseUrl = (config["status-website"] || {}).baseUrl || "/";
 
   execSync(`sapper export --legacy --basepath ${baseUrl}`, {
