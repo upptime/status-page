@@ -1,9 +1,9 @@
 import { readFile, writeJson, ensureDir } from "fs-extra";
-import { safeLoad } from "js-yaml";
+import { load } from "js-yaml";
 import { join } from "path";
 
 export const preProcess = async () => {
-  const i18n = safeLoad(await readFile(join(".", "i18n.yml"), "utf8")) as {
+  const i18n = load(await readFile(join(".", "i18n.yml"), "utf8")) as {
     [index: string]: string;
   };
 
@@ -19,7 +19,7 @@ export const preProcess = async () => {
     "status-website"?: {
       cname?: string;
     };
-  } = safeLoad(await readFile(join("..", ".upptimerc.yml"), "utf8")) as any;
+  } = load(await readFile(join("..", ".upptimerc.yml"), "utf8")) as any;
   if (!config.owner || !config.repo) throw new Error("Owner/repo not set");
   config.path = `https://${config.owner}.github.io/${config.repo}`;
   if (config["status-website"]?.cname) config.path = `https://${config["status-website"].cname}`;

@@ -3,13 +3,13 @@ import compression from "compression";
 import fs from "fs-extra";
 import polka from "polka";
 import sirv from "sirv";
-import { safeLoad } from "js-yaml";
+import { load } from "js-yaml";
 import { join } from "path";
 
 const { PORT, NODE_ENV } = process.env;
 const dev = NODE_ENV === "development";
 
-let config = safeLoad(fs.readFileSync(join("..", ".upptimerc.yml"), "utf8"));
+let config = load(fs.readFileSync(join("..", ".upptimerc.yml"), "utf8"));
 const baseUrl = (config["status-website"] || {}).baseUrl || "/";
 
 polka()
