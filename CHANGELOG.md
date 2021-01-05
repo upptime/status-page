@@ -1,3 +1,19 @@
+## v1.7.8 (2021-01-05)
+
+[📝 Release notes](https://github.com/upptime/status-page/releases/tag/v1.7.8) · [💻 Compare](https://github.com/upptime/status-page/compare/v1.7.7...v1.7.8) · [🔖 Tag](https://github.com/upptime/status-page/tree/v1.7.8) · 🗄️ Archive ([zip](https://github.com/upptime/status-page/archive/v1.7.8.zip) · [tar.gz](https://github.com/upptime/status-page/archive/v1.7.8.tar.gz))
+
+### ♻️ Updates
+
+- [`21813c4`](https://github.com/upptime/status-page/commit/21813c4)  Change safeLoad -&gt; load
+
+### ⬆️ Dependency updates
+
+- [`bd2033a`](https://github.com/upptime/status-page/commit/bd2033a)  Bump @rollup/plugin-node-resolve from 10.0.0 to 11.0.1
+- [`a5bcee3`](https://github.com/upptime/status-page/commit/a5bcee3)  Bump js-yaml from 3.14.1 to 4.0.0
+- [`4e7d895`](https://github.com/upptime/status-page/commit/4e7d895)  Bump svelte from 3.31.0 to 3.31.1
+- [`7369cea`](https://github.com/upptime/status-page/commit/7369cea)  Bump cypress from 6.2.0 to 6.2.1
+- [`f18f151`](https://github.com/upptime/status-page/commit/f18f151)  Bump svelte from 3.31.1 to 3.31.2
+
 ## v1.7.7 (2021-01-04)
 
 [📝 Release notes](https://github.com/upptime/status-page/releases/tag/v1.7.7) · [💻 Compare](https://github.com/upptime/status-page/compare/v1.7.6...v1.7.7) · [🔖 Tag](https://github.com/upptime/status-page/tree/v1.7.7) · 🗄️ Archive ([zip](https://github.com/upptime/status-page/archive/v1.7.7.zip) · [tar.gz](https://github.com/upptime/status-page/archive/v1.7.7.tar.gz))
