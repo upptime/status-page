@@ -61,7 +61,7 @@
     "@semantic-release/npm": "^7.0.6",
     "@types/fs-extra": "^9.0.1",
     "@types/jest": "^26.0.14",
-    "@types/js-yaml": "^3.12.5",
+    "@types/js-yaml": "^4.0.0",
     "cypress": "^6.0.0",
     "jest": "^26.4.2",
     "npm-run-all": "^4.1.5",
