@@ -27,6 +27,9 @@
 </script>
 
 <style>
+  .no-underline {
+    text-decoration: none;
+  }
 </style>
 
 <section>
@@ -34,7 +37,7 @@
     <Loading />
   {:else if summary}
     <h1>
-      {summary.name}
+      <a class="no-underline" href={summary.url}>{summary.name}</a>
       <span class={`tag ${summary.status}`}>
         {summary.status === 'up' ? config.i18n.up : config.i18n.down}
       </span>
