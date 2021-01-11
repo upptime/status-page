@@ -35,9 +35,11 @@
     {/each}
   {/if}
   {#if config['status-website'].css}
+    {@html `
     <style>
-{config['status-website'].css}
-    </style>
+${config['status-website'].css}
+    </style>`
+    }
   {/if}
   {#if config['status-website'].js}
     <script>
