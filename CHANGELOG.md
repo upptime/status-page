@@ -1,3 +1,11 @@
+## v1.7.10 (2021-01-11)
+
+[📝 Release notes](https://github.com/upptime/status-page/releases/tag/v1.7.10) · [💻 Compare](https://github.com/upptime/status-page/compare/v1.7.9...v1.7.10) · [🔖 Tag](https://github.com/upptime/status-page/tree/v1.7.10) · 🗄️ Archive ([zip](https://github.com/upptime/status-page/archive/v1.7.10.zip) · [tar.gz](https://github.com/upptime/status-page/archive/v1.7.10.tar.gz))
+
+### ♻️ Updates
+
+- [`e62d088`](https://github.com/upptime/status-page/commit/e62d088)  Trigger patch release
+
 ## v1.7.9 (2021-01-11)
 
 [📝 Release notes](https://github.com/upptime/status-page/releases/tag/v1.7.9) · [💻 Compare](https://github.com/upptime/status-page/compare/v1.7.8...v1.7.9) · [🔖 Tag](https://github.com/upptime/status-page/tree/v1.7.9) · 🗄️ Archive ([zip](https://github.com/upptime/status-page/archive/v1.7.9.zip) · [tar.gz](https://github.com/upptime/status-page/archive/v1.7.9.tar.gz))
