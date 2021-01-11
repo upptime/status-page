@@ -42,11 +42,11 @@ ${config['status-website'].css}
     }
   {/if}
   {#if config['status-website'].js}
+    {@html `
     <script>
-      {
-        config["status-website"].js;
-      }
-    </script>
+${config['status-website'].js}
+    </script>`
+    }
   {/if}
 </svelte:head>
 
