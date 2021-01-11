@@ -1,3 +1,14 @@
+## v1.7.9 (2021-01-11)
+
+[📝 Release notes](https://github.com/upptime/status-page/releases/tag/v1.7.9) · [💻 Compare](https://github.com/upptime/status-page/compare/v1.7.8...v1.7.9) · [🔖 Tag](https://github.com/upptime/status-page/tree/v1.7.9) · 🗄️ Archive ([zip](https://github.com/upptime/status-page/archive/v1.7.9.zip) · [tar.gz](https://github.com/upptime/status-page/archive/v1.7.9.tar.gz))
+
+### ⬆️ Dependency updates
+
+- [`f794c58`](https://github.com/upptime/status-page/commit/f794c58)  Bump @types/js-yaml from 3.12.5 to 4.0.0
+- [`3beef38`](https://github.com/upptime/status-page/commit/3beef38)  Bump rollup from 2.35.1 to 2.36.0
+- [`5f7bd29`](https://github.com/upptime/status-page/commit/5f7bd29)  Bump rollup from 2.36.0 to 2.36.1
+- [`c04f7c3`](https://github.com/upptime/status-page/commit/c04f7c3)  Bump @types/jest from 26.0.19 to 26.0.20
+
 ## v1.7.8 (2021-01-05)
 
 [📝 Release notes](https://github.com/upptime/status-page/releases/tag/v1.7.8) · [💻 Compare](https://github.com/upptime/status-page/compare/v1.7.7...v1.7.8) · [🔖 Tag](https://github.com/upptime/status-page/tree/v1.7.8) · 🗄️ Archive ([zip](https://github.com/upptime/status-page/archive/v1.7.8.zip) · [tar.gz](https://github.com/upptime/status-page/archive/v1.7.8.tar.gz))
