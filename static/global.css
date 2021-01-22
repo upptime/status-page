@@ -4,8 +4,6 @@ body {
     Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   line-height: 1.5;
   padding-bottom: 2.5rem;
-  color: #333;
-  background-color: #f0f7f7;
 }
 
 h1,
@@ -30,8 +28,6 @@ a {
 code {
   font-family: menlo, inconsolata, monospace;
   font-size: calc(1em - 2px);
-  color: #555;
-  background-color: #f0f0f0;
   padding: 0.2em 0.4em;
   border-radius: 2px;
 }
@@ -50,11 +46,10 @@ code {
 }
 
 article {
-  background-color: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 1rem 1.25rem;
   position: relative;
   border-radius: 0.2rem;
+  border: 1px solid;
 }
 article.link a::after {
   content: "";
@@ -77,13 +72,13 @@ h4 {
   font-weight: bold;
 }
 article.down {
-  border-left: 0.2rem solid #e74c3c;
+  border-left: 0.2rem solid;
 }
 article.degraded {
-  border-left: 0.2rem solid #f39c12 !important;
+  border-left: 0.2rem solid;
 }
 article.up {
-  border-left: 0.2rem solid #2ecc71;
+  border-left: 0.2rem solid;
 }
 
 .f {
@@ -97,20 +92,8 @@ section + h2 {
   margin-top: 2rem;
 }
 
-.tag.closed,
-.tag.up {
-  background-color: #16a085;
-}
-.tag.open,
-.tag.down {
-  background-color: #c0392b;
-}
-.tag.degraded {
-  background-color: #f39c12 !important;
-}
 .tag {
   display: inline-block;
-  color: #fff;
   padding: 0.33rem 0.5rem;
   border-radius: 0.2rem;
   font-size: 70%;
@@ -129,54 +112,16 @@ dl dd {
   margin: 0 0 1rem 0;
 }
 
-.dark body {
-  background-color: #001716;
-  color: #f0ffff;
-}
-.dark article {
-  background-color: #002b29;
-}
-
-article.down {
-  background-color: #ffdce3;
-}
-article.degraded {
-  background-color: #ffdfad;
-}
-article.good {
-  background-color: #dcffeb;
-  color: #003300;
-}
-
-.live-status article {
-  background-color: #fff;
-}
-
-.dark article {
-  background-color: #700000;
-}
-
-.changed + section .data {
-  background-color: #fdcb6e;
-}
-
 nav {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  background-color: #fff;
-}
-.dark nav {
-  background-color: #002b29;
+  border-bottom: 1px solid;
 }
 
 [aria-current] {
-  border-bottom: 2px solid #3498db;
+  border-bottom: 2px solid;
 }
 
 a.error-button {
-  border: 0.1rem solid rgba(0, 0, 0, 0.25);
-  background-color: #01a3a4;
-  color: #fff;
-  border-color: transparent;
+  border: 0.1rem solid;
 }
 
 .submit-button {
