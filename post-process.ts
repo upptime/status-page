@@ -7,6 +7,7 @@ export const postProcess = async () => {
   let config: {
     "status-website"?: {
       cname?: string;
+      robotsText?: string;
       baseUrl?: string;
     };
   } = load(await readFile(join("..", ".upptimerc.yml"), "utf8")) as any;
@@ -23,6 +24,13 @@ export const postProcess = async () => {
 
   if (config["status-website"] && config["status-website"].cname)
     await writeFile(join(".", "__sapper__", "export", "CNAME"), config["status-website"].cname);
+
+  if (config["status-website"] && config["status-website"].robotsText)
+    await writeFile(
+      join(".", "__sapper__", "export", "robots.txt"),
+      config["status-website"].robotsText
+    );
+
   await copyFile(
     join(".", "__sapper__", "export", "service-worker-index.html"),
     join(".", "__sapper__", "export", "404.html")
