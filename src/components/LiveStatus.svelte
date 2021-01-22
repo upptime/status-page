@@ -98,24 +98,26 @@
     <Loading />
   {:else if sites.length}
     {#each sites as site}
-      <article
-        class={`${site.status} link`}
-        style={`background-image: url("${graphsBaseUrl}/${site.slug}/response-time${
-          selected === "day"
-            ? "-day"
-            : selected === "week"
-            ? "-week"
-            : selected === "month"
-            ? "-month"
-            : selected === "year"
-            ? "-year"
-            : ""
-        }.png`}
-      >
+      <article class={`${site.status} link`}>
         <h4>
           <img class="icon" alt="" src={site.icon} />
           <a href={`${config.path}/history/${site.slug}`}>{site.name}</a>
         </h4>
+        <img
+          alt=""
+          class="graph"
+          src={`${graphsBaseUrl}/${site.slug}/response-time${
+            selected === "day"
+              ? "-day"
+              : selected === "week"
+              ? "-week"
+              : selected === "month"
+              ? "-month"
+              : selected === "year"
+              ? "-year"
+              : ""
+          }.png`}
+        />
         <div>
           {@html config.i18n.overallUptime.split("$UPTIME")[0]}
           <span class="data"
@@ -153,9 +155,20 @@
 
 <style>
   article {
-    background-size: contain;
-    background-position: top right;
-    background-repeat: no-repeat;
+    position: relative;
+  }
+  article > * {
+    position: relative;
+    z-index: 2;
+  }
+  article .graph {
+    z-index: 1;
+    height: 1rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
   }
   .icon {
     height: 1rem;

@@ -72,3 +72,7 @@ a.error-button {
   color: #002b29;
   border-color: transparent;
 }
+
+article .graph {
+  opacity: 0.25;
+}
