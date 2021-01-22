@@ -120,23 +120,23 @@ a.error-button {
 /* Theming */
 
 .submit-button {
-  background-color: #01a3a4;
+  background: #01a3a4;
   color: #fff;
   border-color: transparent;
 }
 
 body {
-  background-color: var(--body-background-color);
+  background: var(--body-background-color);
   color: var(--body-text-color);
 }
 
 code {
   color: var(--code-color);
-  background-color: var(--code-background-color);
+  background: var(--code-background-color);
 }
 
 article {
-  background-color: var(--card-background-color);
+  background: var(--card-background-color);
   border-color: var(--card-border-color);
 }
 
@@ -145,7 +145,7 @@ article.down {
   color: var(--down-color-color);
 }
 article.down-active {
-  background-color: var(--down-background-color);
+  background: var(--down-background-color);
   border-color: var(--down-border-left-color);
 }
 article.degraded {
@@ -162,23 +162,23 @@ article.up {
 }
 .tag.closed,
 .tag.up {
-  background-color: var(--tag-up-background-color) !important;
+  background: var(--tag-up-background-color) !important;
 }
 .tag.open,
 .tag.down {
-  background-color: var(--tag-down-background-color) !important;
+  background: var(--tag-down-background-color) !important;
 }
 .tag.degraded {
-  background-color: var(--tag-degraded-background-color) !important;
+  background: var(--tag-degraded-background-color) !important;
 }
 
 .changed + section .data {
-  background-color: var(--change-background-color);
+  background: var(--change-background-color);
 }
 
 nav {
   border-bottom-color: var(--nav-border-bottom-color);
-  background-color: var(--nav-background-color);
+  background: var(--nav-background-color);
 }
 
 [aria-current] {
@@ -187,12 +187,12 @@ nav {
 
 a.error-button {
   border-color: var(--error-button-border-color);
-  background-color: var(--error-button-background-color);
+  background: var(--error-button-background-color);
   color: var(--error-button-color);
 }
 
 .submit-button {
-  background-color: var(--submit-button-background-color);
+  background: var(--submit-button-background-color);
   color: var(--submit-button-color);
   border-color: var(--submit-button-border-color);
 }

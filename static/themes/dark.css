@@ -1,78 +1,26 @@
-body {
-  background-color: #001716;
-  color: #f0ffff;
-}
-
-code {
-  color: #555;
-  background-color: #f0f0f0;
-}
-
-article {
-  background-color: #002b29;
-  border-color: rgba(0, 0, 0, 0.1);
-}
-
-article.down {
-  border-left-color: #e74c3c;
-  background-color: #700000;
-}
-article.degraded {
-  border-left-color: #f39c12 !important;
-  background-color: #ffdfad;
-}
-article.up {
-  border-left-color: #2ecc71;
-}
-article.good {
-  background-color: #dcffeb;
-  color: #003300;
-}
-
-.tag {
-  color: #fff;
-}
-.tag.closed,
-.tag.up {
-  background-color: #16a085;
-}
-.tag.open,
-.tag.down {
-  background-color: #c0392b;
-}
-.tag.degraded {
-  background-color: #f39c12 !important;
-}
-
-.changed + section .data {
-  background-color: #fdcb6e;
-}
-
-.live-status article {
-  background-color: #002b29;
-}
-
-nav {
-  border-bottom-color: rgba(0, 0, 0, 0.1);
-  background-color: #002b29;
-}
-
-[aria-current] {
-  border-bottom-color: #3498db;
-}
-
-a.error-button {
-  border-color: rgba(0, 0, 0, 0.25);
-  background-color: #01a3a4;
-  color: #002b29;
-}
-
-.submit-button {
-  background-color: #01a3a4;
-  color: #002b29;
-  border-color: transparent;
-}
-
-article .graph {
-  opacity: 0.25;
+:root {
+  --body-background-color: #001716;
+  --body-text-color: #f0ffff;
+  --card-background-color: #002b29;
+  --nav-background-color: #002b29;
+  --nav-border-bottom-color: #015450;
+  --nav-current-border-bottom-color: #1abc9c;
+  --card-border-color: #015450;
+  --down-border-left-color: #eb3b5a;
+  --down-background-color: #6b1020;
+  --degraded-border-left-color: #f7b731;
+  --up-border-left-color: #20bf6b;
+  --tag-color: #002b29;
+  --tag-up-background-color: #20bf6b;
+  --tag-down-background-color: #eb3b5a;
+  --tag-degraded-background-color: #f7b731;
+  --change-background-color: #f7b731;
+  --error-button-border-color: #1a46ad;
+  --error-button-background-color: #3867d6;
+  --error-button-color: #ffffff;
+  --submit-button-border-color: #1a46ad;
+  --submit-button-background-color: #3867d6;
+  --submit-button-color: #ffffff;
+  --graph-opacity: 1;
+  --graph-filter: none;
 }
