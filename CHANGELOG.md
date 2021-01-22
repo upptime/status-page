@@ -1,3 +1,39 @@
+## v1.8.0 (2021-01-22)
+
+[📝 Release notes](https://github.com/upptime/status-page/releases/tag/v1.8.0) · [💻 Compare](https://github.com/upptime/status-page/compare/v1.7.11...v1.8.0) · [🔖 Tag](https://github.com/upptime/status-page/tree/v1.8.0) · 🗄️ Archive ([zip](https://github.com/upptime/status-page/archive/v1.8.0.zip) · [tar.gz](https://github.com/upptime/status-page/archive/v1.8.0.tar.gz))
+
+### ✨ New features
+
+- [`17aa659`](https://github.com/upptime/status-page/commit/17aa659)  Add support for multiple themes
+- [`ecfada6`](https://github.com/upptime/status-page/commit/ecfada6)  Add themes
+- [`6ec7d61`](https://github.com/upptime/status-page/commit/6ec7d61)  Add support for robots.txt
+
+### ♻️ Updates
+
+- [`f7a28bc`](https://github.com/upptime/status-page/commit/f7a28bc)  Move theme styles to global.css
+- [`527499a`](https://github.com/upptime/status-page/commit/527499a)  Add options hideNavLogo, hideNavTitle
+- [`f6f12a0`](https://github.com/upptime/status-page/commit/f6f12a0)  Use image instead of background image
+- [`4f826a7`](https://github.com/upptime/status-page/commit/4f826a7)  Use variables for themes
+
+### 💄 Interface changes
+
+- [`44c169a`](https://github.com/upptime/status-page/commit/44c169a)  Add dark theme
+- [`eb50ba9`](https://github.com/upptime/status-page/commit/eb50ba9)  Add ocean theme
+
+### ⬆️ Dependency updates
+
+- [`fc53969`](https://github.com/upptime/status-page/commit/fc53969)  Bump semantic-release from 17.3.2 to 17.3.3
+- [`372bf6c`](https://github.com/upptime/status-page/commit/372bf6c)  Bump rollup from 2.36.1 to 2.36.2
+- [`6f508bf`](https://github.com/upptime/status-page/commit/6f508bf)  Bump @rollup/plugin-node-resolve from 11.0.1 to 11.1.0
+- [`ff64ff7`](https://github.com/upptime/status-page/commit/ff64ff7)  Bump @semantic-release/npm from 7.0.9 to 7.0.10
+- [`6cb8d3d`](https://github.com/upptime/status-page/commit/6cb8d3d)  Bump rollup from 2.36.2 to 2.37.0
+- [`708aeb8`](https://github.com/upptime/status-page/commit/708aeb8)  Bump fs-extra from 9.0.1 to 9.1.0
+- [`b13c79b`](https://github.com/upptime/status-page/commit/b13c79b)  Bump semantic-release from 17.3.3 to 17.3.4
+- [`a16a467`](https://github.com/upptime/status-page/commit/a16a467)  Bump cypress from 6.2.1 to 6.3.0
+- [`afe5e54`](https://github.com/upptime/status-page/commit/afe5e54)  Bump semantic-release from 17.3.4 to 17.3.6
+- [`4f2ff6c`](https://github.com/upptime/status-page/commit/4f2ff6c)  Bump rollup from 2.37.0 to 2.37.1
+- [`b0dfa2e`](https://github.com/upptime/status-page/commit/b0dfa2e)  Bump @octokit/rest from 18.0.12 to 18.0.13
+
 ## v1.7.11 (2021-01-18)
 
 [📝 Release notes](https://github.com/upptime/status-page/releases/tag/v1.7.11) · [💻 Compare](https://github.com/upptime/status-page/compare/v1.7.10...v1.7.11) · [🔖 Tag](https://github.com/upptime/status-page/tree/v1.7.11) · 🗄️ Archive ([zip](https://github.com/upptime/status-page/archive/v1.7.11.zip) · [tar.gz](https://github.com/upptime/status-page/archive/v1.7.11.tar.gz))
