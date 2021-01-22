@@ -3,19 +3,48 @@
   export let segment;
 </script>
 
+<nav>
+  <div class="container">
+    {#if config["status-website"] && config["status-website"].logoUrl}
+      <div>
+        <a href={config["status-website"].logoHref || config.path} class="logo">
+          <img alt="" src={config["status-website"].logoUrl} />
+          <div>{config["status-website"].name}</div>
+        </a>
+      </div>
+    {/if}
+    <ul>
+      {#if config["status-website"] && config["status-website"].navbar}
+        {#each config["status-website"].navbar as item}
+          <li>
+            <a
+              aria-current={segment === (item.href === "/" ? undefined : item.href)
+                ? "page"
+                : undefined}
+              href={item.href.replace("$OWNER", config.owner).replace("$REPO", config.repo)}>
+              {item.title}
+            </a>
+          </li>
+        {/each}
+      {/if}
+      {#if config["status-website"] && config["status-website"].navbarGitHub && !config["status-website"].navbar}
+        <li>
+          <a href={`https://github.com/${config.owner}/${config.repo}`}>
+            {config.i18n.navGitHub}
+          </a>
+        </li>
+      {/if}
+    </ul>
+  </div>
+</nav>
+
 <style>
   nav {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     font-weight: 300;
     padding: 0 1em;
-    background-color: #fff;
     margin-bottom: 2rem;
     white-space: nowrap;
     overflow-x: auto;
-  }
-
-  :global(.dark) nav {
-    background-color: #002b29;
   }
 
   ul {
@@ -25,10 +54,6 @@
     list-style: none;
     align-items: center;
     justify-content: center;
-  }
-
-  [aria-current] {
-    border-bottom: 2px solid #3498db;
   }
 
   a {
@@ -56,36 +81,3 @@
     align-items: center;
   }
 </style>
-
-<nav>
-  <div class="container">
-    {#if config['status-website'] && config['status-website'].logoUrl}
-      <div>
-        <a href={config['status-website'].logoHref || config.path} class="logo">
-          <img alt="" src={config['status-website'].logoUrl} />
-          <div>{config['status-website'].name}</div>
-        </a>
-      </div>
-    {/if}
-    <ul>
-      {#if config['status-website'] && config['status-website'].navbar}
-        {#each config['status-website'].navbar as item}
-          <li>
-            <a
-              aria-current={segment === (item.href === '/' ? undefined : item.href) ? 'page' : undefined}
-              href={item.href.replace('$OWNER', config.owner).replace('$REPO', config.repo)}>
-              {item.title}
-            </a>
-          </li>
-        {/each}
-      {/if}
-      {#if config['status-website'] && config['status-website'].navbarGitHub && !config['status-website'].navbar}
-        <li>
-          <a href={`https://github.com/${config.owner}/${config.repo}`}>
-            {config.i18n.navGitHub}
-          </a>
-        </li>
-      {/if}
-    </ul>
-  </div>
-</nav>

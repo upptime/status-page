@@ -47,18 +47,30 @@
   });
 </script>
 
-<style>
-</style>
-
 <section bind:clientWidth={width}>
   {#if loading}
     <Loading />
   {:else if data.length}
     <h2>{config.i18n.sevelDayResponseTime}</h2>
     <Line
-      data={{ labels, datasets: [{ label: config.i18n.responseTimeMs, backgroundColor: config.graphBackgroundColor || '#89e0cf', borderColor: config.graphBorderColor || '#1abc9c', data }] }}
+      data={{
+        labels,
+        datasets: [
+          {
+            label: config.i18n.responseTimeMs,
+            backgroundColor: config.graphBackgroundColor || "#89e0cf",
+            borderColor: config.graphBorderColor || "#1abc9c",
+            data,
+          },
+        ],
+      }}
       {width}
       height={400}
-      options={{ responsive: true, maintainAspectRatio: true, scales: { xAxes: [{ display: false, gridLines: { display: false } }] } }} />
+      options={{
+        responsive: true,
+        maintainAspectRatio: true,
+        scales: { xAxes: [{ display: false, gridLines: { display: false } }] },
+      }}
+    />
   {/if}
 </section>

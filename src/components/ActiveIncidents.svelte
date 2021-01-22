@@ -39,25 +39,6 @@
   });
 </script>
 
-<style>
-  section {
-    margin-bottom: 2rem;
-  }
-  article {
-    background-color: #ffdce3;
-  }
-  article.degraded {
-    background-color: #ffdfad;
-  }
-  article.good {
-    background-color: #dcffeb;
-    color: #003300;
-  }
-  :global(.dark) article {
-    background-color: #700000;
-  }
-</style>
-
 {#if !incidents.length && !loading}
   <article class="good">✅ &nbsp; {config.i18n.allSystemsOperational}</article>
 {/if}
@@ -71,7 +52,7 @@
       <article class="down link {incident.title.includes('degraded') ? 'degraded' : ''}">
         <div class="f">
           <div>
-            <h4>{incident.title.replace('🛑', '').replace('⚠️', '').trim()}</h4>
+            <h4>{incident.title.replace("🛑", "").replace("⚠️", "").trim()}</h4>
             <div>
               {config.i18n.activeIncidentSummary
                 .replace(/\$DATE/g, new Date(incident.created_at).toLocaleString())
@@ -88,3 +69,9 @@
     {/each}
   {/if}
 </section>
+
+<style>
+  section {
+    margin-bottom: 2rem;
+  }
+</style>

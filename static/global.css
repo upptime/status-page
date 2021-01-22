@@ -136,3 +136,51 @@ dl dd {
 .dark article {
   background-color: #002b29;
 }
+
+article.down {
+  background-color: #ffdce3;
+}
+article.degraded {
+  background-color: #ffdfad;
+}
+article.good {
+  background-color: #dcffeb;
+  color: #003300;
+}
+
+.live-status article {
+  background-color: #fff;
+}
+
+.dark article {
+  background-color: #700000;
+}
+
+.changed + section .data {
+  background-color: #fdcb6e;
+}
+
+nav {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+.dark nav {
+  background-color: #002b29;
+}
+
+[aria-current] {
+  border-bottom: 2px solid #3498db;
+}
+
+a.error-button {
+  border: 0.1rem solid rgba(0, 0, 0, 0.25);
+  background-color: #01a3a4;
+  color: #fff;
+  border-color: transparent;
+}
+
+.submit-button {
+  background-color: #01a3a4;
+  color: #fff;
+  border-color: transparent;
+}

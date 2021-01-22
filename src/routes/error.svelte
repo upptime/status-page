@@ -2,22 +2,6 @@
   import config from "../data/config.json";
 </script>
 
-<style>
-  p.lead {
-    font-size: 110%;
-  }
-  a.button {
-    font: inherit;
-    padding: 0.5rem 1rem;
-    border: 0.1rem solid rgba(0, 0, 0, 0.25);
-    border-radius: 0.2rem;
-    background-color: #01a3a4;
-    text-decoration: none;
-    color: #fff;
-    border-color: transparent;
-  }
-</style>
-
 <svelte:head>
   <title>{config.i18n.errorTitle}</title>
 </svelte:head>
@@ -28,4 +12,16 @@
 
 <p>{config.i18n.errorText}</p>
 
-<a href={config.path} class="button">{config.i18n.errorHome}</a>
+<a href={config.path} class="error-button">{config.i18n.errorHome}</a>
+
+<style>
+  p.lead {
+    font-size: 110%;
+  }
+  a.error-button {
+    font: inherit;
+    padding: 0.5rem 1rem;
+    border-radius: 0.2rem;
+    text-decoration: none;
+  }
+</style>
