@@ -32,7 +32,7 @@
   {/if}
   <link
     rel="stylesheet"
-    href={`/themes/${(config["status-website"] || {}).theme || "light"}.css`}
+    href={`/themes/${(config["status-website"] || {}).theme || "dark"}.css`}
   />
   {#if config['status-website'].css}
     {@html `<style>${config['status-website'].css}</style>`}

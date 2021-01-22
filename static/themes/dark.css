@@ -1,15 +1,74 @@
-.dark body {
+body {
   background-color: #001716;
   color: #f0ffff;
 }
-.dark article {
-  background-color: #002b29;
+
+code {
+  color: #555;
+  background-color: #f0f0f0;
 }
 
-.dark article {
+article {
+  background-color: #002b29;
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+article.down {
+  border-left-color: #e74c3c;
   background-color: #700000;
 }
+article.degraded {
+  border-left-color: #f39c12 !important;
+  background-color: #ffdfad;
+}
+article.up {
+  border-left-color: #2ecc71;
+}
+article.good {
+  background-color: #dcffeb;
+  color: #003300;
+}
 
-.dark nav {
+.tag {
+  color: #fff;
+}
+.tag.closed,
+.tag.up {
+  background-color: #16a085;
+}
+.tag.open,
+.tag.down {
+  background-color: #c0392b;
+}
+.tag.degraded {
+  background-color: #f39c12 !important;
+}
+
+.changed + section .data {
+  background-color: #fdcb6e;
+}
+
+.live-status article {
   background-color: #002b29;
+}
+
+nav {
+  border-bottom-color: rgba(0, 0, 0, 0.1);
+  background-color: #002b29;
+}
+
+[aria-current] {
+  border-bottom-color: #3498db;
+}
+
+a.error-button {
+  border-color: rgba(0, 0, 0, 0.25);
+  background-color: #01a3a4;
+  color: #002b29;
+}
+
+.submit-button {
+  background-color: #01a3a4;
+  color: #002b29;
+  border-color: transparent;
 }
