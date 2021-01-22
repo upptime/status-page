@@ -1,0 +1,78 @@
+body {
+  background-color: #0c2461;
+  color: #f0ffff;
+}
+
+code {
+  color: #555;
+  background-color: #f0f0f0;
+}
+
+article {
+  background-color: #1e3799;
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+article.down {
+  border-left-color: #e74c3c;
+  background-color: #700000;
+}
+article.degraded {
+  border-left-color: #f39c12 !important;
+  background-color: #ffdfad;
+}
+article.up {
+  border-left-color: #2ecc71;
+}
+article.good {
+  background-color: #dcffeb;
+  color: #003300;
+}
+
+.tag {
+  color: #fff;
+}
+.tag.closed,
+.tag.up {
+  background-color: #16a085;
+}
+.tag.open,
+.tag.down {
+  background-color: #c0392b;
+}
+.tag.degraded {
+  background-color: #f39c12 !important;
+}
+
+.changed + section .data {
+  background-color: #fdcb6e;
+}
+
+.live-status article {
+  background-color: #1e3799;
+}
+
+nav {
+  border-bottom-color: rgba(0, 0, 0, 0.1);
+  background-color: #1e3799;
+}
+
+[aria-current] {
+  border-bottom-color: #3498db;
+}
+
+a.error-button {
+  border-color: rgba(0, 0, 0, 0.25);
+  background-color: #01a3a4;
+  color: #1e3799;
+}
+
+.submit-button {
+  background-color: #01a3a4;
+  color: #1e3799;
+  border-color: transparent;
+}
+
+article .graph {
+  opacity: 0.25;
+}
