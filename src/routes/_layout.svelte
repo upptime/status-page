@@ -7,6 +7,10 @@
 
 <svelte:head>
   <link
+    rel="stylesheet"
+    href={`/themes/${(config["status-website"] || {}).theme || "light"}.css`}
+  />
+  <link
     rel="icon"
     type="image/svg"
     href={(config["status-website"] || {}).faviconSvg ||
@@ -30,10 +34,6 @@
       <link rel={link.rel} href={link.href} media={link.media} />
     {/each}
   {/if}
-  <link
-    rel="stylesheet"
-    href={`/themes/${(config["status-website"] || {}).theme || "light"}.css`}
-  />
   {#if config['status-website'].css}
     {@html `<style>${config['status-website'].css}</style>`}
   {/if}

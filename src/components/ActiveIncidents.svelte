@@ -40,7 +40,7 @@
 </script>
 
 {#if !incidents.length && !loading}
-  <article class="good">✅ &nbsp; {config.i18n.allSystemsOperational}</article>
+  <article class="up">✅ &nbsp; {config.i18n.allSystemsOperational}</article>
 {/if}
 
 <section>
@@ -49,7 +49,9 @@
   {:else if incidents.length}
     <h2>{config.i18n.activeIncidents}</h2>
     {#each incidents as incident}
-      <article class="down link {incident.title.includes('degraded') ? 'degraded' : ''}">
+      <article
+        class="down down-active link {incident.title.includes('degraded') ? 'degraded' : ''}"
+      >
         <div class="f">
           <div>
             <h4>{incident.title.replace("🛑", "").replace("⚠️", "").trim()}</h4>
