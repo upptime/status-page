@@ -6,6 +6,9 @@
 </script>
 
 <svelte:head>
+  {#if config["status-website"].customHeadHtml}
+    {@html config["status-website"].customHeadHtml}
+  {/if}
   <link
     rel="stylesheet"
     href={`/themes/${(config["status-website"] || {}).theme || "light"}.css`}
@@ -34,6 +37,11 @@
       <link rel={link.rel} href={link.href} media={link.media} />
     {/each}
   {/if}
+  {#if config["status-website"].metaTags}
+    {#each config["status-website"].metaTags as link}
+      <meta name={link.name} content={link.content} />
+    {/each}
+  {/if}
   {#if config['status-website'].css}
     {@html `<style>${config['status-website'].css}</style>`}
   {/if}
@@ -41,6 +49,10 @@
     {@html `<script>${config['status-website'].js}</script>`}
   {/if}
 </svelte:head>
+
+{#if config["status-website"].customBodyHtml}
+  {@html config["status-website"].customBodyHtml}
+{/if}
 
 <Nav {segment} />
 
