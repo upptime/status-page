@@ -1,6 +1,6 @@
 {
   "name": "@upptime/status-page",
-  "version": "1.8.0",
+  "version": "1.9.0",
   "description": "Upptime status page website",
   "main": "dist/index.js",
   "scripts": {

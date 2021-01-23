@@ -1,3 +1,11 @@
+## v1.9.0 (2021-01-23)
+
+[📝 Release notes](https://github.com/upptime/status-page/releases/tag/v1.9.0) · [💻 Compare](https://github.com/upptime/status-page/compare/v1.8.0...v1.9.0) · [🔖 Tag](https://github.com/upptime/status-page/tree/v1.9.0) · 🗄️ Archive ([zip](https://github.com/upptime/status-page/archive/v1.9.0.zip) · [tar.gz](https://github.com/upptime/status-page/archive/v1.9.0.tar.gz))
+
+### ✨ New features
+
+- [`2b56dbd`](https://github.com/upptime/status-page/commit/2b56dbd)  Add support for custom HTML and meta tags
+
 ## v1.8.0 (2021-01-22)
 
 [📝 Release notes](https://github.com/upptime/status-page/releases/tag/v1.8.0) · [💻 Compare](https://github.com/upptime/status-page/compare/v1.7.11...v1.8.0) · [🔖 Tag](https://github.com/upptime/status-page/tree/v1.8.0) · 🗄️ Archive ([zip](https://github.com/upptime/status-page/archive/v1.8.0.zip) · [tar.gz](https://github.com/upptime/status-page/archive/v1.8.0.tar.gz))
