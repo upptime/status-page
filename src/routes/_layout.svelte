@@ -6,11 +6,11 @@
 </script>
 
 <svelte:head>
-  {#if config["status-website"].customHeadHtml}
-    {@html config["status-website"].customHeadHtml}
+  {#if (config["status-website"] || {}).customHeadHtml}
+    {@html (config["status-website"] || {}).customHeadHtml}
   {/if}
-  {#if config["status-website"].themeUrl}
-    <link rel="stylesheet" href={config["status-website"].themeUrl} />
+  {#if (config["status-website"] || {}).themeUrl}
+    <link rel="stylesheet" href={(config["status-website"] || {}).themeUrl} />
   {:else}
     <link
       rel="stylesheet"
@@ -30,20 +30,20 @@
     type="image/png"
     href={(config["status-website"] || {}).favicon || `/logo-192.png`}
   />
-  {#if config["status-website"].scripts}
-    {#each config["status-website"].scripts as script}<script
+  {#if (config["status-website"] || {}).scripts}
+    {#each (config["status-website"] || {}).scripts as script}<script
         src={script.src}
         async={!!script.async}
         defer={!!script.async}>
       </script>{/each}
   {/if}
-  {#if config["status-website"].links}
-    {#each config["status-website"].links as link}
+  {#if (config["status-website"] || {}).links}
+    {#each (config["status-website"] || {}).links as link}
       <link rel={link.rel} href={link.href} media={link.media} />
     {/each}
   {/if}
-  {#if config["status-website"].metaTags}
-    {#each config["status-website"].metaTags as link}
+  {#if (config["status-website"] || {}).metaTags}
+    {#each (config["status-website"] || {}).metaTags as link}
       <meta name={link.name} content={link.content} />
     {/each}
   {/if}
@@ -55,8 +55,8 @@
   {/if}
 </svelte:head>
 
-{#if config["status-website"].customBodyHtml}
-  {@html config["status-website"].customBodyHtml}
+{#if (config["status-website"] || {}).customBodyHtml}
+  {@html (config["status-website"] || {}).customBodyHtml}
 {/if}
 
 <Nav {segment} />
