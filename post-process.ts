@@ -1,4 +1,4 @@
-import { readFile, writeFile, copyFile, copy, remove } from "fs-extra";
+import { readFile, writeFile, copyFile, copy, remove, pathExists } from "fs-extra";
 import { load } from "js-yaml";
 import { join } from "path";
 import { execSync } from "child_process";
@@ -21,6 +21,9 @@ export const postProcess = async () => {
     await copy(join(".", "__sapper__", "export", baseUrl), join(".", "__sapper__", "export"));
     await remove(join(".", "__sapper__", "export", baseUrl));
   }
+
+  if (pathExists(join(".", "static")))
+    await copy(join(".", "static"), join("__sapper__", "export"), { recursive: true });
 
   if (config["status-website"] && config["status-website"].cname)
     await writeFile(join(".", "__sapper__", "export", "CNAME"), config["status-website"].cname);
