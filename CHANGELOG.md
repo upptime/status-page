@@ -1,3 +1,11 @@
+## v1.10.0 (2021-01-24)
+
+[📝 Release notes](https://github.com/upptime/status-page/releases/tag/v1.10.0) · [💻 Compare](https://github.com/upptime/status-page/compare/v1.9.1...v1.10.0) · [🔖 Tag](https://github.com/upptime/status-page/tree/v1.10.0) · 🗄️ Archive ([zip](https://github.com/upptime/status-page/archive/v1.10.0.zip) · [tar.gz](https://github.com/upptime/status-page/archive/v1.10.0.tar.gz))
+
+### ✨ New features
+
+- [`2740579`](https://github.com/upptime/status-page/commit/2740579)  Add support for static directory
+
 ## v1.9.1 (2021-01-24)
 
 [📝 Release notes](https://github.com/upptime/status-page/releases/tag/v1.9.1) · [💻 Compare](https://github.com/upptime/status-page/compare/v1.9.0...v1.9.1) · [🔖 Tag](https://github.com/upptime/status-page/tree/v1.9.1) · 🗄️ Archive ([zip](https://github.com/upptime/status-page/archive/v1.9.1.zip) · [tar.gz](https://github.com/upptime/status-page/archive/v1.9.1.tar.gz))
