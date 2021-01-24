@@ -1,3 +1,11 @@
+## v1.11.1 (2021-01-24)
+
+[📝 Release notes](https://github.com/upptime/status-page/releases/tag/v1.11.1) · [💻 Compare](https://github.com/upptime/status-page/compare/v1.11.0...v1.11.1) · [🔖 Tag](https://github.com/upptime/status-page/tree/v1.11.1) · 🗄️ Archive ([zip](https://github.com/upptime/status-page/archive/v1.11.1.zip) · [tar.gz](https://github.com/upptime/status-page/archive/v1.11.1.tar.gz))
+
+### ♻️ Updates
+
+- [`f99f965`](https://github.com/upptime/status-page/commit/f99f965)  Change static -&gt; assets
+
 ## v1.11.0 (2021-01-24)
 
 [📝 Release notes](https://github.com/upptime/status-page/releases/tag/v1.11.0) · [💻 Compare](https://github.com/upptime/status-page/compare/v1.10.0...v1.11.0) · [🔖 Tag](https://github.com/upptime/status-page/tree/v1.11.0) · 🗄️ Archive ([zip](https://github.com/upptime/status-page/archive/v1.11.0.zip) · [tar.gz](https://github.com/upptime/status-page/archive/v1.11.0.tar.gz))
