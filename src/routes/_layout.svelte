@@ -9,10 +9,14 @@
   {#if config["status-website"].customHeadHtml}
     {@html config["status-website"].customHeadHtml}
   {/if}
-  <link
-    rel="stylesheet"
-    href={`${config.path}/themes/${(config["status-website"] || {}).theme || "light"}.css`}
-  />
+  {#if config["status-website"].themeUrl}
+    <link rel="stylesheet" href={config["status-website"].themeUrl} />
+  {:else}
+    <link
+      rel="stylesheet"
+      href={`${config.path}/themes/${(config["status-website"] || {}).theme || "light"}.css`}
+    />
+  {/if}
   <link rel="stylesheet" href={`${config.path}/global.css`} />
   <link
     rel="icon"
