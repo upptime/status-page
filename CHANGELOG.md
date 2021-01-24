@@ -1,3 +1,12 @@
+## v1.9.1 (2021-01-24)
+
+[📝 Release notes](https://github.com/upptime/status-page/releases/tag/v1.9.1) · [💻 Compare](https://github.com/upptime/status-page/compare/v1.9.0...v1.9.1) · [🔖 Tag](https://github.com/upptime/status-page/tree/v1.9.1) · 🗄️ Archive ([zip](https://github.com/upptime/status-page/archive/v1.9.1.zip) · [tar.gz](https://github.com/upptime/status-page/archive/v1.9.1.tar.gz))
+
+### 🐛 Bug fixes
+
+- [`cc89673`](https://github.com/upptime/status-page/commit/cc89673)  Fix paths to theme (fixed upptime/upptime#228)
+(Issues: [`upptime/upptime#228`](https://github.com/upptime/upptime/issues/228))
+
 ## v1.9.0 (2021-01-23)
 
 [📝 Release notes](https://github.com/upptime/status-page/releases/tag/v1.9.0) · [💻 Compare](https://github.com/upptime/status-page/compare/v1.8.0...v1.9.0) · [🔖 Tag](https://github.com/upptime/status-page/tree/v1.9.0) · 🗄️ Archive ([zip](https://github.com/upptime/status-page/archive/v1.9.0.zip) · [tar.gz](https://github.com/upptime/status-page/archive/v1.9.0.tar.gz))
