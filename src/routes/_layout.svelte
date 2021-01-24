@@ -11,8 +11,9 @@
   {/if}
   <link
     rel="stylesheet"
-    href={`/themes/${(config["status-website"] || {}).theme || "light"}.css`}
+    href={`${config.path}/themes/${(config["status-website"] || {}).theme || "light"}.css`}
   />
+  <link rel="stylesheet" href={`${config.path}/global.css`} />
   <link
     rel="icon"
     type="image/svg"
