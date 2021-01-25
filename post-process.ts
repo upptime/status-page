@@ -22,8 +22,10 @@ export const postProcess = async () => {
     await remove(join(".", "__sapper__", "export", baseUrl));
   }
 
-  if (pathExists(join(".", "assets")))
-    await copy(join(".", "assets"), join("__sapper__", "export"), { recursive: true });
+  try {
+    if (await pathExists(join(".", "assets")))
+      await copy(join(".", "assets"), join("__sapper__", "export"), { recursive: true });
+  } catch (error) {}
 
   if (config["status-website"] && config["status-website"].cname)
     await writeFile(join(".", "__sapper__", "export", "CNAME"), config["status-website"].cname);
