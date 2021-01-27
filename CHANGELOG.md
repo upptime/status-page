@@ -1,3 +1,20 @@
+## v1.11.3 (2021-01-27)
+
+[📝 Release notes](https://github.com/upptime/status-page/releases/tag/v1.11.3) · [💻 Compare](https://github.com/upptime/status-page/compare/v1.11.2...v1.11.3) · [🔖 Tag](https://github.com/upptime/status-page/tree/v1.11.3) · 🗄️ Archive ([zip](https://github.com/upptime/status-page/archive/v1.11.3.zip) · [tar.gz](https://github.com/upptime/status-page/archive/v1.11.3.tar.gz))
+
+### ♻️ Updates
+
+- [`883b8df`](https://github.com/upptime/status-page/commit/883b8df)  Don&#x27;t allow demo.upptime.js.org to others
+
+### ⬆️ Dependency updates
+
+- [`082b095`](https://github.com/upptime/status-page/commit/082b095)  Bump semantic-release from 17.3.6 to 17.3.7
+- [`f00a1fd`](https://github.com/upptime/status-page/commit/f00a1fd)  Bump @octokit/rest from 18.0.13 to 18.0.14
+- [`3100ae0`](https://github.com/upptime/status-page/commit/3100ae0)  Bump sapper from 0.28.10 to 0.29.0
+- [`bb0446d`](https://github.com/upptime/status-page/commit/bb0446d)  Bump rollup from 2.37.1 to 2.38.0
+- [`1153cf5`](https://github.com/upptime/status-page/commit/1153cf5)  Bump svelte from 3.31.2 to 3.32.0
+- [`c093355`](https://github.com/upptime/status-page/commit/c093355)  Bump @octokit/rest from 18.0.14 to 18.0.15
+
 ## v1.11.2 (2021-01-25)
 
 [📝 Release notes](https://github.com/upptime/status-page/releases/tag/v1.11.2) · [💻 Compare](https://github.com/upptime/status-page/compare/v1.11.1...v1.11.2) · [🔖 Tag](https://github.com/upptime/status-page/tree/v1.11.2) · 🗄️ Archive ([zip](https://github.com/upptime/status-page/archive/v1.11.2.zip) · [tar.gz](https://github.com/upptime/status-page/archive/v1.11.2.tar.gz))
