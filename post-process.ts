@@ -27,8 +27,22 @@ export const postProcess = async () => {
       await copy(join(".", "assets"), join("__sapper__", "export"), { recursive: true });
   } catch (error) {}
 
-  if (config["status-website"] && config["status-website"].cname)
+  const [owner, repo] = (process.env.GITHUB_REPOSITORY || "").split("/");
+
+  if (
+    config["status-website"] &&
+    config["status-website"].cname &&
+    config["status-website"].cname !== "demo.upptime.js.org"
+  )
     await writeFile(join(".", "__sapper__", "export", "CNAME"), config["status-website"].cname);
+  else if (
+    config["status-website"] &&
+    config["status-website"].cname &&
+    config["status-website"].cname === "demo.upptime.js.org" &&
+    owner === "upptime" &&
+    repo === "upptime"
+  )
+    await writeFile(join(".", "__sapper__", "export", "CNAME"), "demo.upptime.js.org");
 
   if (config["status-website"] && config["status-website"].robotsText)
     await writeFile(
