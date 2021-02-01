@@ -1,3 +1,11 @@
+## v1.11.4 (2021-02-01)
+
+[📝 Release notes](https://github.com/upptime/status-page/releases/tag/v1.11.4) · [💻 Compare](https://github.com/upptime/status-page/compare/v1.11.3...v1.11.4) · [🔖 Tag](https://github.com/upptime/status-page/tree/v1.11.4) · 🗄️ Archive ([zip](https://github.com/upptime/status-page/archive/v1.11.4.zip) · [tar.gz](https://github.com/upptime/status-page/archive/v1.11.4.tar.gz))
+
+### ⬆️ Dependency updates
+
+- [`0e837cc`](https://github.com/upptime/status-page/commit/0e837cc)  Bump rollup from 2.38.0 to 2.38.1
+
 ## v1.11.3 (2021-01-27)
 
 [📝 Release notes](https://github.com/upptime/status-page/releases/tag/v1.11.3) · [💻 Compare](https://github.com/upptime/status-page/compare/v1.11.2...v1.11.3) · [🔖 Tag](https://github.com/upptime/status-page/tree/v1.11.3) · 🗄️ Archive ([zip](https://github.com/upptime/status-page/archive/v1.11.3.zip) · [tar.gz](https://github.com/upptime/status-page/archive/v1.11.3.tar.gz))
