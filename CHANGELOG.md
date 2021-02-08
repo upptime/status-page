@@ -1,3 +1,27 @@
+## v1.11.5 (2021-02-08)
+
+[📝 Release notes](https://github.com/upptime/status-page/releases/tag/v1.11.5) · [💻 Compare](https://github.com/upptime/status-page/compare/v1.11.4...v1.11.5) · [🔖 Tag](https://github.com/upptime/status-page/tree/v1.11.5) · 🗄️ Archive ([zip](https://github.com/upptime/status-page/archive/v1.11.5.zip) · [tar.gz](https://github.com/upptime/status-page/archive/v1.11.5.tar.gz))
+
+### ⬆️ Dependency updates
+
+- [`37c4e61`](https://github.com/upptime/status-page/commit/37c4e61)  Bump svelte from 3.32.0 to 3.32.1
+- [`99a8575`](https://github.com/upptime/status-page/commit/99a8575)  Bump ts-jest from 26.4.4 to 26.5.0
+- [`6b6b286`](https://github.com/upptime/status-page/commit/6b6b286)  Bump sirv from 1.0.10 to 1.0.11
+- [`c710562`](https://github.com/upptime/status-page/commit/c710562)  Bump rollup from 2.38.1 to 2.38.3
+- [`2621c5d`](https://github.com/upptime/status-page/commit/2621c5d)  Bump @rollup/plugin-node-resolve from 11.1.0 to 11.1.1
+- [`f8be5cd`](https://github.com/upptime/status-page/commit/f8be5cd)  Bump @rollup/plugin-babel from 5.2.2 to 5.2.3
+- [`0a0c9d4`](https://github.com/upptime/status-page/commit/0a0c9d4)  Bump @rollup/plugin-commonjs from 17.0.0 to 17.1.0
+- [`9687f1c`](https://github.com/upptime/status-page/commit/9687f1c)  Bump rollup from 2.38.3 to 2.38.4
+- [`a820122`](https://github.com/upptime/status-page/commit/a820122)  Bump cypress from 6.3.0 to 6.4.0
+- [`7b7dd10`](https://github.com/upptime/status-page/commit/7b7dd10)  Bump @babel/core from 7.12.10 to 7.12.13
+- [`3850296`](https://github.com/upptime/status-page/commit/3850296)  Bump @octokit/rest from 18.0.15 to 18.1.0
+- [`a88591f`](https://github.com/upptime/status-page/commit/a88591f)  Bump @babel/runtime from 7.12.5 to 7.12.13
+- [`ddd370f`](https://github.com/upptime/status-page/commit/ddd370f)  Bump @babel/preset-env from 7.12.11 to 7.12.13
+- [`2e9c5aa`](https://github.com/upptime/status-page/commit/2e9c5aa)  Bump @babel/plugin-transform-runtime from 7.12.10 to 7.12.13
+- [`3494db2`](https://github.com/upptime/status-page/commit/3494db2)  Bump sapper from 0.29.0 to 0.29.1
+- [`e901f4c`](https://github.com/upptime/status-page/commit/e901f4c)  Bump @babel/plugin-transform-runtime from 7.12.13 to 7.12.15
+- [`69c8067`](https://github.com/upptime/status-page/commit/69c8067)  Bump rollup from 2.38.4 to 2.38.5
+
 ## v1.11.4 (2021-02-01)
 
 [📝 Release notes](https://github.com/upptime/status-page/releases/tag/v1.11.4) · [💻 Compare](https://github.com/upptime/status-page/compare/v1.11.3...v1.11.4) · [🔖 Tag](https://github.com/upptime/status-page/tree/v1.11.4) · 🗄️ Archive ([zip](https://github.com/upptime/status-page/archive/v1.11.4.zip) · [tar.gz](https://github.com/upptime/status-page/archive/v1.11.4.tar.gz))
