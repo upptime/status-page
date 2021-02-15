@@ -1,3 +1,20 @@
+## v1.11.6 (2021-02-15)
+
+[📝 Release notes](https://github.com/upptime/status-page/releases/tag/v1.11.6) · [💻 Compare](https://github.com/upptime/status-page/compare/v1.11.5...v1.11.6) · [🔖 Tag](https://github.com/upptime/status-page/tree/v1.11.6) · 🗄️ Archive ([zip](https://github.com/upptime/status-page/archive/v1.11.6.zip) · [tar.gz](https://github.com/upptime/status-page/archive/v1.11.6.tar.gz))
+
+### ⬆️ Dependency updates
+
+- [`bcfd31d`](https://github.com/upptime/status-page/commit/bcfd31d)  Bump actions/cache from v2 to v2.1.4
+- [`5af660b`](https://github.com/upptime/status-page/commit/5af660b)  Bump semantic-release from 17.3.7 to 17.3.8
+- [`defeaff`](https://github.com/upptime/status-page/commit/defeaff)  Bump svelte from 3.32.1 to 3.32.2
+- [`453553a`](https://github.com/upptime/status-page/commit/453553a)  Bump typescript from 4.1.3 to 4.1.4
+- [`1c1b3f8`](https://github.com/upptime/status-page/commit/1c1b3f8)  Bump ts-jest from 26.5.0 to 26.5.1
+- [`021a18a`](https://github.com/upptime/status-page/commit/021a18a)  Bump svelte from 3.32.2 to 3.32.3
+- [`96ebf9c`](https://github.com/upptime/status-page/commit/96ebf9c)  Bump typescript from 4.1.4 to 4.1.5
+- [`509e84d`](https://github.com/upptime/status-page/commit/509e84d)  Bump @babel/core from 7.12.13 to 7.12.16
+- [`acfa6c6`](https://github.com/upptime/status-page/commit/acfa6c6)  Bump @types/fs-extra from 9.0.6 to 9.0.7
+- [`c11a1b7`](https://github.com/upptime/status-page/commit/c11a1b7)  Bump @babel/preset-env from 7.12.13 to 7.12.16
+
 ## v1.11.5 (2021-02-08)
 
 [📝 Release notes](https://github.com/upptime/status-page/releases/tag/v1.11.5) · [💻 Compare](https://github.com/upptime/status-page/compare/v1.11.4...v1.11.5) · [🔖 Tag](https://github.com/upptime/status-page/tree/v1.11.5) · 🗄️ Archive ([zip](https://github.com/upptime/status-page/archive/v1.11.5.zip) · [tar.gz](https://github.com/upptime/status-page/archive/v1.11.5.tar.gz))
