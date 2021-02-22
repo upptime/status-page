@@ -1,3 +1,24 @@
+## v1.11.7 (2021-02-22)
+
+[📝 Release notes](https://github.com/upptime/status-page/releases/tag/v1.11.7) · [💻 Compare](https://github.com/upptime/status-page/compare/v1.11.6...v1.11.7) · [🔖 Tag](https://github.com/upptime/status-page/tree/v1.11.7) · 🗄️ Archive ([zip](https://github.com/upptime/status-page/archive/v1.11.7.zip) · [tar.gz](https://github.com/upptime/status-page/archive/v1.11.7.tar.gz))
+
+### ⬆️ Dependency updates
+
+- [`260c160`](https://github.com/upptime/status-page/commit/260c160)  Bump @rollup/plugin-node-resolve from 11.1.1 to 11.2.0
+- [`3831ddc`](https://github.com/upptime/status-page/commit/3831ddc)  Bump semantic-release from 17.3.8 to 17.3.9
+- [`994da2f`](https://github.com/upptime/status-page/commit/994da2f)  Bump rollup from 2.38.5 to 2.39.0
+- [`b17c1ac`](https://github.com/upptime/status-page/commit/b17c1ac)  Bump @octokit/rest from 18.1.0 to 18.1.1
+- [`1063e3f`](https://github.com/upptime/status-page/commit/1063e3f)  Bump @rollup/plugin-babel from 5.2.3 to 5.3.0
+- [`bae95fa`](https://github.com/upptime/status-page/commit/bae95fa)  Bump vsoch/pull-request-action from 1.0.13 to 1.0.14
+- [`6e12581`](https://github.com/upptime/status-page/commit/6e12581)  Bump pascalgn/automerge-action from v0.13.0 to v0.13.1
+- [`0eee281`](https://github.com/upptime/status-page/commit/0eee281)  Bump vsoch/pull-request-action from 1.0.14 to 1.0.15
+- [`75caf9c`](https://github.com/upptime/status-page/commit/75caf9c)  Bump cypress from 6.4.0 to 6.5.0
+- [`9e5678b`](https://github.com/upptime/status-page/commit/9e5678b)  Bump @babel/plugin-transform-runtime from 7.12.15 to 7.12.17
+- [`b379a5a`](https://github.com/upptime/status-page/commit/b379a5a)  Bump @babel/core from 7.12.16 to 7.12.17
+- [`9aac802`](https://github.com/upptime/status-page/commit/9aac802)  Bump @babel/preset-env from 7.12.16 to 7.12.17
+- [`c4c227c`](https://github.com/upptime/status-page/commit/c4c227c)  Bump @octokit/rest from 18.1.1 to 18.2.0
+- [`2d5c509`](https://github.com/upptime/status-page/commit/2d5c509)  Bump @babel/runtime from 7.12.13 to 7.12.18
+
 ## v1.11.6 (2021-02-15)
 
 [📝 Release notes](https://github.com/upptime/status-page/releases/tag/v1.11.6) · [💻 Compare](https://github.com/upptime/status-page/compare/v1.11.5...v1.11.6) · [🔖 Tag](https://github.com/upptime/status-page/tree/v1.11.6) · 🗄️ Archive ([zip](https://github.com/upptime/status-page/archive/v1.11.6.zip) · [tar.gz](https://github.com/upptime/status-page/archive/v1.11.6.tar.gz))
