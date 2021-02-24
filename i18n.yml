@@ -44,3 +44,13 @@ errorTitle: An error occurred
 errorIntro: An error occurred in trying to get the latest status details.
 errorText: You can try again in a few moments.
 errorHome: Go to the homepage
+pastScheduledMaintenance: Past Scheduled Maintenance
+scheduledMaintenance: Scheduled Maintenance
+scheduledMaintenanceSummaryStarted: Started at $DATE for $DURATION minutes
+scheduledMaintenanceSummaryStarts: Starts at $DATE for $DURATION minutes
+startedAt: Started at
+startsAt: Starts at
+duration: Duration
+durationMin: $DURATION minutes
+incidentCompleted: Completed
+incidentScheduled: Scheduled
