@@ -1,3 +1,27 @@
+## v1.12.0 (2021-02-24)
+
+[📝 Release notes](https://github.com/upptime/status-page/releases/tag/v1.12.0) · [💻 Compare](https://github.com/upptime/status-page/compare/v1.11.7...v1.12.0) · [🔖 Tag](https://github.com/upptime/status-page/tree/v1.12.0) · 🗄️ Archive ([zip](https://github.com/upptime/status-page/archive/v1.12.0.zip) · [tar.gz](https://github.com/upptime/status-page/archive/v1.12.0.tar.gz))
+
+### ✨ New features
+
+- [`ca13c83`](https://github.com/upptime/status-page/commit/ca13c83)  Add scheduled maintenance events
+
+### ⬆️ Dependency updates
+
+- [`fdb8937`](https://github.com/upptime/status-page/commit/fdb8937)  Bump @rollup/plugin-replace from 2.3.4 to 2.4.0
+- [`f53c6cc`](https://github.com/upptime/status-page/commit/f53c6cc)  Bump actions/setup-node from v2.1.4 to v2.1.5
+- [`1f29eac`](https://github.com/upptime/status-page/commit/1f29eac)  Bump rollup from 2.39.0 to 2.39.1
+- [`56454a5`](https://github.com/upptime/status-page/commit/56454a5)  Bump @rollup/plugin-replace from 2.4.0 to 2.4.1
+- [`d8eaed6`](https://github.com/upptime/status-page/commit/d8eaed6)  Bump @babel/runtime from 7.12.18 to 7.13.2
+- [`cbff063`](https://github.com/upptime/status-page/commit/cbff063)  Bump @babel/preset-env from 7.12.17 to 7.13.0
+- [`4978cdb`](https://github.com/upptime/status-page/commit/4978cdb)  Bump @babel/core from 7.12.17 to 7.13.1
+- [`23ed1be`](https://github.com/upptime/status-page/commit/23ed1be)  Bump @babel/plugin-transform-runtime from 7.12.17 to 7.13.6
+- [`6c0088d`](https://github.com/upptime/status-page/commit/6c0088d)  Bump @babel/runtime from 7.13.2 to 7.13.6
+- [`9d705c9`](https://github.com/upptime/status-page/commit/9d705c9)  Bump typescript from 4.1.5 to 4.2.2
+- [`60fb5d2`](https://github.com/upptime/status-page/commit/60fb5d2)  Bump @babel/preset-env from 7.13.0 to 7.13.5
+- [`84a3956`](https://github.com/upptime/status-page/commit/84a3956)  Bump ts-jest from 26.5.1 to 26.5.2
+- [`ce8f253`](https://github.com/upptime/status-page/commit/ce8f253)  Bump @octokit/rest from 18.2.0 to 18.2.1
+
 ## v1.11.7 (2021-02-22)
 
 [📝 Release notes](https://github.com/upptime/status-page/releases/tag/v1.11.7) · [💻 Compare](https://github.com/upptime/status-page/compare/v1.11.6...v1.11.7) · [🔖 Tag](https://github.com/upptime/status-page/tree/v1.11.7) · 🗄️ Archive ([zip](https://github.com/upptime/status-page/archive/v1.11.7.zip) · [tar.gz](https://github.com/upptime/status-page/archive/v1.11.7.tar.gz))
