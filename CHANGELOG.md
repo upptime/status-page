@@ -1,3 +1,18 @@
+## v1.12.1 (2021-02-26)
+
+[📝 Release notes](https://github.com/upptime/status-page/releases/tag/v1.12.1) · [💻 Compare](https://github.com/upptime/status-page/compare/v1.12.0...v1.12.1) · [🔖 Tag](https://github.com/upptime/status-page/tree/v1.12.1) · 🗄️ Archive ([zip](https://github.com/upptime/status-page/archive/v1.12.1.zip) · [tar.gz](https://github.com/upptime/status-page/archive/v1.12.1.tar.gz))
+
+### 🐛 Bug fixes
+
+- [`5544b85`](https://github.com/upptime/status-page/commit/5544b85)  Fix upptime/upptime/issues/270, remove active message
+
+### ⬆️ Dependency updates
+
+- [`17c41b9`](https://github.com/upptime/status-page/commit/17c41b9)  Bump @babel/plugin-transform-runtime from 7.13.6 to 7.13.7
+- [`af1cb9c`](https://github.com/upptime/status-page/commit/af1cb9c)  Bump @babel/runtime from 7.13.6 to 7.13.7
+- [`eaac2ab`](https://github.com/upptime/status-page/commit/eaac2ab)  Bump svelte from 3.32.3 to 3.34.0
+- [`8eb895e`](https://github.com/upptime/status-page/commit/8eb895e)  Bump semantic-release from 17.3.9 to 17.4.0
+
 ## v1.12.0 (2021-02-24)
 
 [📝 Release notes](https://github.com/upptime/status-page/releases/tag/v1.12.0) · [💻 Compare](https://github.com/upptime/status-page/compare/v1.11.7...v1.12.0) · [🔖 Tag](https://github.com/upptime/status-page/tree/v1.12.0) · 🗄️ Archive ([zip](https://github.com/upptime/status-page/archive/v1.12.0.zip) · [tar.gz](https://github.com/upptime/status-page/archive/v1.12.0.tar.gz))
