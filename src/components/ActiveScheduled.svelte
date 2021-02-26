@@ -50,10 +50,6 @@
   });
 </script>
 
-{#if !incidents.length && !loading}
-  <article class="up">✅ &nbsp; {config.i18n.allSystemsOperational}</article>
-{/if}
-
 <section>
   {#if loading}
     <Loading />
