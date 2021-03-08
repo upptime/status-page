@@ -1,3 +1,28 @@
+## v1.12.2 (2021-03-08)
+
+[📝 Release notes](https://github.com/upptime/status-page/releases/tag/v1.12.2) · [💻 Compare](https://github.com/upptime/status-page/compare/v1.12.1...v1.12.2) · [🔖 Tag](https://github.com/upptime/status-page/tree/v1.12.2) · 🗄️ Archive ([zip](https://github.com/upptime/status-page/archive/v1.12.2.zip) · [tar.gz](https://github.com/upptime/status-page/archive/v1.12.2.tar.gz))
+
+### ⬆️ Dependency updates
+
+- [`5d21699`](https://github.com/upptime/status-page/commit/5d21699)  Bump @babel/preset-env from 7.13.5 to 7.13.8
+- [`d8ff323`](https://github.com/upptime/status-page/commit/d8ff323)  Bump @babel/core from 7.13.1 to 7.13.8
+- [`0a37575`](https://github.com/upptime/status-page/commit/0a37575)  Bump rollup from 2.39.1 to 2.40.0
+- [`5cd31d9`](https://github.com/upptime/status-page/commit/5cd31d9)  Bump @octokit/rest from 18.2.1 to 18.3.0
+- [`825d2bf`](https://github.com/upptime/status-page/commit/825d2bf)  Bump @babel/plugin-transform-runtime from 7.13.7 to 7.13.8
+- [`ee5fdd9`](https://github.com/upptime/status-page/commit/ee5fdd9)  Bump @types/fs-extra from 9.0.7 to 9.0.8
+- [`ec8ae1b`](https://github.com/upptime/status-page/commit/ec8ae1b)  Bump @babel/runtime from 7.13.7 to 7.13.8
+- [`a62fffb`](https://github.com/upptime/status-page/commit/a62fffb)  Bump cypress from 6.5.0 to 6.6.0
+- [`b0a6f1d`](https://github.com/upptime/status-page/commit/b0a6f1d)  Bump @babel/preset-env from 7.13.8 to 7.13.9
+- [`dae4f67`](https://github.com/upptime/status-page/commit/dae4f67)  Bump @babel/runtime from 7.13.8 to 7.13.9
+- [`9afed12`](https://github.com/upptime/status-page/commit/9afed12)  Bump @octokit/rest from 18.3.0 to 18.3.1
+- [`2497e95`](https://github.com/upptime/status-page/commit/2497e95)  Bump svelte from 3.34.0 to 3.35.0
+- [`06dc8d1`](https://github.com/upptime/status-page/commit/06dc8d1)  Bump @babel/plugin-transform-runtime from 7.13.8 to 7.13.9
+- [`0ea4f20`](https://github.com/upptime/status-page/commit/0ea4f20)  Bump @octokit/rest from 18.3.1 to 18.3.2
+- [`31baed0`](https://github.com/upptime/status-page/commit/31baed0)  Bump semantic-release from 17.4.0 to 17.4.1
+- [`29ad3e3`](https://github.com/upptime/status-page/commit/29ad3e3)  Bump ts-jest from 26.5.2 to 26.5.3
+- [`b209f44`](https://github.com/upptime/status-page/commit/b209f44)  Bump @octokit/rest from 18.3.2 to 18.3.3
+- [`810fa77`](https://github.com/upptime/status-page/commit/810fa77)  Bump typescript from 4.2.2 to 4.2.3
+
 ## v1.12.1 (2021-02-26)
 
 [📝 Release notes](https://github.com/upptime/status-page/releases/tag/v1.12.1) · [💻 Compare](https://github.com/upptime/status-page/compare/v1.12.0...v1.12.1) · [🔖 Tag](https://github.com/upptime/status-page/tree/v1.12.1) · 🗄️ Archive ([zip](https://github.com/upptime/status-page/archive/v1.12.1.zip) · [tar.gz](https://github.com/upptime/status-page/archive/v1.12.1.tar.gz))
