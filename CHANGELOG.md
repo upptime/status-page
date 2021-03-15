@@ -1,3 +1,11 @@
+## v1.12.3 (2021-03-15)
+
+[📝 Release notes](https://github.com/upptime/status-page/releases/tag/v1.12.3) · [💻 Compare](https://github.com/upptime/status-page/compare/v1.12.2...v1.12.3) · [🔖 Tag](https://github.com/upptime/status-page/tree/v1.12.3) · 🗄️ Archive ([zip](https://github.com/upptime/status-page/archive/v1.12.3.zip) · [tar.gz](https://github.com/upptime/status-page/archive/v1.12.3.tar.gz))
+
+### ⬆️ Dependency updates
+
+- [`1b13699`](https://github.com/upptime/status-page/commit/1b13699)  Bump @octokit/rest from 18.3.3 to 18.3.4
+
 ## v1.12.2 (2021-03-08)
 
 [📝 Release notes](https://github.com/upptime/status-page/releases/tag/v1.12.2) · [💻 Compare](https://github.com/upptime/status-page/compare/v1.12.1...v1.12.2) · [🔖 Tag](https://github.com/upptime/status-page/tree/v1.12.2) · 🗄️ Archive ([zip](https://github.com/upptime/status-page/archive/v1.12.2.zip) · [tar.gz](https://github.com/upptime/status-page/archive/v1.12.2.tar.gz))
