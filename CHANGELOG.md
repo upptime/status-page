@@ -1,3 +1,11 @@
+## v1.12.4 (2021-05-07)
+
+[📝 Release notes](https://github.com/upptime/status-page/releases/tag/v1.12.4) · [💻 Compare](https://github.com/upptime/status-page/compare/v1.12.3...v1.12.4) · [🔖 Tag](https://github.com/upptime/status-page/tree/v1.12.4) · 🗄️ Archive ([zip](https://github.com/upptime/status-page/archive/v1.12.4.zip) · [tar.gz](https://github.com/upptime/status-page/archive/v1.12.4.tar.gz))
+
+### 🐛 Bug fixes
+
+- [`90fd816`](https://github.com/upptime/status-page/commit/90fd816)  Trigger patch release
+
 ## v1.12.3 (2021-03-15)
 
 [📝 Release notes](https://github.com/upptime/status-page/releases/tag/v1.12.3) · [💻 Compare](https://github.com/upptime/status-page/compare/v1.12.2...v1.12.3) · [🔖 Tag](https://github.com/upptime/status-page/tree/v1.12.3) · 🗄️ Archive ([zip](https://github.com/upptime/status-page/archive/v1.12.3.zip) · [tar.gz](https://github.com/upptime/status-page/archive/v1.12.3.tar.gz))
