@@ -55,7 +55,7 @@ jobs:
           user_email: "bot@koj.co"
           commit_message: ":page_facing_up: Update dependency license file [skip ci]"
       - name: Add PR comment
-        uses: actions/github-script@v3
+        uses: actions/github-script@v4.0.2
         if: always() && steps.licensed.outputs.pr_number
         with:
           github-token: ${{ secrets.GH_PAT }}
