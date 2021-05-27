@@ -24,7 +24,7 @@ export const postProcess = async () => {
 
   try {
     if (await pathExists(join(".", "assets")))
-      await copy(join(".", "assets"), join("__sapper__", "export"), { recursive: true });
+      await copy(join(".", "assets"), join(".", "__sapper__", "export"), { recursive: true });
   } catch (error) {
     console.log("Got an error in copying assets", error);
   }
