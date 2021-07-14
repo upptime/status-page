@@ -45,7 +45,7 @@
     <dl>
       <dt>{config.i18n.overallUptimeTitle}</dt>
       <dd>{summary.uptime}</dd>
-      {#if summary.showAverageResponseType === undefined || summary.showAverageResponseType}
+      {#if summary.showAverageResponseTime === undefined || summary.showAverageResponseTime}
         <dt>{config.i18n.averageResponseTimeTitle}</dt>
         <dd>{summary.time}{config.i18n.ms}</dd>
       {/if}
