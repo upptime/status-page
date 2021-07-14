@@ -133,7 +133,7 @@
             {@html config.i18n.overallUptime.split("$UPTIME")[1]}</span
           >
         </div>
-        {#if site.showAverageResponseType === undefined || site.showAverageResponseType}
+        {#if site.showAverageResponseTime === undefined || site.showAverageResponseTime}
           <div>
             {@html config.i18n.averageResponseTime.split("$TIME")[0]}
             <span class="data"
