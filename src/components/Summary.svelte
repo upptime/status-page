@@ -37,6 +37,7 @@
     <Loading />
   {:else if summary}
     <h1>
+      <img class="icon" alt="" src={site.icon} />
       <a class="no-underline" href={summary.url.startsWith('$') ? '#' : summary.url}>{summary.name}</a>
       <span class={`tag ${summary.status}`}>
         {summary.status === 'up' ? config.i18n.up : config.i18n.down}
@@ -50,3 +51,10 @@
     </dl>
   {/if}
 </section>
+
+<style>
+  .icon {
+    height: 1rem;
+    margin-right: 0.33rem;
+    vertical-align: middle;
+</style>

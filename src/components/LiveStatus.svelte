@@ -171,10 +171,9 @@
     height: 100%;
   }
   .icon {
-    height: 1rem;
+    height: 2rem;
     margin-right: 0.33rem;
     vertical-align: middle;
-    transform: scale(1.1) translateY(-0.1rem);
   }
   a {
     text-decoration: none;
