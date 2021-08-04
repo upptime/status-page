@@ -171,7 +171,7 @@
     height: 100%;
   }
   .icon {
-    height: 1rem;
+    height: 2rem;
     margin-right: 0.33rem;
     vertical-align: middle;
   }
