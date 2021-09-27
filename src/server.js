@@ -10,7 +10,7 @@ const { PORT, NODE_ENV } = process.env;
 const dev = NODE_ENV === "development";
 
 let config
-if(fs.existsSync('.uclirc.yml')){
+if(fs.existsSync(join("..", ".uclirc.yml"))){
   config = load(fs.readFileSync(join("..", ".uclirc.yml"), "utf8"));
 }else{
   config = load(fs.readFileSync(join("..", ".upptimerc.yml"), "utf8"));
