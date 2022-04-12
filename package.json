@@ -72,7 +72,7 @@
     "semantic-release-gitmoji": "^1.3.4",
     "svelte": "^3.24.1",
     "ts-jest": "^26.4.1",
-    "ts-node": "^9.0.0",
+    "ts-node": "^10.7.0",
     "typescript": "^4.0.3"
   }
 }
