@@ -1,3 +1,11 @@
+## v1.12.6 (2022-05-26)
+
+[📝 Release notes](https://github.com/upptime/status-page/releases/tag/v1.12.6) · [💻 Compare](https://github.com/upptime/status-page/compare/v1.12.5...v1.12.6) · [🔖 Tag](https://github.com/upptime/status-page/tree/v1.12.6) · 🗄️ Archive ([zip](https://github.com/upptime/status-page/archive/v1.12.6.zip) · [tar.gz](https://github.com/upptime/status-page/archive/v1.12.6.tar.gz))
+
+### 🐛 Bug fixes
+
+- [`6cb6f23`](https://github.com/upptime/status-page/commit/6cb6f23)  Update all dependencies (testing)
+
 ## v1.12.5 (2022-05-26)
 
 [📝 Release notes](https://github.com/upptime/status-page/releases/tag/v1.12.5) · [💻 Compare](https://github.com/upptime/status-page/compare/v1.12.4...v1.12.5) · [🔖 Tag](https://github.com/upptime/status-page/tree/v1.12.5) · 🗄️ Archive ([zip](https://github.com/upptime/status-page/archive/v1.12.5.zip) · [tar.gz](https://github.com/upptime/status-page/archive/v1.12.5.tar.gz))
