@@ -38,7 +38,7 @@
     "fs-extra": "^10.1.0",
     "js-yaml": "^4.1.0",
     "polka": "next",
-    "sirv": "^1.0.5",
+    "sirv": "^2.0.2",
     "snarkdown": "^2.0.0",
     "svelte-chartjs": "^1.1.4"
   },
