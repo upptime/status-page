@@ -8,8 +8,7 @@ incidentFixed: Fixed
 incidentOngoing: Ongoing
 incidentOpenedAt: Opened at
 incidentClosedAt: Closed at
-incidentSubscribe: Subscribe to Updates
-incidentViewOnGitHub: View on GitHub
+incidentViewOnGitHub: View and Subscribe on GitHub
 incidentCommentSummary: Posted at $DATE by $AUTHOR
 incidentBack: ← Back to all incidents
 pastIncidents: Past Incidents

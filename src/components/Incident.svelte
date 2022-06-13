@@ -120,11 +120,6 @@
       <div class="r">
         <p>
           <a href={`https://github.com/${config.owner}/${config.repo}/issues/${number}`}>
-            {config.i18n.incidentSubscribe}
-          </a>
-        </p>
-        <p>
-          <a href={`https://github.com/${config.owner}/${config.repo}/issues/${number}`}>
             {config.i18n.incidentViewOnGitHub}
           </a>
         </p>
