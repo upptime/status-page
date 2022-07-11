@@ -25,7 +25,8 @@
               aria-current={segment === (item.href === "/" ? undefined : item.href)
                 ? "page"
                 : undefined}
-              href={item.href.replace("$OWNER", config.owner).replace("$REPO", config.repo)}>
+              href={item.href.replace("$OWNER", config.owner).replace("$REPO", config.repo)}
+              target={item.target || "_self"}>
               {item.title}
             </a>
           </li>
