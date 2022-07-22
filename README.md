@@ -34,7 +34,7 @@ Currently, the `.upptimerc.yml` configuration file is required one directly abov
 
 ## 📄 License
 
-[MIT](./LICENSE) © [Koj](https://koj.co)
+[MIT](./LICENSE) © [Koj](https://koj.co) 
 
 <p align="center">
   <a href="https://koj.co">
