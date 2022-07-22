@@ -1,3 +1,11 @@
+## v1.13.0 (2022-07-22)
+
+[📝 Release notes](https://github.com/upptime/status-page/releases/tag/v1.13.0) · [💻 Compare](https://github.com/upptime/status-page/compare/v1.12.6...v1.13.0) · [🔖 Tag](https://github.com/upptime/status-page/tree/v1.13.0) · 🗄️ Archive ([zip](https://github.com/upptime/status-page/archive/v1.13.0.zip) · [tar.gz](https://github.com/upptime/status-page/archive/v1.13.0.tar.gz))
+
+### ✨ New features
+
+- [`48259ef`](https://github.com/upptime/status-page/commit/48259ef)  Trigger new release
+
 ## v1.12.6 (2022-05-26)
 
 [📝 Release notes](https://github.com/upptime/status-page/releases/tag/v1.12.6) · [💻 Compare](https://github.com/upptime/status-page/compare/v1.12.5...v1.12.6) · [🔖 Tag](https://github.com/upptime/status-page/tree/v1.12.6) · 🗄️ Archive ([zip](https://github.com/upptime/status-page/archive/v1.12.6.zip) · [tar.gz](https://github.com/upptime/status-page/archive/v1.12.6.tar.gz))
