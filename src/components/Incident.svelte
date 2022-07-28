@@ -133,10 +133,10 @@
         <div>
           {@html config.i18n.incidentCommentSummary
             .replace(
-              /\$DATE/,
+              /\$DATE/g,
               `<a href=${comment.html_url}>${new Date(comment.created_at).toLocaleString()}</a>`
             )
-            .replace(/\$AUTHOR/, `<a href=${comment.user.html_url}>@${comment.user.login}</a>`)}
+            .replace(/\$AUTHOR/g, `<a href=${comment.user.html_url}>@${comment.user.login}</a>`)}
         </div>
       </article>
     {/each}
