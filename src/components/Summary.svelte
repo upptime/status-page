@@ -9,7 +9,7 @@
   let { apiBaseUrl } = config["status-website"] || {};
   if (!apiBaseUrl) apiBaseUrl = "https://api.github.com";
   const userContentBaseUrl = apiBaseUrl.includes("api.github.com")
-    ? `https://raw.githubusercontent.com`
+    ? `${config.githubUserContentBaseUrl || "https://raw.githubusercontent.com"}`
     : apiBaseUrl;
   const owner = config.owner;
   const repo = config.repo;
