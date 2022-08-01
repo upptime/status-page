@@ -1,3 +1,12 @@
+## v1.14.0 (2022-08-01)
+
+[📝 Release notes](https://github.com/upptime/status-page/releases/tag/v1.14.0) · [💻 Compare](https://github.com/upptime/status-page/compare/v1.13.0...v1.14.0) · [🔖 Tag](https://github.com/upptime/status-page/tree/v1.14.0) · 🗄️ Archive ([zip](https://github.com/upptime/status-page/archive/v1.14.0.zip) · [tar.gz](https://github.com/upptime/status-page/archive/v1.14.0.tar.gz))
+
+### ✨ New features
+
+- [`aeb6b33`](https://github.com/upptime/status-page/commit/aeb6b33)  Allow the use of other mirrors instead of raw.githubusercontent.com
+(Issues: [`#444`](https://github.com/upptime/status-page/issues/444))
+
 ## v1.13.0 (2022-07-22)
 
 [📝 Release notes](https://github.com/upptime/status-page/releases/tag/v1.13.0) · [💻 Compare](https://github.com/upptime/status-page/compare/v1.12.6...v1.13.0) · [🔖 Tag](https://github.com/upptime/status-page/tree/v1.13.0) · 🗄️ Archive ([zip](https://github.com/upptime/status-page/archive/v1.13.0.zip) · [tar.gz](https://github.com/upptime/status-page/archive/v1.13.0.tar.gz))
