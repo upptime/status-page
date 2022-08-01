@@ -12,7 +12,7 @@
   let sites = [];
   if (!apiBaseUrl) apiBaseUrl = "https://api.github.com";
   const userContentBaseUrl = apiBaseUrl.includes("api.github.com")
-    ? `${config.i18n.GithubusercontentWebsiteUrl}`
+    ? `${config.githubUserContentBaseUrl || "https://raw.githubusercontent.com"}`
     : apiBaseUrl;
   const graphsBaseUrl = `${userContentBaseUrl}/${owner}/${repo}/master/graphs`;
   let form = null;
