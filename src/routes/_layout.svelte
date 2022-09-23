@@ -23,7 +23,7 @@
     type="image/svg"
     href={(config["status-website"] || {}).faviconSvg ||
       (config["status-website"] || {}).favicon ||
-      `https://raw.githubusercontent.com/koj-co/upptime/master/assets/icon.svg`}
+      `https://raw.githubusercontent.com/upptime/upptime/master/assets/upptime-icon.svg`}
   />
   <link
     rel="icon"
