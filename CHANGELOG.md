@@ -1,3 +1,11 @@
+## v1.14.1 (2022-09-23)
+
+[📝 Release notes](https://github.com/upptime/status-page/releases/tag/v1.14.1) · [💻 Compare](https://github.com/upptime/status-page/compare/v1.14.0...v1.14.1) · [🔖 Tag](https://github.com/upptime/status-page/tree/v1.14.1) · 🗄️ Archive ([zip](https://github.com/upptime/status-page/archive/v1.14.1.zip) · [tar.gz](https://github.com/upptime/status-page/archive/v1.14.1.tar.gz))
+
+### 🐛 Bug fixes
+
+- [`a331d49`](https://github.com/upptime/status-page/commit/a331d49)  Remove background mask for graph
+
 ## v1.14.0 (2022-08-01)
 
 [📝 Release notes](https://github.com/upptime/status-page/releases/tag/v1.14.0) · [💻 Compare](https://github.com/upptime/status-page/compare/v1.13.0...v1.14.0) · [🔖 Tag](https://github.com/upptime/status-page/tree/v1.14.0) · 🗄️ Archive ([zip](https://github.com/upptime/status-page/archive/v1.14.0.zip) · [tar.gz](https://github.com/upptime/status-page/archive/v1.14.0.tar.gz))
