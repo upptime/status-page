@@ -40,7 +40,7 @@
     "polka": "next",
     "sirv": "^1.0.5",
     "snarkdown": "^2.0.0",
-    "svelte-chartjs": "^1.1.4"
+    "svelte-chartjs": "^3.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.18.2",
