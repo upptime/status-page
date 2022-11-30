@@ -16,7 +16,7 @@ jobs:
         with:
           node-version: 14
       - name: Setup Licensed
-        uses: jonabc/setup-licensed@v1.0.1
+        uses: jonabc/setup-licensed@v1.1.3
         with:
           version: 2.x
       - name: Cache node modules
