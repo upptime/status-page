@@ -1,7 +1,10 @@
 import { Octokit } from "@octokit/rest";
 import config from "../data/config.json";
 
-const { apiBaseUrl: baseUrl } = config["status-website"] || {};
+let { apiBaseUrl, userContentBaseUrl } = config["status-website"] || {};
+if (!apiBaseUrl) apiBaseUrl = "https://api.github.com";
+if (!userContentBaseUrl) userContentBaseUrl = "https://raw.githubusercontent.com";
+
 const userAgent = config.userAgent;
 
 export const createOctokit = () => {
@@ -12,6 +15,8 @@ export const createOctokit = () => {
     localStorage.getItem("personal-access-token")
   )
     token = localStorage.getItem("personal-access-token");
+
+  const baseUrl=apiBaseUrl;
   return new Octokit({
     baseUrl,
     userAgent,

@@ -6,11 +6,11 @@
 
   export let slug;
   let loading = true;
-  let { apiBaseUrl } = config["status-website"] || {};
+
+  let { apiBaseUrl,userContentBaseUrl } = config["status-website"] || {};
   if (!apiBaseUrl) apiBaseUrl = "https://api.github.com";
-  const userContentBaseUrl = apiBaseUrl.includes("api.github.com")
-    ? `${config.githubUserContentBaseUrl || "https://raw.githubusercontent.com"}`
-    : apiBaseUrl;
+  if (!userContentBaseUrl)  userContentBaseUrl = "https://raw.githubusercontent.com";
+
   const owner = config.owner;
   const repo = config.repo;
   let summary = null;
