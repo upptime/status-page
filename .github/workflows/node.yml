@@ -15,10 +15,6 @@ jobs:
         uses: actions/setup-node@v2.1.5
         with:
           node-version: 14
-      - name: Setup Licensed
-        uses: jonabc/setup-licensed@v1.0.1
-        with:
-          version: 2.x
       - name: Cache node modules
         uses: actions/cache@v2.1.4
         env:
@@ -45,23 +41,3 @@ jobs:
           GIT_AUTHOR_EMAIL: "bot@koj.co"
           GIT_COMMITTER_NAME: "Koj Bot"
           GIT_COMMITTER_EMAIL: "bot@koj.co"
-      - name: Check dependency licenses
-        id: licensed
-        uses: jonabc/licensed-ci@v1
-        with:
-          config_file: .github/licensed.yml
-          github_token: ${{ secrets.GH_PAT }}
-          user_name: "KojBot"
-          user_email: "bot@koj.co"
-          commit_message: ":page_facing_up: Update dependency license file [skip ci]"
-      - name: Add PR comment
-        uses: actions/github-script@v3
-        if: always() && steps.licensed.outputs.pr_number
-        with:
-          github-token: ${{ secrets.GH_PAT }}
-          script: |
-            github.issues.createComment({
-              ...context.repo,
-              issue_number: ${{ steps.licensed.outputs.pr_number }}
-              body: "I've checked the license of your new dependency and it looks good!"
-            })
