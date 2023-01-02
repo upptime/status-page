@@ -50,7 +50,7 @@
     "@babel/runtime": "^7.18.3",
     "@koj/config": "^1.2.11",
     "@rollup/plugin-babel": "^5.1.0",
-    "@rollup/plugin-commonjs": "^17.0.0",
+    "@rollup/plugin-commonjs": "^24.0.0",
     "@rollup/plugin-json": "^4.1.0",
     "@rollup/plugin-node-resolve": "^11.0.1",
     "@rollup/plugin-replace": "^2.3.3",
