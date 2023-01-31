@@ -53,3 +53,8 @@ duration: Duration
 durationMin: $DURATION minutes
 incidentCompleted: Completed
 incidentScheduled: Scheduled
+duration24H: 24h
+duration7D: 7d
+duration30D: 30d
+duration1Y: 1y
+durationAll: all
