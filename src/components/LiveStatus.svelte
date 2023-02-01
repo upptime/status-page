@@ -49,7 +49,7 @@
         type="radio"
         on:change={changed}
         id="data_day"
-      /><label for="data_day">{config.i18n.duration24H || "24h"}</label>
+      /><label for="data_day">{config.i18n.duration24H}</label>
     </div>
     <div>
       <input
@@ -59,7 +59,7 @@
         type="radio"
         on:change={changed}
         id="data_week"
-      /><label for="data_week">{config.i18n.duration7D || "7d"}</label>
+      /><label for="data_week">{config.i18n.duration7D}</label>
     </div>
     <div>
       <input
@@ -69,7 +69,7 @@
         type="radio"
         on:change={changed}
         id="data_month"
-      /><label for="data_month">{config.i18n.duration30D || "30d"}</label>
+      /><label for="data_month">{config.i18n.duration30D}</label>
     </div>
     <div>
       <input
@@ -79,7 +79,7 @@
         type="radio"
         on:change={changed}
         id="data_year"
-      /><label for="data_year">{config.i18n.duration1Y || "1y"}</label>
+      /><label for="data_year">{config.i18n.duration1Y}</label>
     </div>
     <div>
       <input
@@ -89,7 +89,7 @@
         type="radio"
         on:change={changed}
         id="data_all"
-      /><label for="data_all">{config.i18n.durationAll || "all"}</label>
+      /><label for="data_all">{config.i18n.durationAll}</label>
     </div>
   </form>
 </div>
