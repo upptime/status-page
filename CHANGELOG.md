@@ -1,3 +1,15 @@
+## v1.15.0 (2023-02-18)
+
+[📝 Release notes](https://github.com/upptime/status-page/releases/tag/v1.15.0) · [💻 Compare](https://github.com/upptime/status-page/compare/v1.14.1...v1.15.0) · [🔖 Tag](https://github.com/upptime/status-page/tree/v1.15.0) · 🗄️ Archive ([zip](https://github.com/upptime/status-page/archive/v1.15.0.zip) · [tar.gz](https://github.com/upptime/status-page/archive/v1.15.0.tar.gz))
+
+### ✨ New features
+
+- [`61a4967`](https://github.com/upptime/status-page/commit/61a4967)  Add light + dark theme support
+
+### 🐛 Bug fixes
+
+- [`47d2cfa`](https://github.com/upptime/status-page/commit/47d2cfa)  Fix error in Svelte syntax
+
 ## v1.14.1 (2022-09-23)
 
 [📝 Release notes](https://github.com/upptime/status-page/releases/tag/v1.14.1) · [💻 Compare](https://github.com/upptime/status-page/compare/v1.14.0...v1.14.1) · [🔖 Tag](https://github.com/upptime/status-page/tree/v1.14.1) · 🗄️ Archive ([zip](https://github.com/upptime/status-page/archive/v1.14.1.zip) · [tar.gz](https://github.com/upptime/status-page/archive/v1.14.1.tar.gz))
