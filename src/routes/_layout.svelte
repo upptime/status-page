@@ -11,7 +11,7 @@
   {/if}
   {#if (config["status-website"] || {}).themeUrl}
     <link rel="stylesheet" href={(config["status-website"] || {}).themeUrl} />
-  {:else if (config["status-website"] || {}).theme)}
+  {:else if (config["status-website"] || {}).theme}
     <link
       rel="stylesheet"
       href={`${config.path}/themes/${config["status-website"].theme}.css`}
