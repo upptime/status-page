@@ -11,10 +11,34 @@
   {/if}
   {#if (config["status-website"] || {}).themeUrl}
     <link rel="stylesheet" href={(config["status-website"] || {}).themeUrl} />
-  {:else}
+  {:else if (config["status-website"] || {}).theme)}
     <link
       rel="stylesheet"
-      href={`${config.path}/themes/${(config["status-website"] || {}).theme || "light"}.css`}
+      href={`${config.path}/themes/${config["status-website"].theme}.css`}
+    />
+  {:else}
+    <!-- https://caniuse.com/prefers-color-scheme -->
+    <!-- https://web.dev/prefers-color-scheme/ -->
+    <script>
+      // If `prefers-color-scheme` is not supported, fall back to light mode.
+      // In this case, light.css will be downloaded with `highest` priority.
+      if (window.matchMedia('(prefers-color-scheme: dark)').media === 'not all') {
+        document.documentElement.style.display = 'none';
+        document.head.insertAdjacentHTML(
+          'beforeend',
+          '<link rel="stylesheet" href={`${config.path}/themes/light.css`} onload="document.documentElement.style.display = \'\'">',
+        );
+      }
+    </script>
+    <link
+      rel="stylesheet"
+      href={`${config.path}/themes/light.css`}
+      media="(prefers-color-scheme: light)"
+    />
+    <link
+      rel="stylesheet"
+      href={`${config.path}/themes/dark.css`}
+      media="(prefers-color-scheme: dark)"
     />
   {/if}
   <link rel="stylesheet" href={`${config.path}/global.css`} />
