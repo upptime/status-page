@@ -1,3 +1,11 @@
+## v1.15.1 (2023-04-03)
+
+[📝 Release notes](https://github.com/upptime/status-page/releases/tag/v1.15.1) · [💻 Compare](https://github.com/upptime/status-page/compare/v1.15.0...v1.15.1) · [🔖 Tag](https://github.com/upptime/status-page/tree/v1.15.1) · 🗄️ Archive ([zip](https://github.com/upptime/status-page/archive/v1.15.1.zip) · [tar.gz](https://github.com/upptime/status-page/archive/v1.15.1.tar.gz))
+
+### 🐛 Bug fixes
+
+- [`14f7f8f`](https://github.com/upptime/status-page/commit/14f7f8f)  Check for window &amp; document in code
+
 ## v1.15.0 (2023-02-18)
 
 [📝 Release notes](https://github.com/upptime/status-page/releases/tag/v1.15.0) · [💻 Compare](https://github.com/upptime/status-page/compare/v1.14.1...v1.15.0) · [🔖 Tag](https://github.com/upptime/status-page/tree/v1.15.0) · 🗄️ Archive ([zip](https://github.com/upptime/status-page/archive/v1.15.0.zip) · [tar.gz](https://github.com/upptime/status-page/archive/v1.15.0.tar.gz))
