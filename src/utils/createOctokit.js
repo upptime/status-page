@@ -16,7 +16,7 @@ export const createOctokit = () => {
   )
     token = localStorage.getItem("personal-access-token");
 
-  const baseUrl=apiBaseUrl;
+  const baseUrl = apiBaseUrl;
   return new Octokit({
     baseUrl,
     userAgent,
@@ -43,7 +43,7 @@ export const handleError = (error) => {
 export const cachedResponse = async (key, fn) => {
   try {
     if (typeof window !== "undefined") {
-      if ("localStorage" in window) {
+      if ("localStorage" in window && typeof document !== "undefined" && "domain" in document) {
         const data = localStorage.getItem(key);
         if (data) {
           const item = JSON.parse(data);
@@ -55,7 +55,6 @@ export const cachedResponse = async (key, fn) => {
           ) {
             localStorage.removeItem(key);
           } else {
-            console.log("Got cached item");
             return item.data;
           }
         }
