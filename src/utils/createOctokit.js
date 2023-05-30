@@ -55,7 +55,6 @@ export const cachedResponse = async (key, fn) => {
           ) {
             localStorage.removeItem(key);
           } else {
-            console.log("Got cached item");
             return item.data;
           }
         }
