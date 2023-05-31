@@ -61,7 +61,6 @@ export const cachedResponse = async (key, fn) => {
       }
     }
   } catch (error) {}
-  console.log("Got here");
   const i = await fn();
   localStorage.setItem(key, JSON.stringify({ data: i, createdAt: new Date() }));
   return i;
