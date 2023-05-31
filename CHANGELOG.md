@@ -1,3 +1,12 @@
+## v1.15.3 (2023-05-31)
+
+[📝 Release notes](https://github.com/upptime/status-page/releases/tag/v1.15.3) · [💻 Compare](https://github.com/upptime/status-page/compare/v1.15.2...v1.15.3) · [🔖 Tag](https://github.com/upptime/status-page/tree/v1.15.3) · 🗄️ Archive ([zip](https://github.com/upptime/status-page/archive/v1.15.3.zip) · [tar.gz](https://github.com/upptime/status-page/archive/v1.15.3.tar.gz))
+
+### 🐛 Bug fixes
+
+- [`fe601cf`](https://github.com/upptime/status-page/commit/fe601cf)  Merge pull request #541 from titanism/master
+(Issues: [`#541`](https://github.com/upptime/status-page/issues/541))
+
 ## v1.15.2 (2023-05-31)
 
 [📝 Release notes](https://github.com/upptime/status-page/releases/tag/v1.15.2) · [💻 Compare](https://github.com/upptime/status-page/compare/v1.15.1...v1.15.2) · [🔖 Tag](https://github.com/upptime/status-page/tree/v1.15.2) · 🗄️ Archive ([zip](https://github.com/upptime/status-page/archive/v1.15.2.zip) · [tar.gz](https://github.com/upptime/status-page/archive/v1.15.2.tar.gz))
