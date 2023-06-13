@@ -104,15 +104,15 @@
       <article
         class={`${site.status} link graph`}
         style="--background: url('{`${graphsBaseUrl}/${site.slug}/response-time${
-          selected === 'day'
-            ? '-day'
-            : selected === 'week'
-            ? '-week'
-            : selected === 'month'
-            ? '-month'
-            : selected === 'year'
-            ? '-year'
-            : ''
+          selected === "day"
+            ? "-day"
+            : selected === "week"
+            ? "-week"
+            : selected === "month"
+            ? "-month"
+            : selected === "year"
+            ? "-year"
+            : ""
         }.png`}')"
       >
         <h4>
