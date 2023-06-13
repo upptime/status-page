@@ -14,6 +14,7 @@ incidentBack: ← Back to all incidents
 pastIncidents: Past Incidents
 pastIncidentsResolved: Resolved in $MINUTES minutes with $POSTS posts
 liveStatus: Live Status
+lastUpdated: "(Last Updated $BUILD_TIME)"
 overallUptime: "Overall uptime: $UPTIME"
 overallUptimeTitle: Overall uptime
 averageResponseTime: "Average response time: $TIMEms"

@@ -39,7 +39,10 @@
 </script>
 
 <div class="f changed" bind:this={form}>
-  <h2>{config.i18n.liveStatus}</h2>
+  <h2>
+    {config.i18n.liveStatus}
+    {config.i18n.lastUpdated.replace("$BUILD_TIME", new Date(config.buildTime).toLocaleString())}
+  </h2>
   <form class="f r">
     <div>
       <input
@@ -101,17 +104,18 @@
       <article
         class={`${site.status} link graph`}
         style="--background: url('{`${graphsBaseUrl}/${site.slug}/response-time${
-          selected === "day"
-            ? "-day"
-            : selected === "week"
-            ? "-week"
-            : selected === "month"
-            ? "-month"
-            : selected === "year"
-            ? "-year"
-            : ""
+          selected === 'day'
+            ? '-day'
+            : selected === 'week'
+            ? '-week'
+            : selected === 'month'
+            ? '-month'
+            : selected === 'year'
+            ? '-year'
+            : ''
         }.png`}')"
-        ><h4>
+      >
+        <h4>
           <img class="icon" alt="" src={site.icon} />
           <a href={`${config.path}/history/${site.slug}`}>{site.name}</a>
         </h4>
