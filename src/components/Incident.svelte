@@ -105,11 +105,15 @@
           <dd>
             {config.i18n.durationMin.replace(
               /\$DURATION/g,
-              Math.floor(
-                (new Date(incident.metadata.end).getTime() -
-                  new Date(incident.metadata.start).getTime()) /
-                  60000
-              )
+              {#if incident.metdadata.end === "unknown"}
+                Not completed yet
+              {:else}
+                Math.floor(
+                  (new Date(incident.metadata.end).getTime() -
+                    new Date(incident.metadata.start).getTime()) /
+                    60000
+                )
+              {/if}
             )}
           </dd>
         {:else if incident.closed_at}
