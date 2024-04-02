@@ -1,3 +1,11 @@
+## v1.16.0 (2024-04-02)
+
+[📝 Release notes](https://github.com/upptime/status-page/releases/tag/v1.16.0) · [💻 Compare](https://github.com/upptime/status-page/compare/v1.15.3...v1.16.0) · [🔖 Tag](https://github.com/upptime/status-page/tree/v1.16.0) · 🗄️ Archive ([zip](https://github.com/upptime/status-page/archive/v1.16.0.zip) · [tar.gz](https://github.com/upptime/status-page/archive/v1.16.0.tar.gz))
+
+### ✨ New features
+
+- [`9e6ecbd`](https://github.com/upptime/status-page/commit/9e6ecbd)  Append base URL to CNAME to fix asset loading
+
 ## v1.15.3 (2023-05-31)
 
 [📝 Release notes](https://github.com/upptime/status-page/releases/tag/v1.15.3) · [💻 Compare](https://github.com/upptime/status-page/compare/v1.15.2...v1.15.3) · [🔖 Tag](https://github.com/upptime/status-page/tree/v1.15.3) · 🗄️ Archive ([zip](https://github.com/upptime/status-page/archive/v1.15.3.zip) · [tar.gz](https://github.com/upptime/status-page/archive/v1.15.3.tar.gz))
