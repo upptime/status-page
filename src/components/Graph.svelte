@@ -42,7 +42,7 @@
       .map((commit) => parseInt(commit.commit.message.split(" in ")[1].split("ms")[0]));
     labels = commits
       .filter((commit) => commit.commit.message.includes("ms) [skip ci]"))
-      .map((commit) => new Date(commit.commit.committer.date).toLocaleString());
+      .map((commit) => new Date(commit.commit.committer.date).toLocaleString(config.i18n.locale));
     loading = false;
   });
 </script>

@@ -57,7 +57,7 @@
             <h4>{incident.title.replace("🛑", "").replace("⚠️", "").trim()}</h4>
             <div>
               {config.i18n.activeIncidentSummary
-                .replace(/\$DATE/g, new Date(incident.created_at).toLocaleString())
+                .replace(/\$DATE/g, new Date(incident.created_at).toLocaleString(config.i18n.locale))
                 .replace(/\$POSTS/g, incident.comments)}
             </div>
           </div>

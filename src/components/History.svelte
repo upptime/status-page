@@ -53,7 +53,7 @@
     <h2>{config.i18n.pastIncidents}</h2>
     {#each incidents as incident}
       {#if incident.showHeading}
-        <h3>{new Date(incident.created_at).toLocaleDateString()}</h3>
+        <h3>{new Date(incident.created_at).toLocaleDateString(config.i18n.locale)}</h3>
       {/if}
       <article class="down link {incident.title.includes('degraded') ? 'degraded' : ''}">
         <div class="f">
