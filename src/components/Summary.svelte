@@ -9,7 +9,6 @@
 
   let { apiBaseUrl,userContentBaseUrl } = config["status-website"] || {};
   if (!apiBaseUrl) apiBaseUrl = "https://api.github.com";
-  if (!userContentBaseUrl)  userContentBaseUrl = "https://raw.githubusercontent.com";
 
   const owner = config.owner;
   const repo = config.repo;
@@ -17,8 +16,9 @@
 
   onMount(async () => {
     try {
-      const res = await fetch(`${userContentBaseUrl}/${owner}/${repo}/master/history/summary.json`);
-      summary = (await res.json()).find((item) => item.slug === slug);
+      const res = await fetch(`${apiBaseUrl}/repos/${owner}/${repo}/contents/history/summary.json`);
+      const json = await res.json();
+      summary = JSON.parse(atob(json.content)).find((item) => item.slug === slug);
     } catch (error) {
       handleError(error);
     }

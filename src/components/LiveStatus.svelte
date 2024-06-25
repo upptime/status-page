@@ -21,8 +21,9 @@
 
   onMount(async () => {
     try {
-      const res = await fetch(`${userContentBaseUrl}/${owner}/${repo}/master/history/summary.json`);
-      sites = await res.json();
+      const res = await fetch(`${apiBaseUrl}/repos/${owner}/${repo}/contents/history/summary.json`);
+      const json = await res.json();
+      sites = JSON.parse(atob(json.content));
     } catch (error) {
       handleError(error);
     }
