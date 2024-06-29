@@ -1,3 +1,12 @@
+## v1.17.0 (2024-06-29)
+
+[📝 Release notes](https://github.com/upptime/status-page/releases/tag/v1.17.0) · [💻 Compare](https://github.com/upptime/status-page/compare/v1.16.0...v1.17.0) · [🔖 Tag](https://github.com/upptime/status-page/tree/v1.17.0) · 🗄️ Archive ([zip](https://github.com/upptime/status-page/archive/v1.17.0.zip) · [tar.gz](https://github.com/upptime/status-page/archive/v1.17.0.tar.gz))
+
+### ✨ New features
+
+- [`bdf7fcd`](https://github.com/upptime/status-page/commit/bdf7fcd)  Date formats in i18n configuration
+(Issues: [`#549`](https://github.com/upptime/status-page/issues/549))
+
 ## v1.16.0 (2024-04-02)
 
 [📝 Release notes](https://github.com/upptime/status-page/releases/tag/v1.16.0) · [💻 Compare](https://github.com/upptime/status-page/compare/v1.15.3...v1.16.0) · [🔖 Tag](https://github.com/upptime/status-page/tree/v1.16.0) · 🗄️ Archive ([zip](https://github.com/upptime/status-page/archive/v1.16.0.zip) · [tar.gz](https://github.com/upptime/status-page/archive/v1.16.0.tar.gz))
