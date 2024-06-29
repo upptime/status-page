@@ -66,7 +66,7 @@
                   ? config.i18n.scheduledMaintenanceSummaryStarted
                   : config.i18n.scheduledMaintenanceSummaryStarts
                 )
-                  .replace(/\$DATE/g, new Date(incident.metadata.start).toLocaleString())
+                  .replace(/\$DATE/g, new Date(incident.metadata.start).toLocaleString(config.i18n.locale))
                   .replace(
                     /\$DURATION/g,
                     Math.floor(
