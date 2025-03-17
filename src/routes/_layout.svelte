@@ -97,6 +97,10 @@
   </p>
 </footer>
 
+{#if (config["status-website"] || {}).customFootHtml}
+  {@html (config["status-website"] || {}).customFootHtml}
+{/if}
+
 <style>
   footer {
     text-align: center;
