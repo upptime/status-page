@@ -97,10 +97,6 @@
   </p>
 </footer>
 
-{#if (config["status-website"] || {}).customFootHtml}
-  {@html (config["status-website"] || {}).customFootHtml}
-{/if}
-
 <style>
   footer {
     text-align: center;
@@ -108,3 +104,7 @@
     margin-top: 3rem;
   }
 </style>
+
+{#if (config["status-website"] || {}).customFootHtml}
+  {@html (config["status-website"] || {}).customFootHtml}
+{/if}
