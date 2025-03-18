@@ -104,3 +104,7 @@
     margin-top: 3rem;
   }
 </style>
+
+{#if (config["status-website"] || {}).customFootHtml}
+  {@html (config["status-website"] || {}).customFootHtml}
+{/if}
