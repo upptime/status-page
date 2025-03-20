@@ -1,6 +1,6 @@
 name: Node CI
 on:
-  workflow:
+  workflow_dispatch:
   push:
     branches:
       - master
