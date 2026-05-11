@@ -3,6 +3,10 @@
   import config from "../data/config.json";
   import snarkdown from "snarkdown";
   export let segment;
+
+  const statusWebsite = config["status-website"] || {};
+  const faviconBaseUrl = (statusWebsite.baseUrl || "").replace(/\/$/, "");
+  const defaultPngFavicon = `${faviconBaseUrl}/logo-192.png`;
 </script>
 
 <svelte:head>
@@ -52,7 +56,7 @@
   <link
     rel="icon"
     type="image/png"
-    href={(config["status-website"] || {}).favicon || `/logo-192.png`}
+    href={(config["status-website"] || {}).favicon || defaultPngFavicon}
   />
   {#if (config["status-website"] || {}).scripts}
     {#each (config["status-website"] || {}).scripts as script}<script
