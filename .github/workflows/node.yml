@@ -3,6 +3,11 @@ on:
   push:
     branches:
       - master
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+  id-token: write
 jobs:
   release:
     name: Build, test, and release
@@ -11,7 +16,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4.2.2
-      - name: Setup Node.js
+        with:
+          token: ${{ secrets.GH_PAT || github.token }}
+      - name: Setup Node.js for legacy build
         uses: actions/setup-node@v4.3.0
         with:
           node-version: 14
@@ -28,23 +35,33 @@ jobs:
             ${{ runner.os }}-
       - name: Install dependencies
         run: npm ci
-      - name: Build TypeScript
+      - name: Remove bundled npm shims (Node 14 incompatible)
+        run: rm -f node_modules/.bin/npm node_modules/.bin/npx
+      - name: Build
         run: npm run build
+      - name: Setup Node.js for npm trusted publishing
+        uses: actions/setup-node@v4.3.0
+        with:
+          node-version: 22
       - name: Check if release is needed
         id: release_check
-        run: node .github/release-preflight.js
+        run: node .github/release-preflight.mjs
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
+          GITHUB_TOKEN: ${{ secrets.GH_PAT || github.token }}
           GIT_AUTHOR_NAME: "Koj Bot"
           GIT_AUTHOR_EMAIL: "bot@koj.co"
           GIT_COMMITTER_NAME: "Koj Bot"
           GIT_COMMITTER_EMAIL: "bot@koj.co"
       - name: Release
         if: steps.release_check.outputs.required == 'true'
-        run: npx semantic-release
+        run: |
+          rm -f node_modules/.bin/npm node_modules/.bin/npx
+          ln -s ../npm/bin/npm-cli.js node_modules/.bin/npm
+          ln -s ../npm/bin/npx-cli.js node_modules/.bin/npx
+          node_modules/.bin/npm --version
+          node_modules/.bin/semantic-release
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_PAT || github.token }}
           GIT_AUTHOR_NAME: "Koj Bot"
           GIT_AUTHOR_EMAIL: "bot@koj.co"
           GIT_COMMITTER_NAME: "Koj Bot"
