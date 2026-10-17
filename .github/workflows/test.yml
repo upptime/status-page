@@ -18,6 +18,8 @@ jobs:
           node-version: 14
       - name: Install dependencies
         run: npm ci
+      - name: Remove bundled npm shims (Node 14 incompatible)
+        run: rm -f node_modules/.bin/npm node_modules/.bin/npx
       - name: Build TypeScript
         run: npm run build
       - name: Run tests
