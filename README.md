@@ -30,7 +30,7 @@ When building locally, you can start a server:
 npm run dev
 ```
 
-Currently, the `.upptimerc.yml` configuration file is required one directly above the project root.
+Currently, the `.upptimerc.yml` configuration file is required one directory above the project root.
 
 ## 📄 License
 
