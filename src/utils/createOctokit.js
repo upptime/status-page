@@ -24,15 +24,36 @@ export const createOctokit = () => {
   });
 };
 
+const getHeader = (headers, name) => {
+  if (!headers) return undefined;
+  return headers[name] || headers[name.toLowerCase()] || headers[name.toUpperCase()];
+};
+
+export const isRateLimitError = (error) => {
+  if (!error || error.message === "Bad credentials") return false;
+
+  const message = String(error.message || "").toLowerCase();
+  const documentationUrl = String(
+    error.documentation_url ||
+      (error.response && error.response.data && error.response.data.documentation_url) ||
+      ""
+  ).toLowerCase();
+  const status = error.status || (error.response && error.response.status);
+  const remaining = getHeader(error.response && error.response.headers, "x-ratelimit-remaining");
+
+  return (
+    message.indexOf("rate limit") > -1 ||
+    documentationUrl.indexOf("rate-limit") > -1 ||
+    (status === 403 && remaining === "0")
+  );
+};
+
+export const getErrorPath = (error) => (isRateLimitError(error) ? "/rate-limit-exceeded" : "/error");
+
 export const handleError = (error) => {
-  if (error.message === "Bad credentials") {
-    window.location.href = config.path + "/error";
-  } else if ((error.message || "").indexOf("rate limit exceeded") > -1) {
-    window.location.href = config.path + "/rate-limit-exceeded";
-  } else {
-    window.location.href = config.path + "/error";
-    console.log(error.message);
-  }
+  const errorPath = getErrorPath(error);
+  window.location.href = config.path + errorPath;
+  if (errorPath === "/error" && error && error.message !== "Bad credentials") console.log(error.message);
 };
 
 /**
