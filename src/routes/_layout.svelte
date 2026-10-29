@@ -21,19 +21,6 @@
       href={`${config.path}/themes/${config["status-website"].theme}.css`}
     />
   {:else}
-    <!-- https://caniuse.com/prefers-color-scheme -->
-    <!-- https://web.dev/prefers-color-scheme/ -->
-    <script>
-      // If `prefers-color-scheme` is not supported, fall back to light mode.
-      // In this case, light.css will be downloaded with `highest` priority.
-      if (typeof window !== "undefined" && typeof document !== "undefined" && "matchMedia" in window && window.matchMedia('(prefers-color-scheme: dark)').media === 'not all') {
-        document.documentElement.style.display = 'none';
-        document.head.insertAdjacentHTML(
-          'beforeend',
-          '<link rel="stylesheet" href={`${config.path}/themes/light.css`} onload="document.documentElement.style.display = \'\'">',
-        );
-      }
-    </script>
     <link
       rel="stylesheet"
       href={`${config.path}/themes/light.css`}
@@ -44,6 +31,25 @@
       href={`${config.path}/themes/dark.css`}
       media="(prefers-color-scheme: dark)"
     />
+    <!-- https://caniuse.com/prefers-color-scheme -->
+    <!-- https://web.dev/prefers-color-scheme/ -->
+    <script>
+      // If `prefers-color-scheme` is not supported, fall back to light mode.
+      // In this case, light.css will be downloaded with `highest` priority.
+      // Svelte does not fill in expressions inside this script, so the URL is
+      // taken from the light theme link above.
+      if (typeof window !== "undefined" && typeof document !== "undefined" && "matchMedia" in window && window.matchMedia('(prefers-color-scheme: dark)').media === 'not all') {
+        var lightTheme = document.querySelector('link[media="(prefers-color-scheme: light)"]');
+        if (lightTheme) {
+          document.documentElement.style.display = 'none';
+          var fallback = document.createElement('link');
+          fallback.rel = 'stylesheet';
+          fallback.href = lightTheme.href;
+          fallback.onload = fallback.onerror = function () { document.documentElement.style.display = ''; };
+          document.head.appendChild(fallback);
+        }
+      }
+    </script>
   {/if}
   <link rel="stylesheet" href={`${config.path}/global.css`} />
   <link
